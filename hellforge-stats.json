@@ -166,12 +166,13 @@
       "damage.standard_damage": 180
     },
     "P-19 Redeemer": {
-      "attachment.magazine.pistol_9x20mm_extended.reload_duration": 1.5,
-      "damage.durable_damage": 14,
-      "damage.standard_damage": 80,
-      "magazine.magazines_from_supply": 10,
+      "damage.durable_damage": 20,
+      "damage.stagger": 15,
+      "damage.standard_damage": 90,
       "magazine.spare_magazines": 10,
-      "magazine.starting_magazines": 6
+      "projectile.drag": 0.8,
+      "weapon.recoil_climb_vertical": 10,
+      "weapon.sway": 0.5
     },
     "P-2 Peacemaker": {
       "attachment.magazine.pistol_12x20mm_standard.reload_duration": 1.5,
