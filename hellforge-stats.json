@@ -54,6 +54,11 @@
     "Orbital Gas Strike": {
       "explosion.outer_radius": 25,
       "explosion.shockwave_radius": 35
+    },
+    "Orbital Railcannon Strike": {
+      "damage.durable_damage": 11000,
+      "damage.standard_damage": 11000,
+      "stratagem.cooldown": 70
     }
   },
   "throwables": {
@@ -228,7 +233,7 @@
       "damage.standard_damage": 40,
       "damage.status_1_strength": 1
     },
-    "SG-225SP Breaker Spray&Pray": {
+    "SG-225SP Breaker Spray\u0026Pray": {
       "damage.durable_damage": 8,
       "damage.standard_damage": 30
     },
@@ -250,6 +255,9 @@
       "damage.primary.status_2_strength": 1,
       "damage.primary.status_3_strength": 1,
       "damage.primary.status_3_type": 8
+    },
+    "AR-11 Arbitrator": {
+      "weapon.ergonomics": 45
     }
   }
 }
