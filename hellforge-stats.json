@@ -1,0 +1,1147 @@
+{
+  "format": 1,
+  "weapons": {
+    "R-36 Eruptor": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "projectile.lifetime": 4.4,
+      "weapon.fire_rate": 26
+    },
+    "VG-70 Variable": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "reload.duration": 2.5,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 90,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "damage.stagger": 15,
+      "magazine.capacity": 49,
+      "magazine.starting_magazines": 6,
+      "magazine.spare_magazines": 7,
+      "magazine.magazines_from_supply": 7
+    },
+    "JAR-5 Dominator": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.6,
+      "weapon.fire_rate": 350,
+      "weapon.horizontal_spread": 2,
+      "weapon.vertical_spread": 2,
+      "reload.duration": 3.3,
+      "fire_mode.modes.3": 1,
+      "ammunition.projectile": 202
+    },
+    "LAS-13 Trident": {
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 8,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.heat_per_shot": 4,
+      "beam.pulse_beams": 1
+    },
+    "LAS-16 Sickle": {
+      "weapon.sway": 0.7,
+      "weapon.fire_rate": 850,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 8,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.firing_charge": 10,
+      "heat.heat_per_shot": 0.95
+    },
+    "LAS-17 Double-Edge Sickle": {
+      "weapon.sway": 0.7,
+      "heat.firing_charge": 10
+    },
+    "LAS-12 Sai": {
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 8,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.cool_per_second": 6.7,
+      "heat.heat_per_shot": 1.3
+    },
+    "LAS-5 Scythe": {
+      "weapon.sway": 0.7,
+      "damage.standard_damage": 450,
+      "damage.durable_damage": 75,
+      "heat.firing_charge": 10
+    },
+    "LAS-7 Dagger": {
+      "weapon.sway": 0.5,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 50
+    },
+    "LAS-58 Talon": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "reload.duration": 3.5,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 20,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 4,
+      "heat.heat_per_shot": 10
+    },
+    "R/40-K Hot-Shot Marksman Rifle": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.fire_rate": 400,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "reload.duration": 2.5,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 500,
+      "damage.durable_damage": 50,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.stagger": 15,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 8,
+      "magazine.capacity": 15
+    },
+    "R-63 Diligence": {
+      "weapon.ergonomics": 65,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 5,
+      "weapon.recoil_drift_vertical": 70,
+      "weapon.horizontal_spread": 0.4,
+      "weapon.vertical_spread": 0.4,
+      "reload.duration": 2.5,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "damage.stagger": 20,
+      "magazine.capacity": 20
+    },
+    "R-72 Censor": {
+      "weapon.ergonomics": 65,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 5,
+      "weapon.recoil_drift_vertical": 70,
+      "weapon.horizontal_spread": 0.4,
+      "weapon.vertical_spread": 0.4,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "damage.stagger": 25,
+      "magazine.capacity": 20
+    },
+    "R-2 Amendment": {
+      "weapon.ergonomics": 60,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 5,
+      "weapon.recoil_drift_vertical": 70,
+      "weapon.horizontal_spread": 0.4,
+      "weapon.vertical_spread": 0.4,
+      "reload.duration": 3,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "magazine.capacity": 20
+    },
+    "R-63CS Diligence Counter Sniper": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 10,
+      "weapon.recoil_drift_vertical": 150,
+      "weapon.horizontal_spread": 0.2,
+      "weapon.vertical_spread": 0.2,
+      "reload.duration": 2.5,
+      "projectile.penetration_slowdown": 0.1,
+      "damage.standard_damage": 365,
+      "damage.durable_damage": 200,
+      "damage.stagger": 30,
+      "magazine.capacity": 12
+    },
+    "R-6 Deadeye": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 10,
+      "weapon.recoil_drift_vertical": 150,
+      "weapon.horizontal_spread": 0.2,
+      "weapon.vertical_spread": 0.2,
+      "reload.duration": 2,
+      "projectile.penetration_slowdown": 0.1,
+      "damage.standard_damage": 365,
+      "damage.durable_damage": 200,
+      "damage.stagger": 30
+    },
+    "R-4 Hyena": {
+      "weapon.ergonomics": 35,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 10,
+      "weapon.recoil_drift_vertical": 150,
+      "weapon.horizontal_spread": 0.2,
+      "weapon.vertical_spread": 0.2,
+      "weapon.fire_rate": 300,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "damage.status_1_strength": 8,
+      "magazine.capacity": 12,
+      "magazine.spare_magazines": 6,
+      "magazine.magazines_from_supply": 8
+    },
+    "PLAS-1 Scorcher": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 5,
+      "damage.standard_damage": 100,
+      "damage.durable_damage": 50,
+      "magazine.capacity": 30,
+      "magazine.starting_magazines": 4,
+      "magazine.spare_magazines": 7,
+      "magazine.magazines_from_supply": 7
+    },
+    "PLAS-101 Purifier": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 5,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "magazine.capacity": 20,
+      "magazine.starting_magazines": 4,
+      "magazine.spare_magazines": 6,
+      "magazine.magazines_from_supply": 6
+    },
+    "PLAS-39 Accelerator Rifle": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 1,
+      "weapon.recoil_drift_vertical": 1,
+      "weapon.recoil_climb_horizontal": 1,
+      "weapon.recoil_climb_vertical": 1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "reload.duration": 2,
+      "damage.standard_damage": 250,
+      "damage.durable_damage": 180,
+      "damage.ap_direct": 4,
+      "damage.ap_slight": 4,
+      "damage.ap_large": 4,
+      "damage.ap_extreme": 3,
+      "magazine.capacity": 9,
+      "magazine.starting_magazines": 8,
+      "magazine.spare_magazines": 12,
+      "magazine.magazines_from_supply": 12
+    },
+    "MP-98 Knight": {
+      "weapon.sway": 0.7,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.4,
+      "damage.standard_damage": 95,
+      "damage.durable_damage": 22,
+      "damage.stagger": 15
+    },
+    "StA-11 SMG": {
+      "weapon.sway": 0.5,
+      "weapon.fire_rate": 1200
+    },
+    "M7S SMG": {
+      "weapon.sway": 0.6,
+      "weapon.fire_rate": 1200,
+      "weapon.recoil_drift_horizontal": 2,
+      "weapon.recoil_drift_vertical": 4,
+      "weapon.recoil_climb_horizontal": 1,
+      "weapon.recoil_climb_vertical": 4,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.4,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 20,
+      "damage.stagger": 15,
+      "magazine.capacity": 48
+    },
+    "SMG-203 Gallant": {
+      "weapon.sway": 0.7,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.25,
+      "damage.standard_damage": 75,
+      "damage.durable_damage": 13,
+      "damage.stagger": 15
+    },
+    "SMG/FLAM-34 Stoker": {
+      "weapon.sway": 0.7,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.4,
+      "damage.standard_damage": 140,
+      "damage.durable_damage": 50,
+      "damage.stagger": 20
+    },
+    "SMG-72 Pummeler": {
+      "weapon.sway": 0.7,
+      "weapon.fire_rate": 600,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.8,
+      "damage.standard_damage": 120,
+      "damage.durable_damage": 40,
+      "damage.stagger": 30
+    },
+    "P-19 Redeemer": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 10,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 20,
+      "damage.stagger": 15,
+      "magazine.spare_magazines": 10
+    },
+    "P-2 Peacemaker": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 15,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 120,
+      "damage.durable_damage": 52,
+      "damage.stagger": 15
+    },
+    "P-92 Warrant": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 45,
+      "projectile.drag": 0,
+      "damage.standard_damage": 120,
+      "damage.durable_damage": 52,
+      "damage.stagger": 15,
+      "magazine.capacity": 13
+    },
+    "P-69 Veto": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 45,
+      "projectile.drag": 0,
+      "damage.standard_damage": 150,
+      "damage.durable_damage": 60,
+      "rounds.feed_capacity_1": 12
+    },
+    "P-113 Verdict": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 45,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 180,
+      "damage.durable_damage": 50,
+      "magazine.capacity": 10
+    },
+    "M6C/SOCOM Pistol": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 45,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 40,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 2,
+      "damage.stagger": 15,
+      "magazine.capacity": 12
+    },
+    "P-4 Senator": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 50,
+      "reload.duration": 3.5,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 150,
+      "damage.stagger": 20
+    },
+    "P/40-K Bolt Pistol": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.5
+    },
+    "P-34 Breacher": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 450,
+      "projectile.drag": 2,
+      "damage.standard_damage": 60,
+      "damage.durable_damage": 0,
+      "magazine.capacity": 1,
+      "magazine.starting_magazines": 1,
+      "magazine.spare_magazines": 2,
+      "magazine.magazines_from_supply": 2
+    },
+    "GP-31 Grenade Pistol": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 50,
+      "projectile.drag": 1.2,
+      "damage.standard_damage": 250,
+      "damage.durable_damage": 250,
+      "rounds.feed_capacity_1": 1,
+      "rounds.starting_rounds": 8,
+      "rounds.spare_rounds": 16,
+      "rounds.rounds_from_supply": 8
+    },
+    "GP-20 Ultimatum": {
+      "weapon.recoil_climb_vertical": 500,
+      "projectile.velocity": 60
+    },
+    "P-35 Re-Educator": {
+      "weapon.sway": 0.5,
+      "weapon.fire_rate": 300,
+      "damage.status_3_type": 40,
+      "damage.status_3_strength": 100,
+      "magazine.starting_magazines": 3,
+      "magazine.spare_magazines": 3,
+      "magazine.magazines_from_supply": 3
+    },
+    "M90A Shotgun": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.4,
+      "damage.standard_damage": 71,
+      "damage.durable_damage": 43,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-8 Punisher": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.5,
+      "projectile.pellet_count": 16,
+      "damage.standard_damage": 49,
+      "damage.durable_damage": 30,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-8S Slugger": {
+      "reload.duration": 2,
+      "projectile.drag": 0.4,
+      "damage.standard_damage": 500,
+      "damage.durable_damage": 200,
+      "damage.stagger": 35,
+      "damage.demolition": 20,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60,
+      "weapon.horizontal_spread": 12,
+      "weapon.vertical_spread": 12
+    },
+    "SG-451 Cookout": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 24,
+      "damage.durable_damage": 6,
+      "damage.stagger": 30,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-20 Halt": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.primary.drag": 0.3,
+      "projectile.alternate.drag": 0.3,
+      "damage.primary.standard_damage": 54,
+      "damage.primary.durable_damage": 22,
+      "damage.alternate.durable_damage": 5,
+      "damage.alternate.standard_damage": 9,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-97 Sweeper": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.3,
+      "damage.standard_damage": 54,
+      "damage.durable_damage": 21
+    },
+    "SG-225 Breaker": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 46,
+      "damage.durable_damage": 22
+    },
+    "SG-225SP Breaker Spray\u0026Pray": {
+      "weapon.horizontal_spread": 120,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 23,
+      "damage.durable_damage": 9
+    },
+    "SG-225IE Breaker Incendiary": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 20,
+      "damage.durable_damage": 10
+    },
+    "DBS-2 Double Freedom": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.4,
+      "damage.standard_damage": 105,
+      "damage.durable_damage": 74,
+      "rounds.feed_capacity_1": 2,
+      "rounds.starting_rounds": 22,
+      "rounds.spare_rounds": 40,
+      "rounds.rounds_from_supply": 40
+    },
+    "AR-23 Liberator": {
+      "weapon.sway": 0.7,
+      "damage.durable_damage": 25,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "damage.stagger": 15
+    },
+    "AR-23A Liberator Carbine": {
+      "weapon.sway": 0.7
+    },
+    "StA-52 Assault Rifle": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 5,
+      "weapon.recoil_drift_vertical": 5,
+      "weapon.recoil_climb_horizontal": 4,
+      "weapon.recoil_climb_vertical": 12,
+      "reload.duration": 3.5
+    },
+    "AR/GL-21 One-Two": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "weapon.recoil_drift_horizontal": 7,
+      "weapon.recoil_drift_vertical": 8,
+      "weapon.recoil_climb_horizontal": 5,
+      "weapon.recoil_climb_vertical": 16,
+      "reload.duration": 3.333,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 25,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 3,
+      "damage.stagger": 15
+    },
+    "AR/GL-21 One-Two / underbarrel": {
+      "weapon.horizontal_spread": 10,
+      "weapon.vertical_spread": 10,
+      "reload.duration": 2,
+      "rounds.feed_capacity_1": 1,
+      "rounds.starting_rounds": 6,
+      "rounds.spare_rounds": 10,
+      "rounds.rounds_from_supply": 5
+    },
+    "AR-23C Liberator Concussive": {
+      "weapon.sway": 0.7,
+      "weapon.fire_rate": 600,
+      "weapon.recoil_drift_horizontal": 7,
+      "weapon.recoil_drift_vertical": 10,
+      "weapon.recoil_climb_horizontal": 5,
+      "weapon.recoil_climb_vertical": 20,
+      "projectile.penetration_slowdown": 0.8,
+      "damage.standard_damage": 110,
+      "damage.durable_damage": 40,
+      "damage.stagger": 35
+    },
+    "AR-23P Liberator Penetrator": {
+      "weapon.ergonomics": 65,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 7,
+      "weapon.recoil_drift_vertical": 10,
+      "weapon.recoil_climb_horizontal": 5,
+      "weapon.recoil_climb_vertical": 20,
+      "projectile.penetration_slowdown": 0.2,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 18,
+      "damage.stagger": 10
+    },
+    "AR-32 Pacifier": {
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 7,
+      "weapon.recoil_drift_vertical": 10,
+      "weapon.recoil_climb_horizontal": 5,
+      "weapon.recoil_climb_vertical": 20,
+      "projectile.penetration_slowdown": 0.4,
+      "damage.standard_damage": 85,
+      "damage.durable_damage": 18,
+      "damage.stagger": 15,
+      "damage.status_1_strength": 6
+    },
+    "AR-59 Suppressor": {
+      "weapon.sway": 0.7,
+      "projectile.penetration_slowdown": 0.4,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 30,
+      "damage.stagger": 20
+    },
+    "AR-11 Arbitrator": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "weapon.recoil_drift_horizontal": 7,
+      "weapon.recoil_drift_vertical": 8,
+      "weapon.recoil_climb_horizontal": 5,
+      "weapon.recoil_climb_vertical": 16,
+      "reload.duration": 3.3,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 25,
+      "damage.stagger": 20,
+      "magazine.capacity": 45,
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 7,
+      "magazine.magazines_from_supply": 6
+    },
+    "AR-11 Arbitrator / underbarrel": {
+      "rounds.spare_rounds": 30,
+      "rounds.rounds_from_supply": 30
+    },
+    "BR-14 Adjudicator": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.6,
+      "weapon.recoil_drift_horizontal": 40,
+      "weapon.recoil_drift_vertical": 100,
+      "weapon.recoil_climb_horizontal": 6,
+      "weapon.recoil_climb_vertical": 35,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "projectile.penetration_slowdown": 0.2,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 75,
+      "damage.stagger": 20,
+      "magazine.capacity": 25,
+      "fire_mode.modes.3": 3,
+      "fire_mode.burst_rounds": 3
+    },
+    "MA5C Assault Rifle": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 40,
+      "weapon.recoil_drift_vertical": 100,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "projectile.penetration_slowdown": 0.15,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 75,
+      "damage.stagger": 20,
+      "magazine.capacity": 25
+    },
+    "AR-2 Coyote": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 40,
+      "weapon.recoil_drift_vertical": 100,
+      "weapon.recoil_climb_vertical": 36,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 75,
+      "damage.stagger": 15,
+      "damage.status_1_strength": 4,
+      "magazine.capacity": 25
+    },
+    "AR-61 Tenderizer": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "weapon.recoil_drift_horizontal": 22,
+      "weapon.recoil_drift_vertical": 85,
+      "weapon.recoil_climb_vertical": 13,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 120,
+      "damage.stagger": 25,
+      "magazine.capacity": 25,
+      "magazine.starting_magazines": 6,
+      "magazine.spare_magazines": 8,
+      "magazine.magazines_from_supply": 8
+    },
+    "SMG-32 Reprimand": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 40,
+      "weapon.recoil_drift_vertical": 115,
+      "weapon.horizontal_spread": 2,
+      "weapon.vertical_spread": 2,
+      "reload.duration": 3,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.25,
+      "damage.standard_damage": 160,
+      "damage.durable_damage": 90,
+      "damage.stagger": 25,
+      "magazine.capacity": 30
+    },
+    "M-105 Stalwart": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1
+    },
+    "MG-43 Machine Gun": {
+      "weapon.ergonomics": 25,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 20,
+      "weapon.recoil_drift_vertical": 20,
+      "weapon.recoil_climb_horizontal": 15,
+      "weapon.recoil_climb_vertical": 30,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "reload.duration": 3,
+      "damage.primary.standard_damage": 160,
+      "damage.primary.durable_damage": 75
+    },
+    "MG-206 Heavy Machine Gun": {
+      "weapon.ergonomics": 20,
+      "weapon.sway": 1,
+      "weapon.recoil_drift_horizontal": 50,
+      "weapon.recoil_drift_vertical": 150,
+      "weapon.recoil_climb_horizontal": 15,
+      "weapon.recoil_climb_vertical": 100,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "weapon.capacity": 50,
+      "reload.duration": 4,
+      "projectile.primary.velocity": 800,
+      "projectile.primary.drag": 0.15,
+      "damage.primary.standard_damage": 400,
+      "damage.primary.durable_damage": 300,
+      "magazine.starting_magazines": 1,
+      "magazine.spare_magazines": 2,
+      "magazine.magazines_from_supply": 2
+    },
+    "M-1000 Maxigun": {
+      "weapon.ergonomics": 15,
+      "weapon.sway": 1,
+      "weapon.recoil_drift_horizontal": 30,
+      "weapon.recoil_drift_vertical": 30,
+      "weapon.recoil_climb_horizontal": 20,
+      "weapon.recoil_climb_vertical": 40,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "weapon.stationary_while_firing": 0,
+      "damage.primary.standard_damage": 150,
+      "damage.primary.durable_damage": 75
+    },
+    "APW-1 Anti-Materiel Rifle": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.horizontal_spread": 0.2,
+      "weapon.vertical_spread": 0.2,
+      "weapon.third_person_reticle": 1,
+      "projectile.primary.drag": 0.15,
+      "projectile.primary.penetration_slowdown": 0.15,
+      "damage.primary.standard_damage": 450,
+      "damage.primary.durable_damage": 350
+    },
+    "RS-422 Railgun": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.capacity": 1,
+      "damage.primary.standard_damage": 800,
+      "damage.primary.durable_damage": 300,
+      "damage.primary.ap_direct": 5,
+      "damage.primary.ap_slight": 5,
+      "damage.primary.ap_large": 5,
+      "damage.primary.ap_extreme": 5,
+      "magazine.starting_magazines": 10,
+      "magazine.spare_magazines": 20,
+      "magazine.magazines_from_supply": 10
+    },
+    "AC-8 Autocannon": {
+      "weapon.sway": 0.7,
+      "damage.primary.standard_damage": 450,
+      "damage.primary.durable_damage": 350,
+      "damage.programmable.durable_damage": 150,
+      "damage.programmable.standard_damage": 150
+    },
+    "GR-8 Recoilless Rifle": {
+      "weapon.sway": 1,
+      "reload.duration": 4
+    },
+    "PLAS-45 Epoch": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 10,
+      "weapon.vertical_spread": 10,
+      "weapon.capacity": 5,
+      "projectile.full_charge.drag": 0,
+      "projectile.full_charge.lifetime": 3.2,
+      "projectile.primary.drag": 0,
+      "projectile.primary.lifetime": 3.2,
+      "magazine.starting_magazines": 3,
+      "magazine.spare_magazines": 4,
+      "magazine.magazines_from_supply": 3,
+      "charge.minimum_seconds": 0.1,
+      "charge.overcharge_limit_seconds": 3.5,
+      "explosion.full_charge_impact.inner_radius": 4,
+      "explosion.full_charge_impact.outer_radius": 5,
+      "explosion.overcharge_explosion.inner_radius": 4,
+      "explosion.overcharge_explosion.outer_radius": 5,
+      "explosion.primary_impact.damage.demolition": 30,
+      "explosion.primary_impact.inner_radius": 3,
+      "explosion.primary_impact.outer_radius": 3.5
+    },
+    "LAS-98 Laser Cannon": {
+      "weapon.sway": 0.5,
+      "damage.primary.standard_damage": 350,
+      "damage.primary.durable_damage": 420,
+      "damage.primary.stagger": 10,
+      "damage.primary.status_2_type": 55,
+      "damage.primary.status_2_strength": 100,
+      "heat.firing_charge": 10,
+      "heat.heat_per_second": 7
+    },
+    "LAS-99 Quasar Cannon": {
+      "weapon.sway": 0.7,
+      "heat.firing_charge": 66,
+      "heat.charge_gain_per_second": 66,
+      "heat.cool_per_second": 8.33,
+      "heat.cool_per_second_overheated": 8.33
+    },
+    "FAF-14 Spear": {
+      "weapon.sway": 1,
+      "reload.duration": 4,
+      "damage.primary.durable_damage": 6000,
+      "damage.primary.standard_damage": 6000
+    },
+    "RL-77 Airburst Rocket Launcher": {
+      "weapon.sway": 1,
+      "reload.duration": 4
+    },
+    "GL-52 De-Escalator": {
+      "weapon.sway": 0.7,
+      "damage.primary_impact_arc.standard_damage": 150,
+      "damage.primary_impact_arc.durable_damage": 100,
+      "arc.primary_impact_arc.chain_count": 2,
+      "arc.primary_impact_arc.max_split": 3,
+      "arc.primary_impact_arc.max_angle_spread": 350
+    },
+    "ARC-3 Arc Thrower": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "damage.primary.standard_damage": 250,
+      "damage.primary.durable_damage": 250,
+      "charge.level_1": 0.2,
+      "charge.level_2": 0.4,
+      "charge.auto_fire_at_full": 1,
+      "arc.primary.chain_count": 2,
+      "arc.primary.max_split": 2,
+      "arc.primary.max_angle_spread": 90
+    },
+    "GL-28 Belt-Fed Grenade Launcher": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.8,
+      "weapon.horizontal_spread": 2,
+      "weapon.vertical_spread": 2,
+      "attack.primary.projectile": 202
+    }
+  },
+  "throwables": {
+    "G-12 High Explosive": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "throwable.explosion_delay": 3,
+      "explosion.inner_radius": 3.5,
+      "explosion.outer_radius": 7,
+      "explosion.damage.standard_damage": 1200,
+      "explosion.damage.durable_damage": 1200
+    },
+    "G-16 Impact": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "explosion.inner_radius": 3.5,
+      "explosion.outer_radius": 7,
+      "explosion.damage.standard_damage": 1200,
+      "explosion.damage.durable_damage": 1200
+    },
+    "G-50 Seeker": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "explosion.inner_radius": 3.5,
+      "explosion.outer_radius": 7,
+      "explosion.damage.standard_damage": 900,
+      "explosion.damage.durable_damage": 900
+    },
+    "G-6 Frag": {
+      "damage.standard_damage": 180,
+      "damage.durable_damage": 70,
+      "throwable.max_count": 6,
+      "throwable.count_from_supply": 4,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 10,
+      "explosion.shrapnel_count": 64,
+      "explosion.damage.standard_damage": 300,
+      "explosion.damage.durable_damage": 300
+    },
+    "G-7 Pineapple": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "throwable.explosion_delay": 2.2,
+      "explosion.shrapnel_count": 24
+    },
+    "G-123 Thermite": {
+      "throwable.max_count": 3,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 1.5,
+      "explosion.outer_radius": 2.5,
+      "explosion.damage.standard_damage": 2000,
+      "explosion.damage.durable_damage": 2000
+    },
+    "G-48 Giga Grenade": {
+      "throwable.max_count": 3,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 12,
+      "explosion.damage.standard_damage": 2000,
+      "explosion.damage.durable_damage": 2000
+    },
+    "G-60 Anti-Tank Seeker": {
+      "throwable.max_count": 3,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 2,
+      "explosion.outer_radius": 3,
+      "explosion.damage.standard_damage": 2700,
+      "explosion.damage.durable_damage": 2700
+    },
+    "G-10 Incendiary": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "throwable.explosion_delay": 2,
+      "explosion.inner_radius": 1,
+      "explosion.outer_radius": 7,
+      "explosion.damage.standard_damage": 300,
+      "explosion.damage.durable_damage": 300,
+      "status.strength": 100
+    },
+    "G-13 Incendiary Impact": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "explosion.inner_radius": 1,
+      "explosion.outer_radius": 7,
+      "explosion.damage.standard_damage": 300,
+      "explosion.damage.durable_damage": 300,
+      "status.strength": 100
+    },
+    "G-8 Immolation": {
+      "throwable.max_count": 6,
+      "throwable.count_from_supply": 3,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 12,
+      "explosion.damage.standard_damage": 20,
+      "explosion.damage.durable_damage": 20,
+      "status.strength": 100
+    },
+    "G-142 Pyrotech": {
+      "throwable.max_count": 6,
+      "throwable.count_from_supply": 3,
+      "throwable.explosion_delay": 2.4,
+      "explosion.inner_radius": 2.5,
+      "explosion.outer_radius": 6,
+      "explosion.damage.standard_damage": 50,
+      "explosion.damage.durable_damage": 50
+    },
+    "G-23 Stun": {
+      "throwable.max_count": 7,
+      "throwable.count_from_supply": 4,
+      "throwable.starting_count": 5,
+      "throwable.explosion_delay": 1.4,
+      "explosion.inner_radius": 1,
+      "explosion.outer_radius": 10,
+      "explosion.damage.status_1_type": 40
+    },
+    "G-109 Urchin": {
+      "throwable.max_count": 7,
+      "throwable.count_from_supply": 4,
+      "throwable.starting_count": 5,
+      "throwable.explosion_delay": 3,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 12,
+      "explosion.damage.status_1_type": 40
+    },
+    "G-31 Arc": {
+      "damage.standard_damage": 150,
+      "damage.durable_damage": 100,
+      "arc.chain_count": 2,
+      "arc.max_split": 3,
+      "arc.max_angle_spread": 350
+    },
+    "G-3 Smoke": {
+      "throwable.max_count": 7,
+      "throwable.count_from_supply": 4,
+      "throwable.starting_count": 6,
+      "throwable.explosion_delay": 2,
+      "explosion.inner_radius": 8,
+      "explosion.outer_radius": 12
+    },
+    "G-89 Smokescreen": {
+      "throwable.max_count": 7,
+      "throwable.count_from_supply": 4,
+      "throwable.starting_count": 6,
+      "explosion.inner_radius": 8,
+      "explosion.outer_radius": 12
+    },
+    "G/40-K Melta Mine": {
+      "throwable.max_count": 4,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 2.5,
+      "explosion.outer_radius": 6,
+      "explosion.damage.standard_damage": 2300,
+      "explosion.damage.durable_damage": 2300
+    },
+    "TM-1 Lure Mine": {
+      "throwable.max_count": 4,
+      "throwable.count_from_supply": 3,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 12,
+      "explosion.damage.standard_damage": 1200,
+      "explosion.damage.durable_damage": 1200
+    },
+    "G/SH-39 Shield": {
+      "throwable.max_count": 5,
+      "throwable.count_from_supply": 3,
+      "shield.radius": 2.2,
+      "shield.durability": 2000
+    }
+  },
+  "stratagems": {
+    "Orbital Gas Strike": {
+      "stratagem.cooldown": 35
+    },
+    "Orbital EMS Strike": {
+      "stratagem.cooldown": 35
+    },
+    "Orbital Smoke Strike": {
+      "stratagem.cooldown": 35
+    },
+    "Orbital Precision Strike": {
+      "stratagem.cooldown": 53,
+      "explosion.damage.standard_damage": 2000,
+      "explosion.damage.durable_damage": 2000
+    },
+    "Orbital Airburst Strike": {
+      "stratagem.cooldown": 70
+    },
+    "Orbital Gatling Barrage": {
+      "stratagem.cooldown": 70
+    },
+    "Orbital Railcannon Strike": {
+      "stratagem.cooldown": 70
+    },
+    "Orbital Laser": {
+      "stratagem.max_uses": -1
+    },
+    "EAT-17 Expendable Anti-Tank": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-700 Expendable Napalm": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-411 Leveller": {
+      "stratagem.cooldown": 90
+    },
+    "MLS-4X Commando": {
+      "stratagem.cooldown": 70
+    },
+    "MS-11 Solo Silo": {
+      "stratagem.cooldown": 120
+    },
+    "FX-12 Shield Generator Relay": {
+      "shield.durability": 12000
+    },
+    "Orbital 380mm HE Barrage": {
+      "orbital.salvos": 5,
+      "orbital.shells_per_salvo": 6,
+      "orbital.shell_interval": 1,
+      "orbital.salvo_interval": 3.0
+    }
+  },
+  "backpacks": {
+    "GL-28 Belt-Fed Grenade Launcher Backpack": {
+      "deposit.capacity": 250,
+      "deposit.start_amount": 250,
+      "deposit.refill_amount": 120
+    },
+    "LIFT-860 Hover Pack": {
+      "jump.sustain_duration": 0.4,
+      "jump.sustain_thrust": 150.0,
+      "hover.max_horizontal_speed": 4.5
+    }
+  },
+  "explosions": {
+    "G-7 Pineapple (detonation, shrapnel expiry)": {
+      "explosion.inner_radius": 3,
+      "explosion.outer_radius": 6,
+      "explosion.damage.standard_damage": 300,
+      "explosion.damage.durable_damage": 150
+    },
+    "G-7 Pineapple (detonation)": {
+      "explosion.damage.standard_damage": 200,
+      "explosion.damage.durable_damage": 200
+    },
+    "Eagle 500kg Bomb (payload expiry)": {
+      "explosion.damage.standard_damage": 2000,
+      "explosion.damage.durable_damage": 2000
+    }
+  },
+  "boosters": {
+    "Surplus EAT Allocation": {
+      "stratagem.max_uses": 10
+    }
+  },
+  "raw": [
+    {
+      "component": "WeaponCustomizationComponentData",
+      "resource": "0x11C27D3BABB38956",
+      "offset": "0x4",
+      "type": "u32",
+      "expect": 1713239419,
+      "value": 1742775424
+    },
+    {
+      "component": "WeaponCustomizationComponentData",
+      "resource": "0xA6A735ACCB4A327F",
+      "offset": "0x4",
+      "type": "u32",
+      "expect": 3885038159,
+      "value": 3905063732
+    }
+  ]
+}
