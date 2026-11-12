@@ -144,6 +144,19 @@ class StatsTests(unittest.TestCase):
             with self.subTest(path=path):
                 self._assert_sorted(self._read(path))
 
+    def test_join_escapes_ampersands_in_json(self) -> None:
+        name = 'SG-225SP Breaker Spray&Pray'
+        self.data['weapons'][name] = {'damage': 100, 'label': r'A&B literal \u0026'}
+        self._write(self.source, self.data)
+        self._split()
+        module._join(self.source, self.folder)
+        output = self.source.read_text(encoding='utf-8')
+        self.assertIn(r'SG-225SP Breaker Spray\u0026Pray', output)
+        self.assertNotIn('&', output)
+        self.assertEqual(self._read(self.source), self.data)
+        fragment = self.folder / 'weapons/SG-225SP Breaker Spray%26Pray.yml'
+        self.assertIn(name, fragment.read_text(encoding='utf-8'))
+
     def test_shell_wrappers_accept_filename_with_spaces_from_another_directory(self) -> None:
         source = self.root / 'other stats.json'
         self._write(source, self.data)

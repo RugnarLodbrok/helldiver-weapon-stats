@@ -69,6 +69,7 @@ def _merge_documents(
 
 def _write_document(path: Path, data: dict[str, JsonValue]) -> None:
     output = json.dumps(Document(data).root, ensure_ascii=False, indent=INDENT, sort_keys=True)
+    output = output.replace('&', r'\u0026')
     _write_text(path, output + '\n')
 
 
