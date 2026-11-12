@@ -1,0 +1,6 @@
+stratagems:
+  Eagle 110mm Rocket Pods:
+    damage.durable_damage: 1200
+    damage.standard_damage: 1200
+    explosion.damage.durable_damage: 600
+    explosion.damage.standard_damage: 600

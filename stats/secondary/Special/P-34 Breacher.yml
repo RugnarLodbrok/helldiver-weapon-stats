@@ -1,0 +1,4 @@
+weapons:
+  P-34 Breacher:
+    magazine.spare_magazines: 1
+    magazine.starting_magazines: 0

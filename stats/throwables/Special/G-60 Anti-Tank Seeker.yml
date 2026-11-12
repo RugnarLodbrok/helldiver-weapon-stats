@@ -1,0 +1,7 @@
+throwables:
+  G-60 Anti-Tank Seeker:
+    explosion.inner_radius: 3
+    explosion.outer_radius: 8
+    throwable.count_from_supply: 1
+    throwable.max_count: 2
+    throwable.starting_count: 1

@@ -1,0 +1,4 @@
+weapons:
+  DBS-2 Double Freedom:
+    damage.durable_damage: 70
+    damage.standard_damage: 140

@@ -1,0 +1,4 @@
+weapons:
+  SG-225SP Breaker Spray&Pray:
+    damage.durable_damage: 8
+    damage.standard_damage: 30

@@ -1,0 +1,6 @@
+throwables:
+  G-50 Seeker:
+    explosion.damage.standard_damage: 700
+    explosion.inner_radius: 5
+    explosion.outer_radius: 9
+    explosion.shockwave_radius: 15

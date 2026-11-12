@@ -1,0 +1,5 @@
+weapons:
+  JAR-5 Dominator:
+    damage.durable_damage: 160
+    damage.standard_damage: 450
+    projectile.velocity: 300

@@ -1,0 +1,5 @@
+throwables:
+  G-12 High Explosive:
+    explosion.damage.durable_damage: 1600
+    explosion.damage.standard_damage: 1600
+    explosion.inner_radius: 3.5

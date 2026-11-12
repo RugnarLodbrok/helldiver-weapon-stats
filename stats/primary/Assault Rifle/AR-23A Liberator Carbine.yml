@@ -1,0 +1,5 @@
+weapons:
+  AR-23A Liberator Carbine:
+    weapon.horizontal_spread: 5
+    weapon.sway: 1.2
+    weapon.vertical_spread: 5

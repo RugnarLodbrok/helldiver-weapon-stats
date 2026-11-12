@@ -1,0 +1,4 @@
+stratagems:
+  Orbital Gas Strike:
+    explosion.outer_radius: 25
+    explosion.shockwave_radius: 35

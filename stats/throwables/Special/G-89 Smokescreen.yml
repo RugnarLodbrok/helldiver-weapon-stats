@@ -1,0 +1,7 @@
+throwables:
+  G-89 Smokescreen:
+    explosion.inner_radius: 10
+    explosion.outer_radius: 10
+    throwable.count_from_supply: 4
+    throwable.max_count: 7
+    throwable.starting_count: 5

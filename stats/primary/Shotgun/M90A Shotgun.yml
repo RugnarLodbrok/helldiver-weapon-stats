@@ -1,0 +1,4 @@
+weapons:
+  M90A Shotgun:
+    damage.durable_damage: 40
+    damage.standard_damage: 110

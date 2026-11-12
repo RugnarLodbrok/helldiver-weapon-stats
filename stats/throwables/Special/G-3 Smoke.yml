@@ -1,0 +1,4 @@
+throwables:
+  G-3 Smoke:
+    explosion.inner_radius: 16
+    explosion.outer_radius: 16

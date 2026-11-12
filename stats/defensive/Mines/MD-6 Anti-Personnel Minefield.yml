@@ -1,0 +1,5 @@
+stratagems:
+  MD-6 Anti-Personnel Minefield:
+    explosion.inner_radius: 4
+    explosion.outer_radius: 7
+    explosion.shockwave_radius: 9

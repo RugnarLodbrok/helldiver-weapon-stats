@@ -1,0 +1,4 @@
+weapons:
+  MG-206 Heavy Machine Gun:
+    weapon.recoil_drift_horizontal: 25
+    weapon.recoil_drift_vertical: 40

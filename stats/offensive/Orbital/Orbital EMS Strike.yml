@@ -1,0 +1,4 @@
+stratagems:
+  Orbital EMS Strike:
+    explosion.outer_radius: 25
+    explosion.shockwave_radius: 30

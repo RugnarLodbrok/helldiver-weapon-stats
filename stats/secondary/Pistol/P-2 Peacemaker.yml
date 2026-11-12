@@ -1,0 +1,10 @@
+weapons:
+  P-2 Peacemaker:
+    attachment.magazine.pistol_12x20mm_standard.reload_duration: 1.5
+    damage.standard_damage: 110
+    fire_mode.modes.1: 1
+    magazine.magazines_from_supply: 12
+    magazine.spare_magazines: 12
+    magazine.starting_magazines: 8
+    weapon.horizontal_spread: 7
+    weapon.vertical_spread: 7

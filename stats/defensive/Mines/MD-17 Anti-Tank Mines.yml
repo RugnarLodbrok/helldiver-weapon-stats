@@ -1,0 +1,6 @@
+stratagems:
+  MD-17 Anti-Tank Mines:
+    explosion.damage.durable_damage: 4000
+    explosion.damage.push_force: 80
+    explosion.damage.stagger: 60
+    explosion.damage.standard_damage: 4000

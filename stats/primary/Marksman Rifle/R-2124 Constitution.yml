@@ -1,0 +1,4 @@
+weapons:
+  R-2124 Constitution:
+    damage.durable_damage: 150
+    damage.standard_damage: 280

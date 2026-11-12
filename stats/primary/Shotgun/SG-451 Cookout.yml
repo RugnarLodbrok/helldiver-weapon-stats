@@ -1,0 +1,5 @@
+weapons:
+  SG-451 Cookout:
+    damage.durable_damage: 6
+    damage.standard_damage: 32
+    damage.status_1_strength: 1

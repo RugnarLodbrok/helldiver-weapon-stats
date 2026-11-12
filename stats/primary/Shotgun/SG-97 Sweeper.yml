@@ -1,0 +1,4 @@
+weapons:
+  SG-97 Sweeper:
+    damage.durable_damage: 22
+    damage.standard_damage: 80

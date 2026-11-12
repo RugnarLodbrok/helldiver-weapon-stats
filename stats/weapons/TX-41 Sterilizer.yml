@@ -1,0 +1,6 @@
+weapons:
+  TX-41 Sterilizer:
+    damage.primary.status_1_strength: 1
+    damage.primary.status_2_strength: 1
+    damage.primary.status_3_strength: 1
+    damage.primary.status_3_type: 8

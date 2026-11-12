@@ -1,0 +1,4 @@
+weapons:
+  SG-225 Breaker:
+    damage.durable_damage: 12
+    damage.standard_damage: 60

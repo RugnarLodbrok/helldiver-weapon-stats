@@ -1,0 +1,4 @@
+weapons:
+  R-63 Diligence:
+    attachment.magazine.rifle_9x70mm_extended.magazine_capacity: 16
+    attachment.magazine.rifle_9x70mm_standard.magazine_capacity: 8

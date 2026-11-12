@@ -1,0 +1,4 @@
+weapons:
+  GL-15 Evictor:
+    reload.duration: 4
+    weapon.fire_rate: 80

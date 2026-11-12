@@ -1,0 +1,4 @@
+weapons:
+  P-113 Verdict:
+    damage.durable_damage: 40
+    damage.standard_damage: 180

@@ -1,0 +1,4 @@
+weapons:
+  SG-8S Slugger:
+    damage.durable_damage: 180
+    damage.standard_damage: 660

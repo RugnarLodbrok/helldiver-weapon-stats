@@ -1,0 +1,4 @@
+weapons:
+  FAF-14 Spear:
+    damage.primary.durable_damage: 6000
+    damage.primary.standard_damage: 6000

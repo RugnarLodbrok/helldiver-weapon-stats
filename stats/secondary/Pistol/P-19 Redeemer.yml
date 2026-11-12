@@ -1,0 +1,9 @@
+weapons:
+  P-19 Redeemer:
+    damage.durable_damage: 20
+    damage.stagger: 15
+    damage.standard_damage: 90
+    magazine.spare_magazines: 10
+    projectile.drag: 0.8
+    weapon.recoil_climb_vertical: 10
+    weapon.sway: 0.5

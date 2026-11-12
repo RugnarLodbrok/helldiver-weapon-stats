@@ -1,0 +1,5 @@
+stratagems:
+  Orbital Railcannon Strike:
+    damage.durable_damage: 11000
+    damage.standard_damage: 11000
+    stratagem.cooldown: 70

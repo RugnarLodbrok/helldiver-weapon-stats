@@ -1,0 +1,4 @@
+weapons:
+  SG-22 Bushwhacker:
+    damage.durable_damage: 24
+    damage.standard_damage: 90

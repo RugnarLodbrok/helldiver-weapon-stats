@@ -1,0 +1,4 @@
+weapons:
+  M6C/SOCOM Pistol:
+    damage.durable_damage: 50
+    damage.standard_damage: 180

@@ -1,0 +1,4 @@
+weapons:
+  SG-20 Halt:
+    damage.primary.durable_damage: 20
+    damage.primary.standard_damage: 70

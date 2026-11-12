@@ -1,0 +1,6 @@
+weapons:
+  CQC-1 One True Flag:
+    damage.primary.ap_direct: 4
+    damage.primary.durable_damage: 200
+    damage.primary.standard_damage: 400
+    presentation.traits.1: 658390125

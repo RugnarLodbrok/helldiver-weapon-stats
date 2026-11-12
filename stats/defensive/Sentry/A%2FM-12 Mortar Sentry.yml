@@ -1,0 +1,3 @@
+stratagems:
+  A/M-12 Mortar Sentry:
+    explosion.damage.ap_direct: 4

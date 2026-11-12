@@ -1,0 +1,7 @@
+throwables:
+  G-6 Frag:
+    explosion.damage.durable_damage: 700
+    explosion.damage.standard_damage: 700
+    explosion.inner_radius: 7
+    explosion.outer_radius: 13
+    explosion.shockwave_radius: 20

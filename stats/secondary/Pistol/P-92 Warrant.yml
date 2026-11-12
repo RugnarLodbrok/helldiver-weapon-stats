@@ -1,0 +1,4 @@
+weapons:
+  P-92 Warrant:
+    damage.durable_damage: 30
+    damage.standard_damage: 100

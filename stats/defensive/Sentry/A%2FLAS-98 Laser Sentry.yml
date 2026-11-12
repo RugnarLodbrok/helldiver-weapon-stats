@@ -1,0 +1,4 @@
+stratagems:
+  A/LAS-98 Laser Sentry:
+    damage.durable_damage: 300
+    damage.standard_damage: 500

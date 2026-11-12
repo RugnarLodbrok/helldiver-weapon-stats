@@ -1,0 +1,5 @@
+weapons:
+  P-4 Senator:
+    damage.durable_damage: 85
+    damage.standard_damage: 250
+    weapon.sway: 0.75

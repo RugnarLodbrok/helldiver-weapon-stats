@@ -1,0 +1,4 @@
+throwables:
+  G-23 Stun:
+    explosion.outer_radius: 15
+    explosion.shockwave_radius: 20

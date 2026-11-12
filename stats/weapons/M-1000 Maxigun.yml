@@ -1,0 +1,3 @@
+weapons:
+  M-1000 Maxigun:
+    weapon.stationary_while_firing: 0

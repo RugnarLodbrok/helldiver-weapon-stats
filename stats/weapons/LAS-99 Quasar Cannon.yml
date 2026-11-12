@@ -1,0 +1,5 @@
+weapons:
+  LAS-99 Quasar Cannon:
+    heat.charge_gain_per_second: 50
+    heat.cool_per_second: 3.33
+    heat.cool_per_second_overheated: 3.33

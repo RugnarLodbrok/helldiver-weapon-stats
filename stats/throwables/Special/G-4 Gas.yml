@@ -1,0 +1,5 @@
+throwables:
+  G-4 Gas:
+    explosion.inner_radius: 4
+    explosion.outer_radius: 14
+    explosion.shockwave_radius: 14
