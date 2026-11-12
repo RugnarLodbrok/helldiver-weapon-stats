@@ -7,12 +7,14 @@ import tempfile
 from pathlib import Path
 from urllib.parse import quote
 
+import yaml
 from pydantic import BaseModel, ConfigDict, JsonValue, RootModel, ValidationError
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATS_FILENAME = 'hellforge-stats.json'
-METADATA_FILENAME = '_metadata.json'
+METADATA_FILENAME = '_metadata.yml'
+FRAGMENT_SUFFIX = '.yml'
 CATALOG_PATTERN = 'editor-catalog-*.json'
 ENCODING = 'utf-8'
 INDENT = 2
@@ -43,6 +45,13 @@ def _read_document(path: Path) -> dict[str, JsonValue]:
         raise ValueError(f'{path}: {error}') from error
 
 
+def _read_fragment(path: Path) -> dict[str, JsonValue]:
+    try:
+        return Document.model_validate(yaml.safe_load(path.read_text(encoding='utf-8-sig'))).root
+    except (ValueError, UnicodeError, yaml.YAMLError) as error:
+        raise ValueError(f'{path}: {error}') from error
+
+
 def _merge(existing: JsonValue, incoming: JsonValue) -> JsonValue:
     if isinstance(existing, dict) and isinstance(incoming, dict):
         result = existing.copy()
@@ -59,10 +68,30 @@ def _merge_documents(
 
 
 def _write_document(path: Path, data: dict[str, JsonValue]) -> None:
+    output = json.dumps(Document(data).root, ensure_ascii=False, indent=INDENT, sort_keys=True)
+    _write_text(path, output + '\n')
+
+
+def _sort_keys(value: JsonValue) -> JsonValue:
+    if isinstance(value, dict):
+        return {key: _sort_keys(value[key]) for key in sorted(value)}
+    if isinstance(value, list):
+        return [_sort_keys(item) for item in value]
+    return value
+
+
+def _write_fragment(path: Path, data: dict[str, JsonValue]) -> None:
+    output = yaml.safe_dump(
+        _sort_keys(Document(data).root), allow_unicode=True, sort_keys=False,
+        width=float('inf'), indent=INDENT,
+    )
+    _write_text(path, output)
+
+
+def _write_text(path: Path, output: str) -> None:
     original = path.read_bytes() if path.exists() else b''
     newline = WINDOWS_NEWLINE if WINDOWS_NEWLINE in original else b'\n'
-    output = json.dumps(Document(data).root, ensure_ascii=False, indent=INDENT)
-    encoded = (output + '\n').encode(ENCODING).replace(b'\n', newline)
+    encoded = output.encode(ENCODING).replace(b'\n', newline)
     if original.startswith(codecs.BOM_UTF8):
         encoded = codecs.BOM_UTF8 + encoded
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -112,7 +141,7 @@ def _object_path(directory: Path, section: str, name: str, entry: CatalogObject 
     folder = directory / _path_segment(category)
     if entry and entry.subtitle:
         folder /= _path_segment(entry.subtitle)
-    return folder / f'{_path_segment(name)}.json'
+    return folder / f'{_path_segment(name)}{FRAGMENT_SUFFIX}'
 
 
 def _partition(
@@ -138,30 +167,30 @@ def _split(source: Path, directory: Path, catalogs: Path) -> int:
     fragments = _partition(data, directory, _load_catalogs(catalogs))
     results = {}
     for path, fragment in fragments.items():
-        existing = _read_document(path) if path.exists() else {}
+        existing = _read_fragment(path) if path.exists() else {}
         results[path] = _merge_documents(existing, fragment)
     for path, result in results.items():
-        _write_document(path, result)
+        _write_fragment(path, result)
     return len(results)
 
 
 def _join(target: Path, directory: Path) -> int:
-    paths = sorted(directory.rglob('*.json'))
+    paths = sorted(directory.rglob(f'*{FRAGMENT_SUFFIX}'))
     if not paths:
-        raise ValueError(f'No JSON files found in {directory}')
+        raise ValueError(f'No {FRAGMENT_SUFFIX} files found in {directory}')
     if target.resolve() in {path.resolve() for path in paths}:
         raise ValueError('The working file must be outside the stats directory')
     result = _read_document(target) if target.exists() else {}
     for path in paths:
-        result = _merge_documents(result, _read_document(path))
+        result = _merge_documents(result, _read_fragment(path))
     _write_document(target, result)
     return len(paths)
 
 
-parser = argparse.ArgumentParser(description='Split and join HellForge stats with recursive merging.')
+parser = argparse.ArgumentParser(description='Split HellForge JSON stats into YAML fragments and join them with recursive merging.')
 parser.add_argument('mode', choices=('split', 'join'))
 parser.add_argument('--file', type=Path, default=BASE_DIR / STATS_FILENAME, help='Working JSON file')
-parser.add_argument('--stats-dir', type=Path, default=BASE_DIR / 'stats', help='Fragment directory')
+parser.add_argument('--stats-dir', type=Path, default=BASE_DIR / 'stats', help='YAML fragment directory')
 parser.add_argument('--catalog-dir', type=Path, default=BASE_DIR.parent / 'hellforge-editor',
                     help='Editor catalog directory (required only for split)')
 
