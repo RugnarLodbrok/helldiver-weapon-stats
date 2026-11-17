@@ -28,14 +28,29 @@ loop — the stats files are the mods' only gameplay artifacts.
   for unlimited). The `# stock N` trailing notes are machine-maintained by the
   build (one aligned note column across the file set). A YAML file in `src/`
   whose stem is not a known group name fails the build.
-- `scripts/` — the offline tooling (PEP 723, run via `uv`): `validate_stats.py`
-  (the validation gate: per-file checks + the cross-file rules — a target in
-  exactly one file, in the file of its derived group, no backing-object
-  conflicts), `annotate_stock.py` (the `# stock N` notes), `gen_stats.py` (the
-  stats generator), `mod_groups.py` (the group derivation shared by the
-  validator and the migration), `gen_catalog.py` (the in-memory SDK catalog
-  builder the tables and stock notes read), `gen_readme_tables.py` (the balance
-  tables below).
+
+  A target may also carry two reserved keys that never reach the stats file:
+  `notes:` (a block-scalar string with the weapon's balance rationale) and
+  `raw:` (that weapon's raw write entries). A target may also nest a section
+  under it — a key named after one of the file's sections (`weapons`,
+  `throwables`, `stratagems`, `backpacks`, `explosions`, `boosters`) holds that
+  section's targets under the logical weapon (the G-7 Pineapple's two
+  `explosions` rows sit under `throwables: G-7 Pineapple: explosions:`; the
+  MG-43 / M-105 scope swaps sit under their weapons' `raw:`). The build
+  flattens the source shape to the flat section/target/field view before
+  validating, generating, annotating, and tabling, so a nested config and an
+  equivalent flat config emit byte-identical stats files.
+- `scripts/` — the offline tooling (PEP 723, run via `uv`): `flatten.py` (the
+  shared source-shape flattener: strips `notes:`, splices nested section targets
+  and nested `raw:` entries into the flat section/target/field view the other
+  tools consume), `validate_stats.py` (the validation gate: per-file checks +
+  the cross-file rules — a target in exactly one file, in the file of its
+  derived group, no backing-object conflicts — plus the reserved-name invariant
+  and the nested raw ownership), `annotate_stock.py` (the `# stock N` notes),
+  `gen_stats.py` (the stats generator), `mod_groups.py` (the group derivation
+  shared by the validator and the migration), `gen_catalog.py` (the in-memory
+  SDK catalog builder the tables and stock notes read), `gen_readme_tables.py`
+  (the balance tables below).
 - `dist/nemo-stats-<group>/` — the built stats mods (`hellforge-stats.json` +
   `hellforge-mod.json`, id `nemo-stats-<group>`, `gameplay: true`), one folder
   per source file. Generated; do not hand-edit.
@@ -251,16 +266,16 @@ The other lasers are hitscan/projectile and use the standard damage × RPM / 60.
 <!-- grenades:start -->
 | Weapon | Std | Dur | In | Out | Shock | Fuse | Start | Max | Shrapnel | Status | Direct | Shield |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| G-12 High Explosive | 800→1200 | 800→1200 | 2.5→3.5 | 7 | 9 | 3.5→3 | 4 | 5 | — | — | — | — |
-| G-16 Impact | 400→1200 | 400→1200 | 2.5→3.5 | 7 | 8 | — | 4 | 5 | — | — | — | — |
-| G-50 Seeker | 500→900 | 500→900 | 3.5 | 7 | 8 | — | 4 | 5 | — | — | — | — |
+| G-12 High Explosive | 800→1200 | 800→1200 | 2.5 | 7 | 9 | 3.5→4 | 4 | 5→6 | — | — | — | — |
+| G-16 Impact | 400→1200 | 400→1200 | 2.5 | 7 | 8 | — | 4 | 5→6 | — | — | — | — |
+| G-50 Seeker | 500→1200 | 500→1200 | 3.5→2.5 | 7 | 8 | — | 4 | 5 | — | — | — | — |
 | G-6 Frag | 500→300 | 500→300 | 4 | 10 | 14 | 2.4 | 4 | 6 | 35→64 | — | 110→180 | — |
 | G-7 Pineapple | 300→200 | 300→200 | 4 | 10 | 14 | 2.4→2.2 | 4 | 5 | 18→24 | — | — | — |
-| G-123 Thermite | 2000 | 2000 | 1.5 | 2.5 | 4 | 2.9 | 2 | 3 | — | — | — | — |
-| G-48 Giga Grenade | 2000 | 2000 | 2→4 | 12 | 16 | — | 2 | 2→3 | — | — | — | — |
-| G-60 Anti-Tank Seeker | 1800→2700 | 1800→2700 | 4→2 | 12→3 | 15 | — | 2 | 3 | — | — | — | — |
-| G-10 Incendiary | 300 | 300 | 1 | 7 | 9 | 2.9→2 | 4 | 5 | — | fire 50→100 | — | — |
-| G-13 Incendiary Impact | 150→300 | 150→300 | 1 | 7 | 9 | — | 4 | 5 | — | fire 100 | — | — |
+| G-123 Thermite | 2000 | 2000 | 1.5 | 2.5 | 4 | 2.9 | 2 | 3→4 | — | — | — | — |
+| G-48 Giga Grenade | 2000→2800 | 2000→2800 | 2→4 | 12 | 16 | — | 2 | 2→3 | — | — | — | — |
+| G-60 Anti-Tank Seeker | 1800→3000 | 1800→3000 | 4→2 | 12→3 | 15 | — | 2 | 3→4 | — | — | — | — |
+| G-10 Incendiary | 300 | 300 | 1 | 7 | 9 | 2.9→2 | 4 | 5→6 | — | fire 50→100 | — | — |
+| G-13 Incendiary Impact | 150→300 | 150→300 | 1 | 7 | 9 | — | 4 | 5→6 | — | fire 100 | — | — |
 | G-8 Immolation | 20 | 20 | 4 | 10→12 | 10 | — | 4 | 6 | — | fire 100 | — | — |
 | G-142 Pyrotech | 50 | 50 | 2.5 | 5→6 | 7 | 2.9→2.4 | 4 | 6 | — | fire 100 | — | — |
 | G-23 Stun | 0 | 0 | 1 | 10 | 15 | 1.8→1.4 | 4→5 | 5→7 | — | stun-large→stun-massive 25 | — | — |

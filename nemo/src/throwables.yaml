@@ -4,18 +4,18 @@ throwables:
   ###########################
 
   G-12 High Explosive:
-    throwable.max_count: 5                                # stock 5
+    throwable.max_count: 6                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
-    throwable.explosion_delay: 3                          # stock 3.5
-    explosion.inner_radius: 3.5                           # stock 2.5
+    throwable.explosion_delay: 4                          # stock 3.5
+    explosion.inner_radius: 2.5                           # stock 2.5
     explosion.outer_radius: 7                             # stock 7
     explosion.damage.standard_damage: 1200                # stock 800
     explosion.damage.durable_damage: 1200                 # stock 800
 
   G-16 Impact:
-    throwable.max_count: 5                                # stock 5
+    throwable.max_count: 6                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
-    explosion.inner_radius: 3.5                           # stock 2.5
+    explosion.inner_radius: 2.5                           # stock 2.5
     explosion.outer_radius: 7                             # stock 7
     explosion.damage.standard_damage: 1200                # stock 400
     explosion.damage.durable_damage: 1200                 # stock 400
@@ -23,10 +23,10 @@ throwables:
   G-50 Seeker:
     throwable.max_count: 5                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
-    explosion.inner_radius: 3.5                           # stock 3.5
+    explosion.inner_radius: 2.5                           # stock 3.5
     explosion.outer_radius: 7                             # stock 7
-    explosion.damage.standard_damage: 900                 # stock 500
-    explosion.damage.durable_damage: 900                  # stock 500
+    explosion.damage.standard_damage: 1200                # stock 500
+    explosion.damage.durable_damage: 1200                 # stock 500
 
   #################
   # Frag grenades #
@@ -46,6 +46,10 @@ throwables:
     explosion.damage.durable_damage: 300                  # stock 500
 
   G-7 Pineapple:
+    notes: |
+      High bomblet count (24 vs stock 18): each bomblet deals no direct damage,
+      its damage is its own sub-explosion (the nested explosions targets). The
+      central blast is reduced to match.
     throwable.max_count: 5                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
     throwable.explosion_delay: 2.2                        # stock 2.4
@@ -54,13 +58,30 @@ throwables:
     # (the :bomblet_explosion fields below). Unique to G-7, still a shared
     # settings row.
     explosion.shrapnel_count: 24                          # stock 18
+    explosions:
+      G-7 Pineapple (detonation, shrapnel expiry):
+        notes: |
+          Bomblet sub-explosion (:bomblet_explosion layer): each bomblet's own
+          blast; carries the grenade's damage.
+        # Bomblet sub-explosion: each bomblet's own blast (:bomblet_explosion layer).
+        explosion.inner_radius: 3                         # stock 2.5
+        explosion.outer_radius: 6                         # stock 5
+        explosion.damage.standard_damage: 400             # stock 100
+        explosion.damage.durable_damage: 150              # stock 100
+      G-7 Pineapple (detonation):
+        notes: |
+          Central blast (:explosion layer) on detonation; reduced because the
+          bomblets carry the damage.
+        # Blast: the central explosion on detonation (:explosion layer).
+        explosion.damage.standard_damage: 200             # stock 300
+        explosion.damage.durable_damage: 200              # stock 300
 
   ######################
   # Anti-tank grenades #
   ######################
 
   G-123 Thermite:
-    throwable.max_count: 3                                # stock 3
+    throwable.max_count: 4                                # stock 3
     throwable.count_from_supply: 2                        # stock 2
     explosion.inner_radius: 1.5                           # stock 1.5
     explosion.outer_radius: 2.5                           # stock 2.5
@@ -72,23 +93,23 @@ throwables:
     throwable.count_from_supply: 2                        # stock 2
     explosion.inner_radius: 4                             # stock 2
     explosion.outer_radius: 12                            # stock 12
-    explosion.damage.standard_damage: 2000                # stock 2000
-    explosion.damage.durable_damage: 2000                 # stock 2000
+    explosion.damage.standard_damage: 2800                # stock 2000
+    explosion.damage.durable_damage: 2800                 # stock 2000
 
   G-60 Anti-Tank Seeker:
-    throwable.max_count: 3                                # stock 3
+    throwable.max_count: 4                                # stock 3
     throwable.count_from_supply: 2                        # stock 2
     explosion.inner_radius: 2                             # stock 4
     explosion.outer_radius: 3                             # stock 12
-    explosion.damage.standard_damage: 2700                # stock 1800
-    explosion.damage.durable_damage: 2700                 # stock 1800
+    explosion.damage.standard_damage: 3000                # stock 1800
+    explosion.damage.durable_damage: 3000                 # stock 1800
 
   #################
   # Fire grenades #
   #################
 
   G-10 Incendiary:
-    throwable.max_count: 5                                # stock 5
+    throwable.max_count: 6                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
     throwable.explosion_delay: 2                          # stock 2.9
     explosion.inner_radius: 1                             # stock 1
@@ -98,7 +119,7 @@ throwables:
     status.strength: 100                                  # stock 50
 
   G-13 Incendiary Impact:
-    throwable.max_count: 5                                # stock 5
+    throwable.max_count: 6                                # stock 5
     throwable.count_from_supply: 3                        # stock 3
     explosion.inner_radius: 1                             # stock 1
     explosion.outer_radius: 7                             # stock 7
@@ -205,17 +226,3 @@ throwables:
     throwable.count_from_supply: 3                        # stock 2
     shield.radius: 2.2                                    # stock 1.8
     shield.durability: 2000                               # stock 1000
-
-explosions:
-
-  G-7 Pineapple (detonation, shrapnel expiry):
-    # Bomblet sub-explosion: each bomblet's own blast (:bomblet_explosion layer).
-    explosion.inner_radius: 3                             # stock 2.5
-    explosion.outer_radius: 6                             # stock 5
-    explosion.damage.standard_damage: 300                 # stock 100
-    explosion.damage.durable_damage: 150                  # stock 100
-
-  G-7 Pineapple (detonation):
-    # Blast: the central explosion on detonation (:explosion layer).
-    explosion.damage.standard_damage: 200                 # stock 300
-    explosion.damage.durable_damage: 200                  # stock 300

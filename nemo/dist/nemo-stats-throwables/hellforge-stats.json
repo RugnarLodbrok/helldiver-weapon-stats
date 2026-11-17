@@ -2,18 +2,18 @@
   "format": 1,
   "throwables": {
     "G-12 High Explosive": {
-      "throwable.max_count": 5,
+      "throwable.max_count": 6,
       "throwable.count_from_supply": 3,
-      "throwable.explosion_delay": 3,
-      "explosion.inner_radius": 3.5,
+      "throwable.explosion_delay": 4,
+      "explosion.inner_radius": 2.5,
       "explosion.outer_radius": 7,
       "explosion.damage.standard_damage": 1200,
       "explosion.damage.durable_damage": 1200
     },
     "G-16 Impact": {
-      "throwable.max_count": 5,
+      "throwable.max_count": 6,
       "throwable.count_from_supply": 3,
-      "explosion.inner_radius": 3.5,
+      "explosion.inner_radius": 2.5,
       "explosion.outer_radius": 7,
       "explosion.damage.standard_damage": 1200,
       "explosion.damage.durable_damage": 1200
@@ -21,10 +21,10 @@
     "G-50 Seeker": {
       "throwable.max_count": 5,
       "throwable.count_from_supply": 3,
-      "explosion.inner_radius": 3.5,
+      "explosion.inner_radius": 2.5,
       "explosion.outer_radius": 7,
-      "explosion.damage.standard_damage": 900,
-      "explosion.damage.durable_damage": 900
+      "explosion.damage.standard_damage": 1200,
+      "explosion.damage.durable_damage": 1200
     },
     "G-6 Frag": {
       "damage.standard_damage": 180,
@@ -44,7 +44,7 @@
       "explosion.shrapnel_count": 24
     },
     "G-123 Thermite": {
-      "throwable.max_count": 3,
+      "throwable.max_count": 4,
       "throwable.count_from_supply": 2,
       "explosion.inner_radius": 1.5,
       "explosion.outer_radius": 2.5,
@@ -56,19 +56,19 @@
       "throwable.count_from_supply": 2,
       "explosion.inner_radius": 4,
       "explosion.outer_radius": 12,
-      "explosion.damage.standard_damage": 2000,
-      "explosion.damage.durable_damage": 2000
+      "explosion.damage.standard_damage": 2800,
+      "explosion.damage.durable_damage": 2800
     },
     "G-60 Anti-Tank Seeker": {
-      "throwable.max_count": 3,
+      "throwable.max_count": 4,
       "throwable.count_from_supply": 2,
       "explosion.inner_radius": 2,
       "explosion.outer_radius": 3,
-      "explosion.damage.standard_damage": 2700,
-      "explosion.damage.durable_damage": 2700
+      "explosion.damage.standard_damage": 3000,
+      "explosion.damage.durable_damage": 3000
     },
     "G-10 Incendiary": {
-      "throwable.max_count": 5,
+      "throwable.max_count": 6,
       "throwable.count_from_supply": 3,
       "throwable.explosion_delay": 2,
       "explosion.inner_radius": 1,
@@ -78,7 +78,7 @@
       "status.strength": 100
     },
     "G-13 Incendiary Impact": {
-      "throwable.max_count": 5,
+      "throwable.max_count": 6,
       "throwable.count_from_supply": 3,
       "explosion.inner_radius": 1,
       "explosion.outer_radius": 7,
@@ -171,7 +171,7 @@
     "G-7 Pineapple (detonation, shrapnel expiry)": {
       "explosion.inner_radius": 3,
       "explosion.outer_radius": 6,
-      "explosion.damage.standard_damage": 300,
+      "explosion.damage.standard_damage": 400,
       "explosion.damage.durable_damage": 150
     },
     "G-7 Pineapple (detonation)": {

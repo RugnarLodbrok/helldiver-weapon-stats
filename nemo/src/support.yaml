@@ -9,11 +9,26 @@ weapons:
     weapon.vertical_spread: 15                            # stock 20
 
   M-105 Stalwart:
+    notes: |
+      Scope swap: the raw write replaces the default Optics optionId with the
+      COMBAT SCOPE 4x; the game's own delta then applies the scope's zoom,
+      zeroing, model and crosshair.
     weapon.sway: 0.7                                      # stock 1
     weapon.horizontal_spread: 1.5                         # stock 6
     weapon.vertical_spread: 1.5                           # stock 6
+    raw:
+      - component: WeaponCustomizationComponentData
+        resource: '0xA6A735ACCB4A327F'
+        offset: '0x4'
+        type: u32
+        expect: 3885038159  # 0xE790FA4F
+        value: 3905063732  # 0xE8C28B34 COMBAT SCOPE 4x
 
   MG-43 Machine Gun:
+    notes: |
+      Scope swap: the raw write replaces the default Optics optionId (TUBE
+      REDDOT 1.5x) with the SNIPER SCOPE 10x; the game's own delta then applies
+      the scope's zoom, zeroing, model and crosshair.
     weapon.horizontal_spread: 1.5                         # stock 4
     weapon.vertical_spread: 1.5                           # stock 4
     weapon.ergonomics: 25                                 # stock 15
@@ -28,6 +43,13 @@ weapons:
     damage.primary.standard_damage: 150                   # stock 90
     damage.primary.durable_damage: 70                     # stock 23
     damage.primary.ap_large: 2                            # stock 3
+    raw:
+      - component: WeaponCustomizationComponentData
+        resource: '0x11C27D3BABB38956'
+        offset: '0x4'
+        type: u32
+        expect: 1713239419  # 0x661DF57B TUBE REDDOT 1.5x
+        value: 1742775424  # 0x67E0A480 SNIPER SCOPE 10x
 
   M-1000 Maxigun:
     weapon.ergonomics: 15                                 # stock 4
@@ -186,25 +208,3 @@ backpacks:
     deposit.capacity: 250
     deposit.start_amount: 250
     deposit.refill_amount: 120
-
-raw:
-  # Scope swaps: replace the weapon's default Optics optionId (first entry of
-  # WeaponCustomizationComponentData, offset +4) with the target scope's; the game's
-  # own delta then applies the scope's zoom, zeroing, model and crosshair. Fail-closed
-  # on expect (the current optionId); passed through verbatim, shape-checked only.
-  # MG-43 Machine Gun: TUBE REDDOT 1.5x -> SNIPER SCOPE 10x
-
-  - component: WeaponCustomizationComponentData
-    resource: '0x11C27D3BABB38956'
-    offset: '0x4'
-    type: u32
-    expect: 1713239419  # 0x661DF57B TUBE REDDOT 1.5x
-    value: 1742775424  # 0x67E0A480 SNIPER SCOPE 10x
-  # M-105 Stalwart: current Optics -> COMBAT SCOPE 4x
-
-  - component: WeaponCustomizationComponentData
-    resource: '0xA6A735ACCB4A327F'
-    offset: '0x4'
-    type: u32
-    expect: 3885038159  # 0xE790FA4F
-    value: 3905063732  # 0xE8C28B34 COMBAT SCOPE 4x
