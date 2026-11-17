@@ -4,7 +4,7 @@ Tunes weapon stats (ergonomics, recoil, spread, damage, projectile velocity) for
 set of primary and support weapons, armory throwables (grenades, mines, the shield,
 the throwing knife), stratagems (orbital, eagle, defensive, support, and the
 backpacks), explosion damage, and stratagem boosters. The tuning ships as
-sixteen HellForge **stats mods** (one per weapon type, `nemo-stats-<group>`),
+seventeen HellForge **stats mods** (one per weapon type, `nemo-stats-<group>`),
 each a
 declarative `hellforge-stats.json` HellForge applies at data load, per player, with
 its own guarded validation. There is no in-game Lua addon, no FFI, and no patch
@@ -14,11 +14,11 @@ loop — the stats files are the mods' only gameplay artifacts.
 
 - `src/<group>.yaml` — the author's source of truth, one file per mod (the
   filename stem is the group name; the mod id is `nemo-stats-<group>`). The
-  sixteen files: `primary-ar`, `primary-dmr`, `primary-shotgun`, `primary-smg`,
-  `primary-energy`, `primary-special`, `secondary-pistols`, `secondary-utility`,
-  `throwables`, `stratagems-backpacks`, `stratagems-defensive`,
-  `stratagems-support`, `stratagems-orbital`, `stratagems-eagle`, `support`,
-  `boosters`. Each file is
+  seventeen files: `weapons-ar`, `weapons-dmr`, `weapons-shotgun`, `weapons-smg`,
+  `weapons-laser`, `weapons-plasma`, `weapons-special`, `weapons-pistols`,
+  `weapons-utility`, `throwables`, `stratagems-backpacks`,
+  `stratagems-defensive`, `stratagems-support`, `stratagems-orbital`,
+  `stratagems-eagle`, `weapons-support`, `boosters`. Each file is
   shaped like the stats file (category → target → field → value, field names as
   in the HellForge schema). Sections: `weapons`, `throwables`, `stratagems`,
   `backpacks`, `explosions`, `boosters`, and an optional `raw` (verbatim write
@@ -58,14 +58,16 @@ loop — the stats files are the mods' only gameplay artifacts.
 ## Build and deploy
 
     make -C mods/nemo/weapon_stat_tuner build    # validate -> annotate -> gen_stats
-    make -C mods/nemo/weapon_stat_tuner deploy   # copy the sixteen dist mods into HellForge
+    make -C mods/nemo/weapon_stat_tuner deploy   # copy the seventeen dist mods into HellForge
     make -C mods/nemo/weapon_stat_tuner tables   # regenerate the balance tables
     make -C mods/nemo/weapon_stat_tuner regen    # force regen after a game update
 
-`deploy` copies the sixteen `dist/nemo-stats-<group>/` folders to the HellForge
+`deploy` copies the seventeen `dist/nemo-stats-<group>/` folders to the HellForge
 `mods/` directory (folder name = manifest id), removes the retired monolithic
-`local.nemo-weapon-stat-tuner/` folder and the retired pre-split
-`nemo-stats-stratagems/` / `nemo-stats-backpacks/` folders, and reports the
+`local.nemo-weapon-stat-tuner/` folder and the retired pre-split and pre-rename
+folders (`nemo-stats-stratagems/`, `nemo-stats-backpacks/`,
+`nemo-stats-primary-energy/`, and the old `nemo-stats-primary-*` /
+`nemo-stats-secondary-*` / `nemo-stats-support/` group names), and reports the
 deployed file list; the launcher auto-discovers and enables each folder.
 Rollback: remove the folders.
 
@@ -107,7 +109,19 @@ Rollback: remove the folders.
 
 <!-- compare:end -->
 <!-- tables:start -->
-### nemo-stats-primary-ar
+### Marksman rifles
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| R-2124 Constitution | 180 | 50→80 | 60 | 20 | 3/3/3/0 | 850 | 0.3→0.2 | 5 | 2.8 | 1 | 65 | 25,25,10,60 | 180 | 80 |
+| R-63 Diligence | 165 | 45→80 | 350 | 15→20 | 2/2/2/0<br>→<br>3/3/2/0 | 850 | 0.3→0.2 | 25→20 | 3.2→2.8 | 1→0.5 | 65 | 25,25,10,45<br>→<br>5,70,10,45 | 962 | 467 |
+| R-2 Amendment | 200→165 | 50→80 | 480 | 20 | 2/2/2/0<br>→<br>3/3/2/0 | 850 | 0.3→0.2 | 20 | 3.5→3 | 1→0.5 | 50→60 | 25,35,10,45<br>→<br>5,70,10,45 | 1320 | 640 |
+| R-72 Censor | 165 | 45 | 400 | 20→25 | 2/2/2/0<br>→<br>3/2/2/0 | 330 | 0.3 | — | — | 1→0.5 | 60→65 | 10,15,10,15<br>→<br>5,70,10,15 | 1100 | 300 |
+| R-63CS Diligence Counter Sniper | 200→300 | 50→130 | 350 | 20→30 | 3/3/3/0<br>→<br>4/3/3/0 | 940 | 0.3→0.15 | 15→12 | 3.2→2.8 | 0.8→0.5 | 35→45 | 25,25,30,80<br>→<br>10,150,30,80 | 1750 | 758 |
+| R-6 Deadeye | 300 | 100→130 | 100→200 | 30 | 3/3/3/0<br>→<br>4/3/3/0 | 850 | 0.3→0.15 | 8 | 2.8→2 | 1→0.5 | 65→50 | 40,40,50,200<br>→<br>5,40,50,150 | 1000 | 433 |
+| R-4 Hyena | 220→200 | 45→90 | 190→300 | 20 | 3/3/3/0 | 950 | 0.3→0.15 | — | — | 1→0.5 | 30→40 | 30,30,50,150<br>→<br>10,150,50,150 | 1000 | 450 |
+
+### Assault rifles
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -126,34 +140,7 @@ Rollback: remove the folders.
 | MA5C Assault Rifle | 90→150 | 16→70 | 640 | 15→20 | 3/3/3/0 | 820 | 0.3→0.2 | 32→25 | 3.2 | 1→0.7 | 60→40 | 12,20,12,30<br>→<br>40,100,12,30 | 1600 | 747 |
 | AR-61 Tenderizer | 105→180 | 30 | 600*/850 | 15→25 | 2/2/2/0 | 820 | 0.3→0.2 | 35→25 | 3.3 | 1→0.6 | 65→45 | 7,7,5,13<br>→<br>22,85,5,13 | 1800 | 300 |
 
-### nemo-stats-primary-dmr
-
-| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| R-2124 Constitution | 180 | 50→80 | 60 | 20 | 3/3/3/0 | 850 | 0.3→0.2 | 5 | 2.8 | 1 | 65 | 25,25,10,60 | 180 | 80 |
-| R-63 Diligence | 165 | 45→80 | 350 | 15→20 | 2/2/2/0<br>→<br>3/3/2/0 | 850 | 0.3→0.2 | 25→20 | 3.2→2.8 | 1→0.5 | 65 | 25,25,10,45<br>→<br>5,70,10,45 | 962 | 467 |
-| R-2 Amendment | 200→165 | 50→80 | 480 | 20 | 2/2/2/0<br>→<br>3/3/2/0 | 850 | 0.3→0.2 | 20 | 3.5→3 | 1→0.5 | 50→60 | 25,35,10,45<br>→<br>5,70,10,45 | 1320 | 640 |
-| R-72 Censor | 165 | 45 | 400 | 20→25 | 2/2/2/0<br>→<br>3/2/2/0 | 330 | 0.3 | — | — | 1→0.5 | 60→65 | 10,15,10,15<br>→<br>5,70,10,15 | 1100 | 300 |
-| R-63CS Diligence Counter Sniper | 200→300 | 50→130 | 350 | 20→30 | 3/3/3/0<br>→<br>4/3/3/0 | 940 | 0.3→0.15 | 15→12 | 3.2→2.8 | 0.8→0.5 | 35→45 | 25,25,30,80<br>→<br>10,150,30,80 | 1750 | 758 |
-| R-6 Deadeye | 300 | 100→130 | 100→200 | 30 | 3/3/3/0<br>→<br>4/3/3/0 | 850 | 0.3→0.15 | 8 | 2.8→2 | 1→0.5 | 65→50 | 40,40,50,200<br>→<br>5,40,50,150 | 1000 | 433 |
-| R-4 Hyena | 220→200 | 45→90 | 190→300 | 20 | 3/3/3/0 | 950 | 0.3→0.15 | — | — | 1→0.5 | 30→40 | 30,30,50,150<br>→<br>10,150,50,150 | 1000 | 450 |
-
-### nemo-stats-primary-shotgun
-
-| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| M90A Shotgun | 55→71 | 20→43 | 80 | 35 | 2/2/2/0 | 385 | 0.5→0.4 | 6→8 | 2.2 | 1 | 65 | 40,40,50,200 | 95 | 57 |
-| SG-8 Punisher | 45→49 | 12→30 | 80 | 35 | 2/2/2/0 | 385 | 0.5 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 65 | 40 |
-| SG-8S Slugger | 330→500 | 90→250 | 80 | 30→35 | 3/3/3/0 | 390 | 2→0.4 | 8 | 2.4→2 | 1→0.7 | 65 | 40,40,50,200 | 667 | 333 |
-| SG-451 Cookout | 16→24 | 3→6 | 80 | 35→30 | 2/2/2/0 | 120 | 0.8 | 8 | 2.4→2 | 1 | 65 | 35,35,50,165 | 32 | 8 |
-| SG-20 Halt | 35→54 | 10→22 | 80 | 20 | 3/3/3/0 | 385 | 0.3 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 72 | 29 |
-| SG-97 Sweeper | 42→54 | 11→21 | 150 | 20 | 3/3/3/0 | 385 | 0.3 | 7 | 2.2 | 1 | 65 | 65,40,50,150 | 135 | 52 |
-| SG-225 Breaker | 30→46 | 6→22 | 300 | 15 | 2/2/2/0 | 360 | 0.5 | — | — | 1 | 65 | 23,35,35,80 | 230 | 110 |
-| SG-225SP Breaker Spray&Pray | 15→23 | 4→9 | 330 | 3 | 2/2/2/0 | 250 | 0.5 | — | — | 1 | 65 | 35,35,35,55 | 126 | 50 |
-| SG-225IE Breaker Incendiary | 20 | 10 | 300 | 10 | 2/2/2/0 | 120 | 0.8 | — | — | 1 | 65 | 20,25,25,60 | 100 | 50 |
-| DBS-2 Double Freedom | 70→105 | 35→74 | 650 | 35 | 3/3/3/0 | 385 | 0.5→0.4 | 2 | 2.4→2 | 1 | 65 | 60,120,70,400 | 1138 | 802 |
-
-### nemo-stats-primary-smg
+### SMGs
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -165,21 +152,58 @@ Rollback: remove the folders.
 | SMG/FLAM-34 Stoker | 130→120 | 30→17 | 420→500 | 15→30 | 2/2/2/0 | 285 | 1.2→0.6 | — | — | 1→0.9 | 60 | 10,5,5,15 | 1000 | 142 |
 | SMG-32 Reprimand | 140 | 32 | 490 | 15→35 | 3/3/3/0<br>→<br>3/3/2/0 | 285 | 1.2→0.7 | 25→30 | 3.5→2.7 | 1→0.9 | 55→40 | 25,40,6,55 | 1143 | 261 |
 
-### nemo-stats-primary-energy
+### Pistols
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| LAS-13 Trident | 60→70 | 6→8 | 300 | 10 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 1050 | 120 |
-| LAS-16 Sickle | 60→70 | 6→8 | 750→850 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 992 | 113 |
-| LAS-17 Double-Edge Sickle | 60→70 | 6→8 | 700 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2 | 817 | 93 |
-| LAS-12 Sai | 80→70 | 4→8 | 800 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 100→2000 | 0 | — | 1.8 | 1→0.8 | 65 | 8,8,2,25<br>→<br>0.1,0.1,0.1,0.1 | 933 | 107 |
-| LAS-5 Scythe | 350→450 | 70→75 | — | 0 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 0,0,0,0 | — | — |
-| R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | 1833 | 267 |
+| P-19 Redeemer | 70→90 | 12→18 | 1100 | 10→15 | 2/2/2/0 | 375 | 1.2→0.6 | — | — | 1→0.5 | 95 | 20,20,5,10 | 1650 | 330 |
+| P-2 Peacemaker | 100→90 | 32→18 | 900→1200 | 10→15 | 2/2/2/0 | 320 | 1.2→0.6 | — | — | 1→0.5 | 100 | 20,40,3,15 | 1800 | 360 |
+| P-113 Verdict | 140 | 32 | 450 | 15 | 3/3/3/0 | 285 | 1.2→0.8 | 10→18 | 2 | 1→0.5 | 100 | 20,50,10,45 | 1050 | 240 |
+| P-69 Veto | 105→140 | 35 | 750 | 35 | 3/3/3/0 | 375 | 0 | 12 | 3.1→1.8 | 1→0.5 | 100 | 20,50,5,45 | 1750 | 438 |
+| P-92 Warrant | 80→115 | 20→30 | 450 | 15 | 3/3/3/0 | 285 | 0 | 13→18 | 2 | 1→0.5 | 100 | 20,50,10,45 | 862 | 225 |
+| M6C/SOCOM Pistol | 125→180 | 28→50 | 900 | 15 | 2/2/2/0<br>→<br>3/3/2/0 | 285 | 1.2→0.8 | 12 | 1.5 | 1→0.5 | 100 | 20,40,3,15<br>→<br>20,40,3,45 | 2700 | 750 |
+| P-4 Senator | 225→300 | 75→125 | 200 | 20 | 4/4/4/0 | 550 | 1.2→0.8 | 6 | 4.5→3 | 1→0.5 | 75 | 20,50,3,50 | 1000 | 417 |
+| P/40-K Bolt Pistol | 325 | 115 | 150 | 35 | 4/4/4/0 | 350 | 0 | 6 | 2.4 | 1→0.5 | 30→45 | 100,500,200,500 | 812 | 288 |
+
+### Shotguns
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | Pellets | Tot std | Tot dur | Start | Spare | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| M90A Shotgun | 55→71 | 20→43 | 80 | 35 | 2/2/2/0 | 385 | 0.5→0.4 | 6→8 | 2.2 | 1 | 65 | 40,40,50,200 | 11 | 605→781 | 220→473 | 24→32 | 44→60 | 1041 | 631 |
+| SG-8 Punisher | 45→49 | 12→30 | 80 | 35 | 2/2/2/0 | 385 | 0.5 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 9→16 | 405→784 | 108→480 | 32 | 60 | 1045 | 640 |
+| SG-8S Slugger | 330→500 | 90→250 | 80 | 30→35 | 3/3/3/0 | 390 | 2→0.4 | 8 | 2.4→2 | 1→0.7 | 65 | 40,40,50,200 | 1 | 330→500 | 90→250 | 32 | 60 | 667 | 333 |
+| SG-451 Cookout | 16→24 | 3→6 | 80 | 35→30 | 2/2/2/0 | 120 | 0.8 | 8 | 2.4→2 | 1 | 65 | 35,35,50,165 | 20 | 320→480 | 60→120 | 32 | 60 | 640 | 160 |
+| SG-20 Halt | 35→54 | 10→22 | 80 | 20 | 3/3/3/0 | 385 | 0.3 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 11 | 385→594 | 110→242 | 32 | 60 | 792 | 323 |
+| SG-97 Sweeper | 42→54 | 11→21 | 150 | 20 | 3/3/3/0 | 385 | 0.3 | 7 | 2.2 | 1 | 65 | 65,40,50,150 | 12 | 504→648 | 132→252 | 46 | 70 | 1620 | 630 |
+| SG-225 Breaker | 30→46 | 6→22 | 300 | 15 | 2/2/2/0 | 360 | 0.5 | — | — | 1 | 65 | 23,35,35,80 | 11 | 330→506 | 66→242 | — | — | 2530 | 1210 |
+| SG-225SP Breaker Spray&Pray | 15→23 | 4→9 | 330 | 3 | 2/2/2/0 | 250 | 0.5 | — | — | 1 | 65 | 35,35,35,55 | 16 | 240→368 | 64→144 | — | — | 2024 | 792 |
+| SG-225IE Breaker Incendiary | 20 | 10 | 300 | 10 | 2/2/2/0 | 120 | 0.8 | — | — | 1 | 65 | 20,25,25,60 | 12 | 240 | 120 | — | — | 1200 | 600 |
+| DBS-2 Double Freedom | 70→105 | 35→74 | 650 | 35 | 3/3/3/0 | 385 | 0.5→0.4 | 2 | 2.4→2 | 1 | 65 | 60,120,70,400 | 12 | 840→1260 | 420→888 | 22 | 40 | 13650 | 9620 |
+
+### Laser weapons
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | Beams | Fire str | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| LAS-13 Trident | 60→70 | 6→8 | 300 | 10 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 3 | 0→1 | 1050 | 120 |
+| LAS-16 Sickle | 60→70 | 6→8 | 750→850 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 992 | 113 |
+| LAS-17 Double-Edge Sickle | 60→70 | 6→8 | 700 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2 | — | 0→1 | 817 | 93 |
+| LAS-12 Sai | 80→70 | 4→8 | 800 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 100→2000 | 0 | — | 1.8 | 1→0.8 | 65 | 8,8,2,25<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 933 | 107 |
+| LAS-5 Scythe | 350→450 | 70→75 | — | 0 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 0,0,0,0 | — | 1 | — | — |
+| R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | — | 0→16 | 1833 | 267 |
+| LAS-7 Dagger | 250→300 | 50 | — | 0 | 2/2/2/0 | — | — | — | 2.3 | 1→0.5 | 95 | 0,0,0,0 | — | 1 | — | — |
+| LAS-58 Talon | 200 | 20 | 750 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 1300→2000 | 0 | — | 4.6→3 | 1→0.5 | 95 | 2,2,2,1<br>→<br>0.1,0.1,0.1,0.1 | — | 0→4 | 2500 | 250 |
+
+### Plasma weapons
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | PLAS-1 Scorcher | 100 | 50 | 350 | 20 | 2/2/2/0 | 550 | 1.5 | 20→30 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 583 | 292 |
 | PLAS-101 Purifier | 200 | 100 | 1000 | 20 | 3/3/3/0 | 350 | 1.5 | 15→20 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 3333 | 1667 |
 | PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
+| PLAS-15 Loyalist | 100 | 50 | 1000 | 20 | 2/2/2/0 | 550 | 1 | — | 1.8 | 1 | 95 | 2.5,10,2.5,10 | 1667 | 833 |
+| SG-8P Punisher Plasma | 0 | 0 | 80 | 20 | 2/2/2/0 | 90 | 4 | 10 | 2.5 | 1 | 65 | 40,40,50,180 | 0 | 0 |
 
-### nemo-stats-primary-special
+### Special weapons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -187,7 +211,7 @@ Rollback: remove the folders.
 | JAR-5 Dominator | 275 | 90 | 250→350 | 35 | 3/3/3/0 | 180 | 0 | 15 | 3.7→3.3 | 0.8→0.6 | 30→40 | 30,30,50,120 | 1604 | 525 |
 | GL-15 Evictor | 50 | 2 | 60 | 30 | 3/3/3/0 | 100 | 1.2 | 4 | 2.7 | 1 | 65 | 40,40,50,200 | 50 | 2 |
 
-### nemo-stats-support
+### Support weapons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -208,62 +232,17 @@ Rollback: remove the folders.
 | ARC-3 Arc Thrower | 250 | 100→250 | — | 35 | 7/7/7/0 | — | — | — | — | 1→0.7 | 50 | 40,40,50,50 | — | — |
 | GL-28 Belt-Fed Grenade Launcher | 0 | 0 | — | 30 | 4/4/4/0 | 100 | 1.2 | — | 4.5 | 1→0.8 | 20→45 | 20,25,15,35 | — | — |
 
-<!-- tables:end -->
+### Utility weapons
 
-### Pistols
-
-<!-- pistols:start -->
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| P-19 Redeemer | 70→90 | 12→18 | 1100 | 10→15 | 2/2/2/0 | 375 | 1.2→0.6 | — | — | 1→0.5 | 95 | 20,20,5,10 | 1650 | 330 |
-| P-92 Warrant | 80→115 | 20→30 | 450 | 15 | 3/3/3/0 | 285 | 0 | 13→18 | 2 | 1→0.5 | 100 | 20,50,10,45 | 862 | 225 |
-| P-2 Peacemaker | 100→90 | 32→18 | 900→1200 | 10→15 | 2/2/2/0 | 320 | 1.2→0.6 | — | — | 1→0.5 | 100 | 20,40,3,15 | 1800 | 360 |
-| P-69 Veto | 105→140 | 35 | 750 | 35 | 3/3/3/0 | 375 | 0 | 12 | 3.1→1.8 | 1→0.5 | 100 | 20,50,5,45 | 1750 | 438 |
-| M6C/SOCOM Pistol | 125→180 | 28→50 | 900 | 15 | 2/2/2/0<br>→<br>3/3/2/0 | 285 | 1.2→0.8 | 12 | 1.5 | 1→0.5 | 100 | 20,40,3,15<br>→<br>20,40,3,45 | 2700 | 750 |
-| P-113 Verdict | 140 | 32 | 450 | 15 | 3/3/3/0 | 285 | 1.2→0.8 | 10→18 | 2 | 1→0.5 | 100 | 20,50,10,45 | 1050 | 240 |
-| P-4 Senator | 225→300 | 75→125 | 200 | 20 | 4/4/4/0 | 550 | 1.2→0.8 | 6 | 4.5→3 | 1→0.5 | 75 | 20,50,3,50 | 1000 | 417 |
-| P/40-K Bolt Pistol | 325 | 115 | 150 | 35 | 4/4/4/0 | 350 | 0 | 6 | 2.4 | 1→0.5 | 30→45 | 100,500,200,500 | 812 | 288 |
+| P-34 Breacher | 60 | 0 | 20 | 10 | 4/4/3/0 | 150 | 2 | 1 | 2.7 | 1 | 45 | 200,500,100,450 | 20 | 0 |
+| GP-31 Grenade Pistol | 250 | 250 | 900 | 40 | 3/3/3/0 | 100 | 1.2 | 1 | 1.7 | 1→0.8 | 95 | 20,50,3,50 | 3750 | 3750 |
+| GP-20 Ultimatum | 1000 | 1000 | 900 | 50 | 6/6/6/6 | 20→60 | 0.5 | 1 | 2.7 | 1 | 35 | 20,50,3,50<br>→<br>20,50,3,500 | 15000 | 15000 |
+| P-35 Re-Educator | 60 | 10 | 110→300 | 1 | 4/4/3/0 | 150 | 2 | 6 | 2.1 | 1→0.5 | 100 | 5,15,5,15 | 300 | 50 |
 
-<!-- pistols:end -->
+### Throwables
 
-### Shotguns
-
-<!-- shotguns:start -->
-| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | Pellets | Tot std | Tot dur | Start | Spare | DPS | dDPS |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| M90A Shotgun | 55→71 | 20→43 | 80 | 35 | 2/2/2/0 | 385 | 0.5→0.4 | 6→8 | 2.2 | 1 | 65 | 40,40,50,200 | 11 | 605→781 | 220→473 | 24→32 | 44→60 | 1041 | 631 |
-| SG-8 Punisher | 45→49 | 12→30 | 80 | 35 | 2/2/2/0 | 385 | 0.5 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 9→16 | 405→784 | 108→480 | 32 | 60 | 1045 | 640 |
-| SG-8S Slugger | 330→500 | 90→250 | 80 | 30→35 | 3/3/3/0 | 390 | 2→0.4 | 8 | 2.4→2 | 1→0.7 | 65 | 40,40,50,200 | 1 | 330→500 | 90→250 | 32 | 60 | 667 | 333 |
-| SG-451 Cookout | 16→24 | 3→6 | 80 | 35→30 | 2/2/2/0 | 120 | 0.8 | 8 | 2.4→2 | 1 | 65 | 35,35,50,165 | 20 | 320→480 | 60→120 | 32 | 60 | 640 | 160 |
-| SG-20 Halt | 35→54 | 10→22 | 80 | 20 | 3/3/3/0 | 385 | 0.3 | 8 | 2.4→2 | 1 | 65 | 40,40,50,200 | 11 | 385→594 | 110→242 | 32 | 60 | 792 | 323 |
-| SG-97 Sweeper | 42→54 | 11→21 | 150 | 20 | 3/3/3/0 | 385 | 0.3 | 7 | 2.2 | 1 | 65 | 65,40,50,150 | 12 | 504→648 | 132→252 | 46 | 70 | 1620 | 630 |
-| SG-225 Breaker | 30→46 | 6→22 | 300 | 15 | 2/2/2/0 | 360 | 0.5 | — | — | 1 | 65 | 23,35,35,80 | 11 | 330→506 | 66→242 | — | — | 2530 | 1210 |
-| SG-225SP Breaker Spray&Pray | 15→23 | 4→9 | 330 | 3 | 2/2/2/0 | 250 | 0.5 | — | — | 1 | 65 | 35,35,35,55 | 16 | 240→368 | 64→144 | — | — | 2024 | 792 |
-| SG-225IE Breaker Incendiary | 20 | 10 | 300 | 10 | 2/2/2/0 | 120 | 0.8 | — | — | 1 | 65 | 20,25,25,60 | 12 | 240 | 120 | — | — | 1200 | 600 |
-| DBS-2 Double Freedom | 70→105 | 35→74 | 650 | 35 | 3/3/3/0 | 385 | 0.5→0.4 | 2 | 2.4→2 | 1 | 65 | 60,120,70,400 | 12 | 840→1260 | 420→888 | 22 | 40 | 13650 | 9620 |
-
-<!-- shotguns:end -->
-
-### Laser weapons
-
-<!-- laser:start -->
-| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | Beams | Fire str | DPS | dDPS |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| LAS-13 Trident | 60→70 | 6→8 | 300 | 10 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 3 | 0→1 | 1050 | 120 |
-| LAS-16 Sickle | 60→70 | 6→8 | 750→850 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 992 | 113 |
-| LAS-12 Sai | 80→70 | 4→8 | 800 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 100→2000 | 0 | — | 1.8 | 1→0.8 | 65 | 8,8,2,25<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 933 | 107 |
-| LAS-58 Talon | 200 | 20 | 750 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 1300→2000 | 0 | — | 4.6→3 | 1→0.5 | 95 | 2,2,2,1<br>→<br>0.1,0.1,0.1,0.1 | — | 0→4 | 2500 | 250 |
-| R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | — | 0→16 | 1833 | 267 |
-
-<!-- laser:end -->
-
-The LAS-13 Trident is a beam weapon: its 3 barrels fire one beam each (3
-parallel beams) at 300 rpm, so its DPS/dDPS are the per-beam damage × 300 / 60 × 3.
-The other lasers are hitscan/projectile and use the standard damage × RPM / 60.
-
-### Grenades
-
-<!-- grenades:start -->
 | Weapon | Std | Dur | In | Out | Shock | Fuse | Start | Max | Shrapnel | Status | Direct | Shield |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | G-12 High Explosive | 800→1200 | 800→1200 | 2.5 | 7 | 9 | 3.5→4 | 4 | 5→6 | — | — | — | — |
@@ -287,7 +266,11 @@ The other lasers are hitscan/projectile and use the standard damage × RPM / 60.
 | TM-1 Lure Mine | 1000→1200 | 1000→1200 | 2→4 | 8→12 | 12 | — | 3 | 4 | 35 | — | 110→180 | — |
 | G/SH-39 Shield | — | — | — | — | — | — | 3 | 4→5 | — | — | — | 1.8→2.2 / 1000→2000 |
 
-<!-- grenades:end -->
+<!-- tables:end -->
+
+The LAS-13 Trident is a beam weapon: its 3 barrels fire one beam each (3
+parallel beams) at 300 rpm, so its DPS/dDPS are the per-beam damage × 300 / 60 × 3.
+The other lasers are hitscan/projectile and use the standard damage × RPM / 60.
 
 ## Gotchas (read before changing a stat)
 

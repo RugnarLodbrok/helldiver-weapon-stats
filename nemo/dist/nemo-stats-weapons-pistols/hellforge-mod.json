@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-pistols",
+  "name": "Nemo Stats: Weapons Pistols",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for weapons pistols.",
+  "gameplay": true
+}

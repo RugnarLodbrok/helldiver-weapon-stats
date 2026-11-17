@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-shotgun",
+  "name": "Nemo Stats: Weapons Shotgun",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for weapons shotgun.",
+  "gameplay": true
+}

@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-utility",
+  "name": "Nemo Stats: Weapons Utility",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for weapons utility.",
+  "gameplay": true
+}

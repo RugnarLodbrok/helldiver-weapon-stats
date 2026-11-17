@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-dmr",
+  "name": "Nemo Stats: Weapons DMR",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for weapons dmr.",
+  "gameplay": true
+}

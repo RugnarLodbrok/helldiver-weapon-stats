@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-ar",
+  "name": "Nemo Stats: Weapons AR",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for weapons ar.",
+  "gameplay": true
+}

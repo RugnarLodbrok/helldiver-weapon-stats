@@ -84,46 +84,29 @@
       "damage.status_1_strength": 16,
       "magazine.capacity": 15
     },
-    "PLAS-1 Scorcher": {
-      "weapon.sway": 0.7,
-      "weapon.horizontal_spread": 5,
-      "weapon.vertical_spread": 5,
-      "damage.standard_damage": 100,
-      "damage.durable_damage": 50,
-      "magazine.capacity": 30,
-      "magazine.starting_magazines": 4,
-      "magazine.spare_magazines": 7,
-      "magazine.magazines_from_supply": 7
-    },
-    "PLAS-101 Purifier": {
-      "weapon.sway": 0.7,
-      "weapon.horizontal_spread": 5,
-      "weapon.vertical_spread": 5,
-      "damage.standard_damage": 200,
-      "damage.durable_damage": 100,
-      "magazine.capacity": 20,
-      "magazine.starting_magazines": 4,
-      "magazine.spare_magazines": 6,
-      "magazine.magazines_from_supply": 6
-    },
-    "PLAS-39 Accelerator Rifle": {
-      "weapon.ergonomics": 45,
+    "LAS-7 Dagger": {
       "weapon.sway": 0.5,
-      "weapon.recoil_drift_horizontal": 1,
-      "weapon.recoil_drift_vertical": 1,
-      "weapon.recoil_climb_horizontal": 1,
-      "weapon.recoil_climb_vertical": 1,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 50
+    },
+    "LAS-58 Talon": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
       "weapon.horizontal_spread": 0.1,
       "weapon.vertical_spread": 0.1,
-      "reload.duration": 2,
-      "damage.standard_damage": 250,
-      "damage.durable_damage": 180,
-      "damage.ap_direct": 4,
-      "damage.ap_slight": 4,
-      "magazine.capacity": 9,
-      "magazine.starting_magazines": 8,
-      "magazine.spare_magazines": 12,
-      "magazine.magazines_from_supply": 12
+      "reload.duration": 3,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 20,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 4,
+      "heat.heat_per_shot": 10
     }
   }
 }

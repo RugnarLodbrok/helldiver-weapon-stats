@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "weapons": {
+    "PLAS-1 Scorcher": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 5,
+      "damage.standard_damage": 100,
+      "damage.durable_damage": 50,
+      "magazine.capacity": 30,
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 9,
+      "magazine.magazines_from_supply": 9
+    },
+    "PLAS-101 Purifier": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 5,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 100,
+      "magazine.capacity": 20,
+      "magazine.starting_magazines": 4,
+      "magazine.spare_magazines": 6,
+      "magazine.magazines_from_supply": 6
+    },
+    "PLAS-39 Accelerator Rifle": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 1,
+      "weapon.recoil_drift_vertical": 1,
+      "weapon.recoil_climb_horizontal": 1,
+      "weapon.recoil_climb_vertical": 1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "reload.duration": 2,
+      "damage.standard_damage": 250,
+      "damage.durable_damage": 180,
+      "damage.ap_direct": 4,
+      "damage.ap_slight": 4,
+      "magazine.capacity": 9,
+      "magazine.starting_magazines": 8,
+      "magazine.spare_magazines": 12,
+      "magazine.magazines_from_supply": 12
+    },
+    "PLAS-15 Loyalist": {
+      "weapon.fire_rate": 1000
+    },
+    "SG-8P Punisher Plasma": {
+      "explosion.primary.impact.damage.standard_damage": 225,
+      "explosion.primary.impact.damage.durable_damage": 225
+    }
+  }
+}

@@ -87,47 +87,26 @@ weapons:
     damage.status_1_strength: 16                          # stock 0
     magazine.capacity: 15                                 # stock 12
 
-  ##################
-  # Plasma weapons #
-  ##################
-
-  PLAS-1 Scorcher:
-    weapon.sway: 0.7                                      # stock 1
-    weapon.horizontal_spread: 5                           # stock 10
-    weapon.vertical_spread: 5                             # stock 10
-    damage.standard_damage: 100                           # stock 100
-    damage.durable_damage: 50                             # stock 50
-    magazine.capacity: 30                                 # stock 20
-    magazine.starting_magazines: 4                        # stock 3
-    magazine.spare_magazines: 7                           # stock 5
-    magazine.magazines_from_supply: 7                     # stock 5
-
-  PLAS-101 Purifier:
-    weapon.sway: 0.7                                      # stock 1
-    weapon.horizontal_spread: 5                           # stock 10
-    weapon.vertical_spread: 5                             # stock 10
-    damage.standard_damage: 200                           # stock 200
-    damage.durable_damage: 100                            # stock 100
-    magazine.capacity: 20                                 # stock 15
-    magazine.starting_magazines: 4                        # stock 4
-    magazine.spare_magazines: 6                           # stock 6
-    magazine.magazines_from_supply: 6                     # stock 6
-
-  PLAS-39 Accelerator Rifle:
-    weapon.ergonomics: 45                                 # stock 60
+  LAS-7 Dagger:
     weapon.sway: 0.5                                      # stock 1
-    weapon.recoil_drift_horizontal: 1                     # stock 3
-    weapon.recoil_drift_vertical: 1                       # stock 3
-    weapon.recoil_climb_horizontal: 1                     # stock 3
-    weapon.recoil_climb_vertical: 1                       # stock 3
-    weapon.horizontal_spread: 0.1                         # stock 0.5
-    weapon.vertical_spread: 0.1                           # stock 0.5
-    reload.duration: 2                                    # stock 3.333
-    damage.standard_damage: 250                           # stock 250
-    damage.durable_damage: 180                            # stock 125
-    damage.ap_direct: 4                                   # stock 3
-    damage.ap_slight: 4                                   # stock 3
-    magazine.capacity: 9                                  # stock 9
-    magazine.starting_magazines: 8                        # stock 8
-    magazine.spare_magazines: 12                          # stock 12
-    magazine.magazines_from_supply: 12                    # stock 12
+    damage.standard_damage: 300                           # stock 250
+    damage.durable_damage: 50                             # stock 50
+
+  LAS-58 Talon:
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 2
+    weapon.recoil_climb_vertical: 0.1                     # stock 1
+    weapon.horizontal_spread: 0.1                         # stock 10
+    weapon.vertical_spread: 0.1                           # stock 10
+    reload.duration: 3                                    # stock 4.583
+    projectile.velocity: 2000                             # stock 1300
+    damage.standard_damage: 200                           # stock 200
+    damage.durable_damage: 20                             # stock 20
+    damage.ap_direct: 2                                   # stock 3
+    damage.ap_slight: 2                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 4                           # stock 0
+    heat.heat_per_shot: 10                                # stock 15

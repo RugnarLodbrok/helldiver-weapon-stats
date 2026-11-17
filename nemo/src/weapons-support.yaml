@@ -201,10 +201,8 @@ weapons:
     # Fire the P/40-K Bolt Pistol round (projectile 202) instead of the default
     # grenade; the round's own damage, velocity and explosion apply.
     attack.primary.projectile: 202
-
-backpacks:
-
-  GL-28 Belt-Fed Grenade Launcher Backpack:
-    deposit.capacity: 250
-    deposit.start_amount: 250
-    deposit.refill_amount: 120
+    backpacks:
+      GL-28 Belt-Fed Grenade Launcher Backpack:
+        deposit.capacity: 250
+        deposit.start_amount: 250
+        deposit.refill_amount: 120

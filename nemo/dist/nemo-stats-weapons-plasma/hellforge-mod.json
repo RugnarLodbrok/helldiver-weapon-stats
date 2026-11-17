@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-plasma",
+  "name": "Nemo Stats: Plasma Weapons",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for plasma weapons.",
+  "gameplay": true
+}
