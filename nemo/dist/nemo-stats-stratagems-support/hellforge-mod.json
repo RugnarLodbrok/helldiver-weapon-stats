@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-stratagems-support",
+  "name": "Nemo Stats: Stratagem Support",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for stratagem support.",
+  "gameplay": true
+}

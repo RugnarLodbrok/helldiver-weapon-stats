@@ -1,0 +1,210 @@
+weapons:
+
+  ###################
+  # Support weapons #
+  ###################
+
+  GL-21 Grenade Launcher:
+    weapon.horizontal_spread: 15                          # stock 20
+    weapon.vertical_spread: 15                            # stock 20
+
+  M-105 Stalwart:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 1.5                         # stock 6
+    weapon.vertical_spread: 1.5                           # stock 6
+
+  MG-43 Machine Gun:
+    weapon.horizontal_spread: 1.5                         # stock 4
+    weapon.vertical_spread: 1.5                           # stock 4
+    weapon.ergonomics: 25                                 # stock 15
+    weapon.sway: 0.7                                      # stock 1
+    weapon.recoil_drift_horizontal: 20                    # stock 20
+    weapon.recoil_drift_vertical: 20                      # stock 20
+    weapon.recoil_climb_horizontal: 15                    # stock 15
+    weapon.recoil_climb_vertical: 30                      # stock 30
+    reload.duration: 3                                    # stock 4.5
+    projectile.primary.drag: 0.2                          # stock 0.3
+    projectile.primary.penetration_slowdown: 0.2          # stock 0.25
+    damage.primary.standard_damage: 150                   # stock 90
+    damage.primary.durable_damage: 70                     # stock 23
+    damage.primary.ap_large: 2                            # stock 3
+
+  M-1000 Maxigun:
+    weapon.ergonomics: 15                                 # stock 4
+    weapon.sway: 1                                        # stock 1
+    weapon.horizontal_spread: 1.5                         # stock 10
+    weapon.vertical_spread: 1.5                           # stock 10
+    weapon.stationary_while_firing: false                 # stock true
+    weapon.recoil_drift_horizontal: 25                    # stock 20
+    weapon.recoil_drift_vertical: 10                      # stock 20
+    weapon.recoil_climb_horizontal: 20                    # stock 15
+    weapon.recoil_climb_vertical: 15                      # stock 30
+    windup.wind_up_seconds: 0.2                           # stock 0.5
+    projectile.primary.drag: 0.2                          # stock 0.3
+    projectile.primary.penetration_slowdown: 0.2          # stock 0.25
+    damage.primary.standard_damage: 150                   # stock 80
+    damage.primary.durable_damage: 75                     # stock 18
+    damage.primary.ap_large: 2                            # stock 3
+
+  MG-206 Heavy Machine Gun:  # balance: magnum caliber
+    weapon.ergonomics: 15                                 # stock 0
+    weapon.sway: 1                                        # stock 1
+    weapon.horizontal_spread: 1.5                         # stock 5
+    weapon.vertical_spread: 1.5                           # stock 5
+    weapon.capacity: 100                                  # stock 100
+    reload.duration: 4                                    # stock 5.5
+    projectile.primary.velocity: 800                      # stock 980
+    projectile.primary.drag: 0.2                          # stock 0.3
+    projectile.primary.penetration_slowdown: 0.2          # stock 0.25
+    damage.primary.standard_damage: 220                   # stock 150
+    damage.primary.durable_damage: 100                    # stock 35
+    damage.primary.stagger: 30                            # stock 25
+    damage.primary.ap_slight: 4                           # stock 4
+    damage.primary.ap_large: 3                            # stock 4
+    magazine.magazines_from_supply: 4                     # stock 2
+    magazine.spare_magazines: 4                           # stock 2
+    magazine.starting_magazines: 2                        # stock 1
+
+  APW-1 Anti-Materiel Rifle:
+    weapon.horizontal_spread: 1.5                         # stock 0.1
+    weapon.vertical_spread: 1.5                           # stock 0.1
+    weapon.ergonomics: 40                                 # stock 35
+    weapon.sway: 0.5                                      # stock 1
+    weapon.third_person_reticle: 4                        # stock 3; assault rifle reticle
+    projectile.primary.drag: 0.1                          # stock 0.3
+    projectile.primary.penetration_slowdown: 0.1          # stock 0.25
+    damage.primary.standard_damage: 690                   # stock 450
+    damage.primary.durable_damage: 350                    # stock 225
+
+  RS-422 Railgun:
+    weapon.ergonomics: 40                                 # stock 35
+    weapon.sway: 0.5                                      # stock 1
+    weapon.capacity: 1                                    # stock 1
+    damage.primary.standard_damage: 800                   # stock 600
+    damage.primary.durable_damage: 300                    # stock 225
+    damage.primary.ap_direct: 5                           # stock 5
+    damage.primary.ap_slight: 5                           # stock 5
+    damage.primary.ap_large: 4                            # stock 5
+    damage.primary.ap_extreme: 4                          # stock 5
+    magazine.starting_magazines: 10                       # stock 10
+    magazine.spare_magazines: 20                          # stock 20
+    magazine.magazines_from_supply: 10                    # stock 10
+
+  AC-8 Autocannon:
+    weapon.sway: 0.7                                      # stock 1
+    damage.primary.standard_damage: 700                   # stock 325
+    damage.primary.durable_damage: 350                    # stock 260
+    damage.primary.ap_large: 3                            # stock 4
+    damage.programmable.durable_damage: 150               # stock 150
+    damage.programmable.standard_damage: 150              # stock 150
+
+  GR-8 Recoilless Rifle:
+    weapon.sway: 0.9                                      # stock 1
+    reload.duration: 4                                    # stock 6
+
+#  PLAS-45 Epoch:
+#    weapon.sway: 0.7                                # stock 1
+#    weapon.horizontal_spread: 10                    # stock 30
+#    weapon.vertical_spread: 10                      # stock 30
+#    weapon.capacity: 5                              # stock 3
+#    projectile.full_charge.drag: 0                  # stock 0.1
+#    projectile.full_charge.lifetime: 3.2            # stock 0.6; 800 m at velocity 250
+#    projectile.primary.drag: 0                      # stock 0.1
+#    projectile.primary.lifetime: 3.2                # stock 0.6; 800 m at velocity 250
+#    magazine.starting_magazines: 3                  # stock 2
+#    magazine.spare_magazines: 4                     # stock 4
+#    magazine.magazines_from_supply: 3               # stock 2
+#    charge.level_1: 0.1                             # stock 1
+#    charge.speed_multiplier_min: 1                  # stock 1
+#    charge.overcharge_limit_seconds: 3.5            # stock 3.25
+#    explosion.full_charge_impact.inner_radius: 4    # stock 3
+#    explosion.full_charge_impact.outer_radius: 5    # stock 4
+#    explosion.overcharge_explosion.inner_radius: 4  # stock 3
+#    explosion.overcharge_explosion.outer_radius: 5  # stock 4
+#    explosion.primary_impact.damage.demolition: 30  # stock 10
+#    explosion.primary_impact.inner_radius: 3        # stock 2.3
+#    explosion.primary_impact.outer_radius: 3.5      # stock 3
+
+  LAS-98 Laser Cannon:
+    weapon.sway: 0.5                                      # stock 1
+    damage.primary.standard_damage: 350                   # stock 350
+    damage.primary.durable_damage: 420                    # stock 200
+    damage.primary.stagger: 10                            # stock 0
+    damage.primary.status_2_type: acid_storm              # stock none; slot 1 keeps fire
+    damage.primary.status_2_strength: 100                 # stock 0
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
+    heat.heat_per_second: 7                               # stock 8
+
+  LAS-99 Quasar Cannon:
+    weapon.sway: 0.7                                      # stock 1
+    heat.firing_charge: 66                                # stock 100
+    heat.charge_gain_per_second: 66                       # stock 33
+    heat.cool_per_second: 8.33                            # stock 6.66; post-shot cooldown 100/8.33 = 12.0 s (was 15.0 s)
+    heat.cool_per_second_overheated: 8.33                 # stock 6.66; match the non-overheated rate
+
+  FAF-14 Spear:
+    weapon.sway: 1                                        # stock 1
+    reload.duration: 4                                    # stock 5
+
+  RL-77 Airburst Rocket Launcher:
+    weapon.sway: 1                                        # stock 1
+    reload.duration: 4                                    # stock 5
+
+  GL-52 De-Escalator:
+    weapon.sway: 0.7                                      # stock 1
+    damage.primary_impact_arc.standard_damage: 150        # stock 100
+    damage.primary_impact_arc.durable_damage: 100         # stock 70
+    arc.primary_impact_arc.chain_count: 2                 # stock 2
+    arc.primary_impact_arc.max_split: 3                   # stock 2
+    arc.primary_impact_arc.max_angle_spread: 350          # stock 300
+
+  ARC-3 Arc Thrower:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 1                           # stock 10
+    weapon.vertical_spread: 1                             # stock 10
+    damage.primary.standard_damage: 250                   # stock 250
+    damage.primary.durable_damage: 250                    # stock 100
+    charge.level_1: 0.2                                   # stock 1; min charge time
+    charge.level_2: 0.4                                   # stock 1.1; full charge time
+    charge.auto_fire_at_full: true                        # stock false; hold to keep firing
+    arc.primary.chain_count: 2                            # stock 1
+    arc.primary.max_split: 2                              # stock 1
+    arc.primary.max_angle_spread: 90                      # stock 60
+
+  GL-28 Belt-Fed Grenade Launcher:
+    weapon.ergonomics: 45                                 # stock 20
+    weapon.sway: 0.8                                      # stock 1
+    weapon.horizontal_spread: 2                           # stock 4
+    weapon.vertical_spread: 2                             # stock 4
+    # Fire the P/40-K Bolt Pistol round (projectile 202) instead of the default
+    # grenade; the round's own damage, velocity and explosion apply.
+    attack.primary.projectile: 202
+
+backpacks:
+
+  GL-28 Belt-Fed Grenade Launcher Backpack:
+    deposit.capacity: 250
+    deposit.start_amount: 250
+    deposit.refill_amount: 120
+
+raw:
+  # Scope swaps: replace the weapon's default Optics optionId (first entry of
+  # WeaponCustomizationComponentData, offset +4) with the target scope's; the game's
+  # own delta then applies the scope's zoom, zeroing, model and crosshair. Fail-closed
+  # on expect (the current optionId); passed through verbatim, shape-checked only.
+  # MG-43 Machine Gun: TUBE REDDOT 1.5x -> SNIPER SCOPE 10x
+
+  - component: WeaponCustomizationComponentData
+    resource: '0x11C27D3BABB38956'
+    offset: '0x4'
+    type: u32
+    expect: 1713239419  # 0x661DF57B TUBE REDDOT 1.5x
+    value: 1742775424  # 0x67E0A480 SNIPER SCOPE 10x
+  # M-105 Stalwart: current Optics -> COMBAT SCOPE 4x
+
+  - component: WeaponCustomizationComponentData
+    resource: '0xA6A735ACCB4A327F'
+    offset: '0x4'
+    type: u32
+    expect: 3885038159  # 0xE790FA4F
+    value: 3905063732  # 0xE8C28B34 COMBAT SCOPE 4x

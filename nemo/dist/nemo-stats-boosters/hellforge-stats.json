@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "boosters": {
+    "Surplus EAT Allocation": {
+      "stratagem.max_uses": 10
+    },
+    "Expert Extraction Pilot": {
+      "booster.extraction_time_scale": 0.5
+    },
+    "Localization Confusion": {
+      "booster.encounter_rate_scale": 0.8
+    },
+    "UAV Recon Booster": {
+      "booster.radar_range_scale": 3
+    }
+  }
+}

@@ -1,0 +1,27 @@
+weapons:
+  ###################
+  # Special weapons #
+  ###################
+
+  R-36 Eruptor:
+    weapon.ergonomics: 40                                 # stock 25
+    weapon.sway: 0.6                                      # stock 0.8
+    projectile.lifetime: 4.4                              # stock 1; ~800 m at velocity 180
+
+  JAR-5 Dominator:
+    weapon.ergonomics: 40                                 # stock 30
+    weapon.sway: 0.6                                      # stock 0.8
+    weapon.fire_rate: 350                                 # stock 250
+    reload.duration: 3.3                                  # stock 3.667
+    fire_mode.modes.3: 1                                  # stock 0 -- full-auto mode
+    # Fire the P/40-K Bolt Pistol round (projectile 202) instead of the default
+    # rocket; the round's own damage, velocity and explosion apply.
+    ammunition.projectile: 202
+
+  GL-15 Evictor:
+    weapon.horizontal_spread: 5                           # stock 15
+    weapon.vertical_spread: 10                            # stock 12
+    explosion.primary.impact.damage.standard_damage: 440  # stock 440
+    explosion.primary.impact.damage.durable_damage: 440   # stock 440
+    explosion.primary.impact.inner_radius: 7.5            # stock 2.25
+    explosion.primary.impact.outer_radius: 7.5            # stock 5.5

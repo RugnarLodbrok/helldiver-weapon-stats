@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "weapons": {
+    "M90A Shotgun": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.4,
+      "damage.standard_damage": 71,
+      "damage.durable_damage": 43,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-8 Punisher": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.5,
+      "projectile.pellet_count": 16,
+      "damage.standard_damage": 49,
+      "damage.durable_damage": 30,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-8S Slugger": {
+      "weapon.sway": 0.7,
+      "reload.duration": 2,
+      "projectile.drag": 0.4,
+      "projectile.pellet_count": 1,
+      "damage.standard_damage": 500,
+      "damage.durable_damage": 250,
+      "damage.stagger": 35,
+      "damage.demolition": 20,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-451 Cookout": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 24,
+      "damage.durable_damage": 6,
+      "damage.stagger": 30,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-20 Halt": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.primary.drag": 0.3,
+      "projectile.alternate.drag": 0.3,
+      "damage.primary.standard_damage": 54,
+      "damage.primary.durable_damage": 22,
+      "damage.alternate.durable_damage": 5,
+      "damage.alternate.standard_damage": 9,
+      "rounds.feed_capacity_1": 8,
+      "rounds.starting_rounds": 32,
+      "rounds.spare_rounds": 60,
+      "rounds.rounds_from_supply": 60
+    },
+    "SG-97 Sweeper": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.3,
+      "damage.standard_damage": 54,
+      "damage.durable_damage": 21
+    },
+    "SG-225 Breaker": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 46,
+      "damage.durable_damage": 22
+    },
+    "SG-225SP Breaker Spray&Pray": {
+      "weapon.horizontal_spread": 120,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.5,
+      "damage.standard_damage": 23,
+      "damage.durable_damage": 9
+    },
+    "SG-225IE Breaker Incendiary": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "projectile.drag": 0.8,
+      "damage.standard_damage": 20,
+      "damage.durable_damage": 10
+    },
+    "DBS-2 Double Freedom": {
+      "weapon.horizontal_spread": 80,
+      "weapon.vertical_spread": 80,
+      "reload.duration": 2,
+      "projectile.drag": 0.4,
+      "damage.standard_damage": 105,
+      "damage.durable_damage": 74,
+      "rounds.feed_capacity_1": 2,
+      "rounds.starting_rounds": 22,
+      "rounds.spare_rounds": 40,
+      "rounds.rounds_from_supply": 40
+    }
+  }
+}

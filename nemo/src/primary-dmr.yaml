@@ -1,0 +1,116 @@
+weapons:
+
+  ###################
+  # Marksman rifles #
+  ###################
+
+  # Rifle caliber
+  R-2124 Constitution:
+    weapon.horizontal_spread: 0.2                         # stock 0.1
+    weapon.vertical_spread: 0.2                           # stock 0.1
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.2                  # stock 0.25
+    damage.standard_damage: 180                           # stock 180
+    damage.durable_damage: 80                             # stock 50
+    damage.ap_direct: 3                                   # stock 3
+    damage.ap_slight: 3                                   # stock 3
+    damage.stagger: 20                                    # stock 20
+
+  R-63 Diligence:
+    weapon.ergonomics: 65                                 # stock 65
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 5                     # stock 25
+    weapon.recoil_drift_vertical: 70                      # stock 25
+    weapon.horizontal_spread: 0.6                         # stock 0.5
+    weapon.vertical_spread: 0.6                           # stock 0.5
+    reload.duration: 2.8                                  # stock 3.167
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.2                  # stock 0.25
+    damage.standard_damage: 165                           # stock 165
+    damage.durable_damage: 80                             # stock 45
+    damage.ap_direct: 3                                   # stock 2
+    damage.ap_slight: 3                                   # stock 2
+    damage.stagger: 20                                    # stock 15
+    magazine.capacity: 20                                 # stock 25
+
+  R-2 Amendment:
+    weapon.horizontal_spread: 0.6                         # stock 0.1
+    weapon.vertical_spread: 0.6                           # stock 0.1
+    weapon.ergonomics: 60                                 # stock 50
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 5                     # stock 25
+    weapon.recoil_drift_vertical: 70                      # stock 35
+    reload.duration: 3                                    # stock 3.5
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.2                  # stock 0.25
+    damage.standard_damage: 165                           # stock 200
+    damage.durable_damage: 80                             # stock 50
+    damage.ap_direct: 3                                   # stock 2
+    damage.ap_slight: 3                                   # stock 2
+    magazine.capacity: 20                                 # stock 20
+
+  # 9×39 aka VSS Vintorez
+  R-72 Censor:
+    weapon.ergonomics: 65                                 # stock 60
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 5                     # stock 10
+    weapon.recoil_drift_vertical: 70                      # stock 15
+    weapon.horizontal_spread: 0.5                         # stock 0.5
+    weapon.vertical_spread: 0.5                           # stock 0.5
+    projectile.drag: 0.3                                  # stock 0.3
+    projectile.penetration_slowdown: 0.5                  # stock 0.25
+    damage.standard_damage: 165                           # stock 165
+    damage.durable_damage: 45                             # stock 45
+    damage.ap_direct: 3                                   # stock 2
+    damage.stagger: 25                                    # stock 20
+    magazine.capacity: 20                                 # stock 20
+
+  # Lapua magnum caliber
+  R-63CS Diligence Counter Sniper:
+    weapon.ergonomics: 45                                 # stock 35
+    weapon.sway: 0.5                                      # stock 0.8
+    weapon.recoil_drift_horizontal: 10                    # stock 25
+    weapon.recoil_drift_vertical: 150                     # stock 25
+    weapon.horizontal_spread: 0.4                         # stock 0.5
+    weapon.vertical_spread: 0.4                           # stock 0.5
+    reload.duration: 2.8                                  # stock 3.167
+    projectile.drag: 0.15                                 # stock 0.3
+    projectile.penetration_slowdown: 0.15                 # stock 0.25
+    damage.standard_damage: 300                           # stock 200
+    damage.durable_damage: 130                            # stock 50
+    damage.ap_direct: 4                                   # stock 3
+    damage.stagger: 30                                    # stock 20
+    magazine.capacity: 12                                 # stock 15
+
+  R-6 Deadeye:
+    weapon.horizontal_spread: 0.1                         # stock 0.1
+    weapon.vertical_spread: 0.1                           # stock 0.1
+    weapon.ergonomics: 50                                 # stock 65
+    weapon.fire_rate: 200                                 # stock 100
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 5                     # stock 40
+    weapon.recoil_climb_vertical: 150                     # stock 200
+    reload.duration: 2                                    # stock 2.833
+    projectile.drag: 0.15                                 # stock 0.3
+    projectile.penetration_slowdown: 0.15                 # stock 0.25
+    damage.ap_direct: 4                                   # stock 3
+    damage.standard_damage: 300                           # stock 300
+    damage.durable_damage: 130                            # stock 100
+    damage.stagger: 30                                    # stock 30
+
+  R-4 Hyena:
+    weapon.ergonomics: 40                                 # stock 30
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 10                    # stock 30
+    weapon.recoil_drift_vertical: 150                     # stock 30
+    weapon.horizontal_spread: 0.6                         # stock 0.5
+    weapon.vertical_spread: 0.6                           # stock 0.5
+    weapon.fire_rate: 300                                 # stock 190
+    projectile.drag: 0.15                                 # stock 0.3
+    projectile.penetration_slowdown: 0.4                  # stock 0.25
+    damage.standard_damage: 200                           # stock 220
+    damage.durable_damage: 90                             # stock 45
+    damage.status_1_strength: 16                          # stock 3; fire effect
+    magazine.capacity: 12                                 # stock 15
+    magazine.spare_magazines: 6                           # stock 5
+    magazine.magazines_from_supply: 8                     # stock 5

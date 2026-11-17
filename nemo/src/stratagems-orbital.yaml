@@ -1,0 +1,39 @@
+stratagems:
+
+  Orbital Gas Strike:
+    stratagem.cooldown: 35                                # stock 75
+
+  Orbital EMS Strike:
+    stratagem.cooldown: 35                                # stock 75
+
+  Orbital Smoke Strike:
+    stratagem.cooldown: 35                                # stock 75
+    explosion.outer_radius: 20
+
+  Orbital Precision Strike:
+    stratagem.cooldown: 53                                # stock 80
+    explosion.damage.standard_damage: 2000
+    explosion.damage.durable_damage: 2000
+
+  Orbital Airburst Strike:
+    stratagem.cooldown: 70                                # stock 100
+
+  Orbital Gatling Barrage:
+    stratagem.cooldown: 70                                # stock 70
+
+  Orbital Railcannon Strike:
+    stratagem.cooldown: 70                                # stock 180
+    damage.durable_damage: 11000
+    damage.standard_damage: 11000
+
+  Orbital Napalm Barrage:
+    orbital.salvos: 3
+
+  Orbital Laser:
+    stratagem.max_uses: -1                                # stock 3
+
+  Orbital 380mm HE Barrage:
+    orbital.salvos: 5
+    orbital.shells_per_salvo: 4
+    orbital.shell_interval: 1.125
+    orbital.salvo_interval: 3.0

@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-primary-energy",
+  "name": "Nemo Stats: Primary Energy",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for primary energy.",
+  "gameplay": true
+}

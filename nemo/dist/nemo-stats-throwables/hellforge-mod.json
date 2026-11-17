@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-throwables",
+  "name": "Nemo Stats: Throwables",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for throwables.",
+  "gameplay": true
+}

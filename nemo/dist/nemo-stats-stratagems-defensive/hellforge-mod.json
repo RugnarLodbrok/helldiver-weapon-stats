@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-stratagems-defensive",
+  "name": "Nemo Stats: Stratagem Defensive",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for stratagem defensive.",
+  "gameplay": true
+}

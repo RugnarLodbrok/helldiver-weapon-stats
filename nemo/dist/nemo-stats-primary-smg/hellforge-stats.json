@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "weapons": {
+    "MP-98 Knight": {
+      "weapon.sway": 0.9,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.7,
+      "damage.standard_damage": 95,
+      "damage.durable_damage": 18,
+      "damage.stagger": 15
+    },
+    "StA-11 SMG": {
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 5,
+      "weapon.sway": 0.7,
+      "weapon.fire_rate": 1200
+    },
+    "M7S SMG": {
+      "weapon.sway": 0.9,
+      "weapon.fire_rate": 1200,
+      "weapon.recoil_drift_horizontal": 2,
+      "weapon.recoil_drift_vertical": 4,
+      "weapon.recoil_climb_horizontal": 1,
+      "weapon.recoil_climb_vertical": 4,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.7,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 18,
+      "damage.stagger": 15,
+      "magazine.capacity": 48,
+      "magazine.magazines_from_supply": 10,
+      "magazine.spare_magazines": 10,
+      "magazine.starting_magazines": 7
+    },
+    "SMG-203 Gallant": {
+      "weapon.sway": 0.9,
+      "weapon.fire_rate": 450,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.7,
+      "damage.standard_damage": 75,
+      "damage.durable_damage": 13,
+      "damage.stagger": 15
+    },
+    "SMG-72 Pummeler": {
+      "weapon.sway": 0.9,
+      "weapon.fire_rate": 500,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 120,
+      "damage.durable_damage": 17,
+      "damage.stagger": 30
+    },
+    "SMG/FLAM-34 Stoker": {
+      "weapon.sway": 0.9,
+      "weapon.fire_rate": 500,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 120,
+      "damage.durable_damage": 17,
+      "damage.stagger": 30
+    },
+    "SMG-32 Reprimand": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.9,
+      "reload.duration": 2.7,
+      "projectile.drag": 0.7,
+      "projectile.penetration_slowdown": 0.7,
+      "damage.standard_damage": 140,
+      "damage.durable_damage": 32,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 2,
+      "damage.stagger": 35,
+      "magazine.capacity": 30,
+      "magazine.spare_magazines": 10,
+      "magazine.magazines_from_supply": 10
+    }
+  }
+}

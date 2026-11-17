@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "stratagems": {
+    "EAT-17 Expendable Anti-Tank": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-700 Expendable Napalm": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-411 Leveller": {
+      "stratagem.cooldown": 90
+    },
+    "MLS-4X Commando": {
+      "stratagem.cooldown": 70
+    },
+    "MS-11 Solo Silo": {
+      "stratagem.cooldown": 120
+    }
+  }
+}

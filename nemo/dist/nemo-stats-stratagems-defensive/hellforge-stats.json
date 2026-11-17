@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "stratagems": {
+    "MD-17 Anti-Tank Mines": {
+      "explosion.damage.durable_damage": 4000,
+      "explosion.damage.stagger": 35,
+      "explosion.damage.standard_damage": 4000
+    },
+    "MD-6 Anti-Personnel Minefield": {
+      "explosion.damage.durable_damage": 900,
+      "explosion.damage.standard_damage": 900,
+      "explosion.inner_radius": 3.5,
+      "explosion.outer_radius": 7
+    },
+    "FX-12 Shield Generator Relay": {
+      "shield.durability": 12000
+    }
+  }
+}

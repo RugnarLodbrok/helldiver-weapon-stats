@@ -1,0 +1,16 @@
+stratagems:
+
+  EAT-17 Expendable Anti-Tank:
+    stratagem.cooldown: 70                                # stock 70
+
+  EAT-700 Expendable Napalm:
+    stratagem.cooldown: 70                                # stock 140
+
+  EAT-411 Leveller:
+    stratagem.cooldown: 90                                # stock 140
+
+  MLS-4X Commando:
+    stratagem.cooldown: 70                                # stock 120
+
+  MS-11 Solo Silo:
+    stratagem.cooldown: 120                               # stock 180

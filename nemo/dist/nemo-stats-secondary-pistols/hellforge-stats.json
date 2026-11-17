@@ -1,0 +1,108 @@
+{
+  "format": 1,
+  "weapons": {
+    "P-19 Redeemer": {
+      "weapon.sway": 0.5,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 18,
+      "damage.stagger": 15,
+      "magazine.capacity": 40,
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 9,
+      "magazine.magazines_from_supply": 9
+    },
+    "P-2 Peacemaker": {
+      "weapon.sway": 0.5,
+      "weapon.fire_rate": 1200,
+      "projectile.drag": 0.6,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 90,
+      "damage.durable_damage": 18,
+      "damage.stagger": 15,
+      "magazine.capacity": 34,
+      "fire_mode.modes.2": 3,
+      "fire_mode.burst_rounds": 3,
+      "weapon_function.left": 3
+    },
+    "P-113 Verdict": {
+      "weapon.sway": 0.5,
+      "projectile.drag": 0.8,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 140,
+      "damage.durable_damage": 32,
+      "magazine.capacity": 18,
+      "fire_mode.modes.2": 1,
+      "weapon_function.left": 3
+    },
+    "P-69 Veto": {
+      "weapon.sway": 0.5,
+      "reload.duration": 1.8,
+      "projectile.drag": 0,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 140,
+      "damage.durable_damage": 35,
+      "rounds.feed_capacity_1": 12
+    },
+    "P-92 Warrant": {
+      "weapon.sway": 0.5,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 115,
+      "damage.durable_damage": 30,
+      "damage.stagger": 15,
+      "magazine.capacity": 18
+    },
+    "M6C/SOCOM Pistol": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_climb_vertical": 45,
+      "projectile.drag": 0.8,
+      "projectile.penetration_slowdown": 0.9,
+      "damage.standard_damage": 180,
+      "damage.durable_damage": 50,
+      "damage.ap_direct": 3,
+      "damage.ap_slight": 3,
+      "damage.ap_large": 2,
+      "damage.stagger": 15,
+      "magazine.capacity": 12
+    },
+    "P-4 Senator": {
+      "weapon.sway": 0.5,
+      "reload.duration": 3.0,
+      "projectile.drag": 0.8,
+      "projectile.penetration_slowdown": 0.7,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 125,
+      "damage.stagger": 20
+    },
+    "P/40-K Bolt Pistol": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.5,
+      "projectile.penetration_slowdown": 0.7
+    },
+    "LAS-7 Dagger": {
+      "weapon.sway": 0.5,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 50
+    },
+    "LAS-58 Talon": {
+      "weapon.sway": 0.5,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "reload.duration": 3,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 200,
+      "damage.durable_damage": 20,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 4,
+      "heat.heat_per_shot": 10
+    }
+  }
+}

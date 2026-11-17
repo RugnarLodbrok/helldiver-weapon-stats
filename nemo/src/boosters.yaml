@@ -1,0 +1,13 @@
+boosters:
+
+  Surplus EAT Allocation:
+    stratagem.max_uses: 10                                # stock 2
+
+  Expert Extraction Pilot:
+    booster.extraction_time_scale: 0.5                    # stock 0.7
+
+  Localization Confusion:
+    booster.encounter_rate_scale: 0.8                     # stock 0.9
+
+  UAV Recon Booster:
+    booster.radar_range_scale: 3                          # stock 1.5

@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-boosters",
+  "name": "Nemo Stats: Boosters",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for boosters.",
+  "gameplay": true
+}

@@ -1,0 +1,6 @@
+backpacks:
+
+  LIFT-860 Hover Pack:
+    jump.sustain_duration: 0.4
+    jump.sustain_thrust: 150.0
+    hover.max_horizontal_speed: 4.5

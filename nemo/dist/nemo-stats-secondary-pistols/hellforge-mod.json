@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-secondary-pistols",
+  "name": "Nemo Stats: Secondary Pistols",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for secondary pistols.",
+  "gameplay": true
+}

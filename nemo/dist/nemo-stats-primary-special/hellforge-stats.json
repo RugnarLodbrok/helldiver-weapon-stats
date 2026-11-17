@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "weapons": {
+    "R-36 Eruptor": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.6,
+      "projectile.lifetime": 4.4
+    },
+    "JAR-5 Dominator": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.6,
+      "weapon.fire_rate": 350,
+      "reload.duration": 3.3,
+      "fire_mode.modes.3": 1,
+      "ammunition.projectile": 202
+    },
+    "GL-15 Evictor": {
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 10,
+      "explosion.primary.impact.damage.standard_damage": 440,
+      "explosion.primary.impact.damage.durable_damage": 440,
+      "explosion.primary.impact.inner_radius": 7.5,
+      "explosion.primary.impact.outer_radius": 7.5
+    }
+  }
+}

@@ -1,0 +1,111 @@
+weapons:
+
+  ############
+  # Shotguns #
+  ############
+
+  M90A Shotgun:
+    weapon.horizontal_spread: 80                          # stock 120
+    weapon.vertical_spread: 80                            # stock 100
+    projectile.drag: 0.4                                  # stock 0.5
+    damage.standard_damage: 71                            # stock 55; 781 total
+    damage.durable_damage: 43                             # stock 20; 473 total
+    rounds.feed_capacity_1: 8                             # stock 6; SG-8 match
+    rounds.starting_rounds: 32                            # stock 24; SG-8 match
+    rounds.spare_rounds: 60                               # stock 44; SG-8 match
+    rounds.rounds_from_supply: 60                         # stock 44; SG-8 match
+
+  SG-8 Punisher:
+    weapon.horizontal_spread: 80                          # stock 150
+    weapon.vertical_spread: 80                            # stock 120
+    reload.duration: 2                                    # stock 2.417
+    projectile.drag: 0.5                                  # stock 0.5
+    projectile.pellet_count: 16                           # stock 9
+    damage.standard_damage: 49                            # stock 45; 784 total
+    damage.durable_damage: 30                             # stock 12; 480 total
+    rounds.feed_capacity_1: 8                             # stock 8
+    rounds.starting_rounds: 32                            # stock 32
+    rounds.spare_rounds: 60                               # stock 60
+    rounds.rounds_from_supply: 60                         # stock 60
+
+  SG-8S Slugger:
+    weapon.sway: 0.7                                      # stock 1
+    reload.duration: 2                                    # stock 2.417
+    projectile.drag: 0.4                                  # stock 2
+    projectile.pellet_count: 1                            # stock 1
+    damage.standard_damage: 500                           # stock 330
+    damage.durable_damage: 250                            # stock 90
+    damage.stagger: 35                                    # stock 30
+    damage.demolition: 20                                 # stock 10
+    rounds.feed_capacity_1: 8                             # stock 8
+    rounds.starting_rounds: 32                            # stock 32
+    rounds.spare_rounds: 60                               # stock 60
+    rounds.rounds_from_supply: 60                         # stock 60
+
+  SG-451 Cookout:
+    weapon.horizontal_spread: 80                          # stock 180
+    weapon.vertical_spread: 80                            # stock 140
+    reload.duration: 2                                    # stock 2.417
+    projectile.drag: 0.8                                  # stock 0.8
+    damage.standard_damage: 24                            # stock 16; 480 total
+    damage.durable_damage: 6                              # stock 3; 120 total
+    damage.stagger: 30                                    # stock 35
+    rounds.feed_capacity_1: 8                             # stock 8
+    rounds.starting_rounds: 32                            # stock 32
+    rounds.spare_rounds: 60                               # stock 60
+    rounds.rounds_from_supply: 60                         # stock 60
+
+  SG-20 Halt:
+    weapon.horizontal_spread: 80                          # stock 300
+    weapon.vertical_spread: 80                            # stock 200
+    reload.duration: 2                                    # stock 2.417
+    projectile.primary.drag: 0.3                          # stock 0.3
+    projectile.alternate.drag: 0.3                        # stock 0.3
+    damage.primary.standard_damage: 54                    # stock 35; 594 total
+    damage.primary.durable_damage: 22                     # stock 10; 242 total
+    damage.alternate.durable_damage: 5                    # stock 2; 100 total
+    damage.alternate.standard_damage: 9                   # stock 6; 180 total
+    rounds.feed_capacity_1: 8                             # stock 8
+    rounds.starting_rounds: 32                            # stock 32
+    rounds.spare_rounds: 60                               # stock 60
+    rounds.rounds_from_supply: 60                         # stock 60
+
+  SG-97 Sweeper:
+    weapon.horizontal_spread: 80                          # stock 125
+    weapon.vertical_spread: 80                            # stock 105
+    projectile.drag: 0.3                                  # stock 0.3
+    damage.standard_damage: 54                            # stock 42; 648 total
+    damage.durable_damage: 21                             # stock 11; 252 total
+
+  SG-225 Breaker:
+    weapon.horizontal_spread: 80                          # stock 100
+    weapon.vertical_spread: 80                            # stock 100
+    projectile.drag: 0.5                                  # stock 0.5
+    damage.standard_damage: 46                            # stock 30; 506 total
+    damage.durable_damage: 22                             # stock 6; 242 total
+
+  SG-225SP Breaker Spray&Pray:
+    weapon.horizontal_spread: 120                         # stock 200
+    weapon.vertical_spread: 80                            # stock 200
+    projectile.drag: 0.5                                  # stock 0.5
+    damage.standard_damage: 23                            # stock 15; 368 total
+    damage.durable_damage: 9                              # stock 4; 144 total
+
+  SG-225IE Breaker Incendiary:
+    weapon.horizontal_spread: 80                          # stock 300
+    weapon.vertical_spread: 80                            # stock 300
+    projectile.drag: 0.8                                  # stock 0.8
+    damage.standard_damage: 20                            # stock 20
+    damage.durable_damage: 10                             # stock 10
+
+  DBS-2 Double Freedom:
+    weapon.horizontal_spread: 80                          # stock 150
+    weapon.vertical_spread: 80                            # stock 120
+    reload.duration: 2                                    # stock 2.417
+    projectile.drag: 0.4                                  # stock 0.5
+    damage.standard_damage: 105                           # stock 70; 1260 total
+    damage.durable_damage: 74                             # stock 35; 888 total
+    rounds.feed_capacity_1: 2                             # stock 2
+    rounds.starting_rounds: 22                            # stock 22
+    rounds.spare_rounds: 40                               # stock 40
+    rounds.rounds_from_supply: 40                         # stock 40

@@ -1,0 +1,112 @@
+weapons:
+
+  #####################
+  # Ballistic Pistols #
+  #####################
+
+  P-19 Redeemer: # 9x20mm
+    weapon.sway: 0.5                                      # stock 1
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 90                            # stock 70
+    damage.durable_damage: 18                             # stock 12
+    damage.stagger: 15                                    # stock 10
+    magazine.capacity: 40                                 # stock 31
+    magazine.starting_magazines: 5                        # stock 4
+    magazine.spare_magazines: 9                           # stock 6
+    magazine.magazines_from_supply: 9                     # stock 6
+
+  P-2 Peacemaker: # 9x20mm
+    weapon.sway: 0.5                                      # stock 1
+    weapon.fire_rate: 1200                                # stock 900
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 90                            # stock 100
+    damage.durable_damage: 18                             # stock 32
+    damage.stagger: 15                                    # stock 10
+    magazine.capacity: 34                                 # stock 15
+    fire_mode.modes.2: 3                                  # stock 0; burst mode
+    fire_mode.burst_rounds: 3                             # stock 1
+    weapon_function.left: 3                               # stock 0; fire-mode selector on the left input
+
+  P-113 Verdict: # 12x25mm
+    weapon.sway: 0.5                                      # stock 1
+    projectile.drag: 0.8                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 140                           # stock 140
+    damage.durable_damage: 32                             # stock 32
+    magazine.capacity: 18                                 # stock 10
+    fire_mode.modes.2: 1                                  # stock 0; auto mode
+    weapon_function.left: 3                               # stock 0; fire-mode selector on the left input
+
+  P-69 Veto: # 12x25mm jet-propelled high stagger
+    weapon.sway: 0.5                                      # stock 1
+    reload.duration: 1.8                                  # stock 3.083
+    projectile.drag: 0                                    # stock 0
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 140                           # stock 105
+    damage.durable_damage: 35                             # stock 35
+    rounds.feed_capacity_1: 12                            # stock 12
+
+  P-92 Warrant: # 12x25mm jet-propelled guided
+    weapon.sway: 0.5                                      # stock 1
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 115                           # stock 80
+    damage.durable_damage: 30                             # stock 20
+    damage.stagger: 15                                    # stock 15
+    magazine.capacity: 18                                 # stock 13
+
+  M6C/SOCOM Pistol: # 12.7x40mm suppressed
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_climb_vertical: 45                      # stock 15
+    projectile.drag: 0.8                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 180                           # stock 125
+    damage.durable_damage: 50                             # stock 28
+    damage.ap_direct: 3                                   # stock 2
+    damage.ap_slight: 3                                   # stock 2
+    damage.ap_large: 2                                    # stock 2
+    damage.stagger: 15                                    # stock 15
+    magazine.capacity: 12                                 # stock 12
+
+  P-4 Senator: # 13x40mm hand cannon
+    weapon.sway: 0.5                                      # stock 1
+    reload.duration: 3.0                                  # stock 4.5
+    projectile.drag: 0.8                                  # stock 1.2
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+    damage.standard_damage: 300                           # stock 225
+    damage.durable_damage: 125                            # stock 75
+    damage.stagger: 20                                    # stock 20
+
+  P/40-K Bolt Pistol: # 40mm jet-propelled
+    weapon.ergonomics: 45                                 # stock 30
+    weapon.sway: 0.5                                      # stock 1
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+
+  ##########
+  # Lasers #
+  ##########
+
+  LAS-7 Dagger:
+    weapon.sway: 0.5                                      # stock 1
+    damage.standard_damage: 300                           # stock 250
+    damage.durable_damage: 50                             # stock 50
+
+  LAS-58 Talon:
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 2
+    weapon.recoil_climb_vertical: 0.1                     # stock 1
+    weapon.horizontal_spread: 0.1                         # stock 10
+    weapon.vertical_spread: 0.1                           # stock 10
+    reload.duration: 3                                    # stock 4.583
+    projectile.velocity: 2000                             # stock 1300
+    damage.standard_damage: 200                           # stock 200
+    damage.durable_damage: 20                             # stock 20
+    damage.ap_direct: 2                                   # stock 3
+    damage.ap_slight: 2                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 4                           # stock 0
+    heat.heat_per_shot: 10                                # stock 15

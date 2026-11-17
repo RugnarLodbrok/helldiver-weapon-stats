@@ -1,0 +1,197 @@
+weapons:
+
+  ##################
+  # Assault Rifles #
+  ##################
+
+  # 5,56 × 45
+  AR-23 Liberator:
+    weapon.horizontal_spread: 3.1                         # stock 2
+    weapon.vertical_spread: 3.1                           # stock 2
+    weapon.sway: 0.8                                      # stock 1
+    damage.standard_damage: 95                            # stock 90
+    damage.durable_damage: 30                             # stock 22
+    damage.stagger: 15                                    # stock 15
+
+  AR-23A Liberator Carbine:
+    weapon.horizontal_spread: 3.1                         # stock 3
+    weapon.vertical_spread: 3.1                           # stock 3
+    weapon.sway: 0.8                                      # stock 1
+    weapon.recoil_drift_vertical: 25                      # stock 20
+    attachment.magazine.rifle_5_5x50mm_drum.reload_duration: 3.2
+    attachment.magazine.rifle_5_5x50mm_extended.reload_duration: 2.5
+
+  StA-52 Assault Rifle:
+    weapon.horizontal_spread: 3.1                         # stock 2
+    weapon.vertical_spread: 3.1                           # stock 2
+    weapon.sway: 0.8                                      # stock 1
+    weapon.recoil_drift_horizontal: 5                     # stock 10
+    weapon.recoil_drift_vertical: 5                       # stock 15
+    weapon.recoil_climb_horizontal: 4                     # stock 6
+    weapon.recoil_climb_vertical: 12                      # stock 25
+    reload.duration: 3                                    # stock 4.167
+
+  AR-23P Liberator Penetrator:
+    weapon.horizontal_spread: 3.1                         # stock 1
+    weapon.vertical_spread: 3.1                           # stock 1
+    weapon.sway: 0.8                                      # stock 1
+    projectile.penetration_slowdown: 0.1                  # stock 0.25
+    damage.standard_damage: 72                            # stock 65
+    damage.durable_damage: 15                             # stock 15
+    damage.stagger: 10                                    # stock 10
+
+  AR-23C Liberator Concussive:
+    weapon.horizontal_spread: 3.1                         # stock 4
+    weapon.vertical_spread: 3.1                           # stock 4
+    weapon.sway: 0.8                                      # stock 1
+    weapon.fire_rate: 500                                 # stock 400
+    projectile.penetration_slowdown: 0.8                  # stock 0.25
+    damage.standard_damage: 75                            # stock 75
+    damage.durable_damage: 35                             # stock 35
+    damage.stagger: 35                                    # stock 35
+    attachment.magazine.rifle_5_5x50mm_standard.reload_duration: 2
+
+  AR-32 Pacifier:
+    weapon.horizontal_spread: 3.1                         # stock 4
+    weapon.vertical_spread: 3.1                           # stock 4
+    weapon.sway: 0.8                                      # stock 1
+    projectile.penetration_slowdown: 0.4                  # stock 0.25
+    damage.standard_damage: 60                            # stock 55
+    damage.durable_damage: 10                             # stock 10
+    damage.stagger: 15                                    # stock 15
+    damage.status_1_strength: 6                           # stock 2; stun effect
+    magazine.capacity: 40                                 # stock 40
+    magazine.starting_magazines: 7                        # stock 6
+    magazine.spare_magazines: 10                          # stock 8
+    magazine.magazines_from_supply: 10                    # stock 8
+
+  AR-59 Suppressor:
+    weapon.horizontal_spread: 3.1                         # stock 2
+    weapon.vertical_spread: 3.1                           # stock 2
+    weapon.sway: 0.8                                      # stock 1
+    projectile.penetration_slowdown: 0.5                  # stock 0.25
+    damage.standard_damage: 90                            # stock 80
+    damage.durable_damage: 20                             # stock 20
+    damage.stagger: 20                                    # stock 10
+
+  AR/GL-21 One-Two:
+    weapon.horizontal_spread: 3.1                         # stock 1
+    weapon.vertical_spread: 3.1                           # stock 1
+    weapon.ergonomics: 45                                 # stock 30
+    weapon.sway: 0.6                                      # stock 1
+    damage.standard_damage: 95                            # stock 95
+    damage.durable_damage: 30                             # stock 24
+    damage.stagger: 15                                    # stock 15
+
+  AR/GL-21 One-Two / underbarrel:
+    weapon.horizontal_spread: 10                          # stock 30
+    weapon.vertical_spread: 10                            # stock 30
+    reload.duration: 2                                    # stock 0 (native 2.5 s); match GP-31 (2.0 s)
+    rounds.feed_capacity_1: 1                             # stock 1
+    rounds.starting_rounds: 6                             # stock 3
+    rounds.spare_rounds: 10                               # stock 5
+    rounds.rounds_from_supply: 5                          # stock 5
+
+  AR-11 Arbitrator:
+    weapon.horizontal_spread: 3.1                         # stock 1
+    weapon.vertical_spread: 3.1                           # stock 1
+    weapon.ergonomics: 45                                 # stock 30
+    weapon.sway: 0.6                                      # stock 1
+    reload.duration: 3                                    # stock 3.75
+    damage.standard_damage: 95                            # stock 70
+    damage.durable_damage: 30                             # stock 20
+
+  AR-11 Arbitrator / underbarrel:
+    rounds.spare_rounds: 30                               # stock 20
+    rounds.rounds_from_supply: 30                         # stock 20
+
+  VG-70 Variable:
+    weapon.horizontal_spread: 3.1                         # stock 5
+    weapon.vertical_spread: 3.1                           # stock 5
+    weapon.ergonomics: 45                                 # stock 25
+    weapon.sway: 0.6                                      # stock 1
+    reload.duration: 3                                    # stock 3.583
+    projectile.drag: 0.4                                  # stock 0.6
+    damage.standard_damage: 95                            # stock 85
+    damage.durable_damage: 30                             # stock 23
+    damage.stagger: 15                                    # stock 10
+    magazine.starting_magazines: 7                        # stock 6
+    magazine.spare_magazines: 8                           # stock 7
+    magazine.magazines_from_supply: 8                     # stock 7
+
+  # 7,62 × 39
+  AR-2 Coyote:  # AP3 direct / AP2 angled, incendiary
+    weapon.ergonomics: 50                                 # stock 50
+    weapon.sway: 0.7                                      # stock 1
+    weapon.fire_rate: 500                                 # stock 600
+    weapon.recoil_drift_horizontal: 26                    # stock 17
+    weapon.recoil_drift_vertical: 65                      # stock 20
+    weapon.recoil_climb_vertical: 36                      # stock 36
+    weapon.horizontal_spread: 1.5                         # stock 4
+    weapon.vertical_spread: 1.5                           # stock 4
+    projectile.drag: 0.25                                 # stock 0.3
+    projectile.penetration_slowdown: 0.22                 # stock 0.25
+    projectile.velocity: 718                              # stock 650
+    damage.standard_damage: 95                            # stock 75;
+    damage.durable_damage: 30                             # stock 10
+    damage.stagger: 15                                    # stock 12
+    damage.status_1_strength: 8                           # stock 2; fire effect
+    magazine.capacity: 30                                 # stock 45
+    magazine.starting_magazines: 7                        # stock 6
+    magazine.spare_magazines: 10                          # stock 8
+    magazine.magazines_from_supply: 10                    # stock 8
+
+  #################
+  # Battle Rifles #
+  #################
+
+  # 7.62×54
+  BR-14 Adjudicator:
+    weapon.ergonomics: 40                                 # stock 40
+    weapon.sway: 0.7                                      # stock 1
+    weapon.recoil_drift_horizontal: 40                    # stock 17
+    weapon.recoil_drift_vertical: 100                     # stock 35
+    weapon.recoil_climb_horizontal: 6                     # stock 6
+    weapon.recoil_climb_vertical: 35                      # stock 50
+    weapon.horizontal_spread: 1.5                         # stock 1
+    weapon.vertical_spread: 1.5                           # stock 1
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.2                  # stock 0.25
+    damage.standard_damage: 150                           # stock 95
+    damage.durable_damage: 70                             # stock 23
+    damage.stagger: 20                                    # stock 15
+    magazine.capacity: 25                                 # stock 30
+    fire_mode.modes.3: 3                                  # stock 0; burst mode
+    fire_mode.burst_rounds: 3                             # stock 2
+
+  MA5C Assault Rifle:
+    weapon.ergonomics: 40                                 # stock 60
+    weapon.sway: 0.7                                      # stock 1
+    weapon.recoil_drift_horizontal: 40                    # stock 12
+    weapon.recoil_drift_vertical: 100                     # stock 20
+    weapon.horizontal_spread: 1.5                         # stock 2
+    weapon.vertical_spread: 1.5                           # stock 2
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.2                  # stock 0.25
+    damage.standard_damage: 150                           # stock 90
+    damage.durable_damage: 70                             # stock 16
+    damage.stagger: 20                                    # stock 15
+    magazine.capacity: 25                                 # stock 32
+
+  AR-61 Tenderizer:  # AP2 expansive
+    weapon.ergonomics: 45                                 # stock 65
+    weapon.sway: 0.6                                      # stock 1
+    weapon.recoil_drift_horizontal: 22                    # stock 7
+    weapon.recoil_drift_vertical: 85                      # stock 7
+    weapon.recoil_climb_vertical: 13                      # stock 13
+    weapon.horizontal_spread: 1.5                         # stock 1
+    weapon.vertical_spread: 1.5                           # stock 1
+    projectile.drag: 0.2                                  # stock 0.3
+    projectile.penetration_slowdown: 0.4                  # stock 0.25
+    damage.standard_damage: 180                           # stock 105
+    damage.durable_damage: 30                             # stock 30
+    damage.stagger: 25                                    # stock 15
+    magazine.capacity: 25                                 # stock 35
+    magazine.starting_magazines: 6                        # stock 5
+    magazine.spare_magazines: 8                           # stock 7
+    magazine.magazines_from_supply: 8                     # stock 7

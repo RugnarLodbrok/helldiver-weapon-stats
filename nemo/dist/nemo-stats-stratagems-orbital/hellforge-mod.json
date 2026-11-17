@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-stratagems-orbital",
+  "name": "Nemo Stats: Stratagem Orbital",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for stratagem orbital.",
+  "gameplay": true
+}

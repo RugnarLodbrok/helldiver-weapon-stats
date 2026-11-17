@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-secondary-utility",
+  "name": "Nemo Stats: Secondary Utility",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for secondary utility.",
+  "gameplay": true
+}

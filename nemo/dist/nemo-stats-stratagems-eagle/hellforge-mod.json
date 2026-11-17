@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-stratagems-eagle",
+  "name": "Nemo Stats: Stratagem Eagle",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for stratagem eagle.",
+  "gameplay": true
+}

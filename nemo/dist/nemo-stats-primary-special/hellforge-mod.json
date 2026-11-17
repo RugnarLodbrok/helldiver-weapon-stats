@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-primary-special",
+  "name": "Nemo Stats: Primary Special",
+  "version": "1.0.0",
+  "description": "The Nemo balance pass for primary special.",
+  "gameplay": true
+}

@@ -1,0 +1,17 @@
+stratagems:
+
+  Eagle 110mm Rocket Pods:
+    damage.durable_damage: 900
+    damage.standard_damage: 900
+
+  Eagle Napalm Airstrike:
+    eagle.uses_per_rearm: 3
+
+  Eagle Smoke Strike:
+    eagle.uses_per_rearm: 6
+
+explosions:
+
+  Eagle 500kg Bomb (payload expiry):
+    explosion.damage.standard_damage: 2000
+    explosion.damage.durable_damage: 2000

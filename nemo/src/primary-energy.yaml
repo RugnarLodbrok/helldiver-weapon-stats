@@ -1,0 +1,133 @@
+weapons:
+
+  #################
+  # Laser weapons #
+  #################
+
+  LAS-13 Trident:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 1
+    weapon.recoil_climb_vertical: 0.1                     # stock 2
+    weapon.horizontal_spread: 0.1                         # stock 200
+    weapon.vertical_spread: 0.1                           # stock 50
+    damage.standard_damage: 70                            # stock 60
+    damage.durable_damage: 8                              # stock 6
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.heat_per_shot: 4                                 # stock 10
+    beam.pulse_beams: 1                                   # stock 2
+
+  LAS-16 Sickle:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.fire_rate: 850                                 # stock 750
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 1
+    weapon.recoil_climb_vertical: 0.1                     # stock 2
+    weapon.horizontal_spread: 0.1                         # stock 20
+    weapon.vertical_spread: 0.1                           # stock 20
+    projectile.velocity: 2000                             # stock 1300
+    damage.standard_damage: 70                            # stock 60
+    damage.durable_damage: 8                              # stock 6
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
+    heat.heat_per_shot: 0.95                              # stock 1.15; as in new patch
+
+  LAS-17 Double-Edge Sickle:
+    weapon.sway: 0.7                                      # stock 1
+    heat.firing_charge: 10                                # stock 100; 0 = instant
+
+  LAS-12 Sai:
+    weapon.sway: 0.8                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 8
+    weapon.recoil_drift_vertical: 0.1                     # stock 8
+    weapon.recoil_climb_horizontal: 0.1                   # stock 2
+    weapon.recoil_climb_vertical: 0.1                     # stock 25
+    weapon.horizontal_spread: 0.1                         # stock 140
+    weapon.vertical_spread: 0.1                           # stock 140
+    projectile.velocity: 2000                             # stock 100
+    damage.standard_damage: 70                            # stock 80
+    damage.durable_damage: 8                              # stock 4
+    damage.ap_direct: 2                                   # stock 3
+    damage.ap_slight: 2                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.cool_per_second: 6.7                             # stock 5.4
+    heat.heat_per_shot: 1.3                               # stock 2
+
+  LAS-5 Scythe:
+    weapon.sway: 0.7                                      # stock 1
+    damage.standard_damage: 450                           # stock 350
+    damage.durable_damage: 75                             # stock 70
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.25 s wind-up
+
+  R/40-K Hot-Shot Marksman Rifle:
+    weapon.ergonomics: 40                                 # stock 30
+    weapon.sway: 0.5                                      # stock 1
+    weapon.fire_rate: 400                                 # stock 210
+    weapon.recoil_drift_horizontal: 0.1                   # stock 12.5
+    weapon.recoil_drift_vertical: 0.1                     # stock 17.5
+    weapon.recoil_climb_horizontal: 0.1                   # stock 12.5
+    weapon.recoil_climb_vertical: 0.1                     # stock 32.5
+    weapon.horizontal_spread: 0.1                         # stock 0.5
+    weapon.vertical_spread: 0.1                           # stock 0.5
+    reload.duration: 2.8                                  # stock 2.667
+    projectile.velocity: 2000                             # stock 500
+    damage.standard_damage: 275                           # stock 275
+    damage.durable_damage: 40                             # stock 40
+    damage.ap_direct: 2                                   # stock 3
+    damage.ap_slight: 2                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.stagger: 15                                    # stock 20
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 16                          # stock 0
+    magazine.capacity: 15                                 # stock 12
+
+  ##################
+  # Plasma weapons #
+  ##################
+
+  PLAS-1 Scorcher:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 5                           # stock 10
+    weapon.vertical_spread: 5                             # stock 10
+    damage.standard_damage: 100                           # stock 100
+    damage.durable_damage: 50                             # stock 50
+    magazine.capacity: 30                                 # stock 20
+    magazine.starting_magazines: 4                        # stock 3
+    magazine.spare_magazines: 7                           # stock 5
+    magazine.magazines_from_supply: 7                     # stock 5
+
+  PLAS-101 Purifier:
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 5                           # stock 10
+    weapon.vertical_spread: 5                             # stock 10
+    damage.standard_damage: 200                           # stock 200
+    damage.durable_damage: 100                            # stock 100
+    magazine.capacity: 20                                 # stock 15
+    magazine.starting_magazines: 4                        # stock 4
+    magazine.spare_magazines: 6                           # stock 6
+    magazine.magazines_from_supply: 6                     # stock 6
+
+  PLAS-39 Accelerator Rifle:
+    weapon.ergonomics: 45                                 # stock 60
+    weapon.sway: 0.5                                      # stock 1
+    weapon.recoil_drift_horizontal: 1                     # stock 3
+    weapon.recoil_drift_vertical: 1                       # stock 3
+    weapon.recoil_climb_horizontal: 1                     # stock 3
+    weapon.recoil_climb_vertical: 1                       # stock 3
+    weapon.horizontal_spread: 0.1                         # stock 0.5
+    weapon.vertical_spread: 0.1                           # stock 0.5
+    reload.duration: 2                                    # stock 3.333
+    damage.standard_damage: 250                           # stock 250
+    damage.durable_damage: 180                            # stock 125
+    damage.ap_direct: 4                                   # stock 3
+    damage.ap_slight: 4                                   # stock 3
+    magazine.capacity: 9                                  # stock 9
+    magazine.starting_magazines: 8                        # stock 8
+    magazine.spare_magazines: 12                          # stock 12
+    magazine.magazines_from_supply: 12                    # stock 12

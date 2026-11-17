@@ -1,0 +1,81 @@
+weapons:
+
+  #######
+  # SMG #
+  #######
+
+  MP-98 Knight:
+    weapon.sway: 0.9                                      # stock 1
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+    damage.standard_damage: 95                            # stock 90
+    damage.durable_damage: 18                             # stock 18
+    damage.stagger: 15                                    # stock 10
+
+  StA-11 SMG:
+    weapon.horizontal_spread: 5                           # stock 5
+    weapon.vertical_spread: 5                             # stock 5
+    weapon.sway: 0.7                                      # stock 0.7
+    weapon.fire_rate: 1200                                # stock 1050
+
+  M7S SMG:
+    weapon.sway: 0.9                                      # stock 1
+    weapon.fire_rate: 1200                                # stock 872
+    weapon.recoil_drift_horizontal: 2                     # stock 7
+    weapon.recoil_drift_vertical: 4                       # stock 14
+    weapon.recoil_climb_horizontal: 1                     # stock 2.5
+    weapon.recoil_climb_vertical: 4                       # stock 10
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+    damage.standard_damage: 90                            # stock 90
+    damage.durable_damage: 18                             # stock 18
+    damage.stagger: 15                                    # stock 10
+    magazine.capacity: 48                                 # stock 48
+    magazine.magazines_from_supply: 10                    # stock 7
+    magazine.spare_magazines: 10                          # stock 7
+    magazine.starting_magazines: 7                        # stock 5
+
+  SMG-203 Gallant:
+    weapon.sway: 0.9                                      # stock 1
+    weapon.fire_rate: 450                                 # stock 1380
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+    damage.standard_damage: 75                            # stock 65
+    damage.durable_damage: 13                             # stock 13
+    damage.stagger: 15                                    # stock 10
+
+  # expansive projectile
+  SMG-72 Pummeler:
+    weapon.sway: 0.9                                      # stock 1
+    weapon.fire_rate: 500                                 # stock 475
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 120                           # stock 85
+    damage.durable_damage: 17                             # stock 17
+    damage.stagger: 30                                    # stock 15
+
+  SMG/FLAM-34 Stoker:
+    weapon.sway: 0.9                                      # stock 1
+    weapon.fire_rate: 500                                 # stock 420
+    projectile.drag: 0.6                                  # stock 1.2
+    projectile.penetration_slowdown: 0.9                  # stock 0.25
+    damage.standard_damage: 120                           # stock 130
+    damage.durable_damage: 17                             # stock 30
+    damage.stagger: 30                                    # stock 15
+
+  # heavy subsonic projectile
+  SMG-32 Reprimand:
+    weapon.ergonomics: 40                                 # stock 55
+    weapon.sway: 0.9                                      # stock 1
+    reload.duration: 2.7                                  # stock 3.5
+    projectile.drag: 0.7                                  # stock 1.2
+    projectile.penetration_slowdown: 0.7                  # stock 0.25
+    damage.standard_damage: 140                           # stock 140
+    damage.durable_damage: 32                             # stock 32
+    damage.ap_direct: 3                                   # stock 3
+    damage.ap_slight: 3                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.stagger: 35                                    # stock 15
+    magazine.capacity: 30                                 # stock 25
+    magazine.spare_magazines: 10                          # stock 9
+    magazine.magazines_from_supply: 10                    # stock 9
