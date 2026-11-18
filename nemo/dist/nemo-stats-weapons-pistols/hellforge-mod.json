@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-pistols",
   "name": "Nemo Stats: Weapons Pistols",
   "version": "1.0.0",
-  "description": "Tunes the pistols' damage, stagger, and fire rate.\nP-19 Redeemer\nP-2 Peacemaker\nP-113 Verdict\nP-69 Veto\nP-92 Warrant\nM6C/SOCOM Pistol\nP-4 Senator\nP/40-K Bolt Pistol",
+  "description": "Tunes the pistols' damage, stagger, and fire rate.\n- P-19 Redeemer\n- P-2 Peacemaker\n- P-113 Verdict\n- P-69 Veto\n- P-92 Warrant\n- M6C/SOCOM Pistol\n- P-4 Senator\n- P/40-K Bolt Pistol",
   "gameplay": true
 }

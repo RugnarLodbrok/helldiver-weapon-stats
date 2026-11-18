@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-gl",
   "name": "Nemo Stats: Weapons GL",
   "version": "1.0.0",
-  "description": "Tunes the grenade launchers' projectile damage and spread.\nGL-21 Grenade Launcher\nGL-52 De-Escalator\nGL-28 Belt-Fed Grenade Launcher\nGL-15 Evictor\nGP-31 Grenade Pistol",
+  "description": "Tunes the grenade launchers' projectile damage and spread.\n- GL-21 Grenade Launcher\n- GL-52 De-Escalator\n- GL-28 Belt-Fed Grenade Launcher\n- GL-15 Evictor\n- GP-31 Grenade Pistol",
   "gameplay": true
 }

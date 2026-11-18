@@ -3,6 +3,6 @@
   "id": "nemo-stats-boosters",
   "name": "Nemo Stats: Boosters",
   "version": "1.0.0",
-  "description": "Tunes the stratagem boosters' extraction, encounter, and radar stats.\nSurplus EAT Allocation\nExpert Extraction Pilot\nLocalization Confusion\nUAV Recon Booster",
+  "description": "Tunes the stratagem boosters' extraction, encounter, and radar stats.\n- Surplus EAT Allocation\n- Expert Extraction Pilot\n- Localization Confusion\n- UAV Recon Booster",
   "gameplay": true
 }

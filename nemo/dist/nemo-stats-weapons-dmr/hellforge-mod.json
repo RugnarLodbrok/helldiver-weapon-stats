@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-dmr",
   "name": "Nemo Stats: Weapons DMR",
   "version": "1.0.0",
-  "description": "Tunes the designated-marksmen rifles' spread, recoil, and damage.\nR-2124 Constitution\nR-63 Diligence\nR-2 Amendment\nR-72 Censor\nR-63CS Diligence Counter Sniper\nR-6 Deadeye\nR-4 Hyena",
+  "description": "Tunes the designated-marksmen rifles' spread, recoil, and damage.\n- R-2124 Constitution\n- R-63 Diligence\n- R-2 Amendment\n- R-72 Censor\n- R-63CS Diligence Counter Sniper\n- R-6 Deadeye\n- R-4 Hyena",
   "gameplay": true
 }

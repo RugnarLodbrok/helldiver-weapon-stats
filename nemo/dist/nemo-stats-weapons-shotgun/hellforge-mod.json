@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-shotgun",
   "name": "Nemo Stats: Weapons Shotgun",
   "version": "1.0.0",
-  "description": "Tunes the shotguns' damage, pellet counts, and spread.\nM90A Shotgun\nSG-8 Punisher\nSG-8S Slugger\nSG-451 Cookout\nSG-20 Halt\nSG-97 Sweeper\nSG-225 Breaker\nSG-225SP Breaker Spray&Pray\nSG-225IE Breaker Incendiary\nDBS-2 Double Freedom",
+  "description": "Tunes the shotguns' damage, pellet counts, and spread.\n- M90A Shotgun\n- SG-8 Punisher\n- SG-8S Slugger\n- SG-451 Cookout\n- SG-20 Halt\n- SG-97 Sweeper\n- SG-225 Breaker\n- SG-225SP Breaker Spray&Pray\n- SG-225IE Breaker Incendiary\n- DBS-2 Double Freedom",
   "gameplay": true
 }

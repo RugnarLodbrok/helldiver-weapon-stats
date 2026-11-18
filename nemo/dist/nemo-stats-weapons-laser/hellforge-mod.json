@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-laser",
   "name": "Nemo Stats: Laser Weapons",
   "version": "1.0.0",
-  "description": "Tunes the laser weapons' damage, heat, and spread.\nLAS-13 Trident\nLAS-16 Sickle\nLAS-17 Double-Edge Sickle\nLAS-12 Sai\nLAS-5 Scythe\nR/40-K Hot-Shot Marksman Rifle\nLAS-7 Dagger\nLAS-58 Talon\nLAS-98 Laser Cannon\nLAS-99 Quasar Cannon",
+  "description": "Tunes the laser weapons' damage, heat, and spread.\n- LAS-13 Trident\n- LAS-16 Sickle\n- LAS-17 Double-Edge Sickle\n- LAS-12 Sai\n- LAS-5 Scythe\n- R/40-K Hot-Shot Marksman Rifle\n- LAS-7 Dagger\n- LAS-58 Talon\n- LAS-98 Laser Cannon\n- LAS-99 Quasar Cannon",
   "gameplay": true
 }

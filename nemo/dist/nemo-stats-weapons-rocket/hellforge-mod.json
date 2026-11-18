@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-rocket",
   "name": "Nemo Stats: Weapons Rocket",
   "version": "1.0.0",
-  "description": "Tunes the rocket weapons' damage, reloads, and stratagem cooldowns.\nGR-8 Recoilless Rifle\nFAF-14 Spear\nRL-77 Airburst Rocket Launcher\nP-34 Breacher\nGP-20 Ultimatum",
+  "description": "Tunes the rocket weapons' damage, reloads, and stratagem cooldowns.\n- GR-8 Recoilless Rifle\n- FAF-14 Spear\n- RL-77 Airburst Rocket Launcher\n- P-34 Breacher\n- GP-20 Ultimatum",
   "gameplay": true
 }

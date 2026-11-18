@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-mg",
   "name": "Nemo Stats: Weapons MG",
   "version": "1.0.0",
-  "description": "Tunes the machine guns' spread, damage, and magazine reloads.\nM-105 Stalwart\nMG-43 Machine Gun\nM-1000 Maxigun\nMG-206 Heavy Machine Gun",
+  "description": "Tunes the machine guns' spread, damage, and magazine reloads.\n- M-105 Stalwart\n- MG-43 Machine Gun\n- M-1000 Maxigun\n- MG-206 Heavy Machine Gun",
   "gameplay": true
 }
