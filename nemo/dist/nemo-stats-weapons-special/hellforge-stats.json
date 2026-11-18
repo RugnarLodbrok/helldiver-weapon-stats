@@ -1,11 +1,6 @@
 {
   "format": 1,
   "weapons": {
-    "R-36 Eruptor": {
-      "weapon.ergonomics": 40,
-      "weapon.sway": 0.6,
-      "projectile.lifetime": 4.4
-    },
     "JAR-5 Dominator": {
       "weapon.ergonomics": 40,
       "weapon.sway": 0.6,
@@ -14,13 +9,27 @@
       "fire_mode.modes.3": 1,
       "ammunition.projectile": 202
     },
-    "GL-15 Evictor": {
-      "weapon.horizontal_spread": 5,
-      "weapon.vertical_spread": 10,
-      "explosion.primary.impact.damage.standard_damage": 440,
-      "explosion.primary.impact.damage.durable_damage": 440,
-      "explosion.primary.impact.inner_radius": 7.5,
-      "explosion.primary.impact.outer_radius": 7.5
+    "ARC-3 Arc Thrower": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 1,
+      "weapon.vertical_spread": 1,
+      "damage.primary.standard_damage": 250,
+      "damage.primary.durable_damage": 250,
+      "charge.level_1": 0.2,
+      "charge.level_2": 0.4,
+      "charge.auto_fire_at_full": 1,
+      "arc.primary.chain_count": 2,
+      "arc.primary.max_split": 2,
+      "arc.primary.max_angle_spread": 90
+    },
+    "P-35 Re-Educator": {
+      "weapon.sway": 0.5,
+      "weapon.fire_rate": 300,
+      "damage.status_3_type": 40,
+      "damage.status_3_strength": 100,
+      "magazine.starting_magazines": 3,
+      "magazine.spare_magazines": 3,
+      "magazine.magazines_from_supply": 3
     }
   }
 }

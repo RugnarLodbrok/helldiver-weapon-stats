@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "weapons": {
+    "GR-8 Recoilless Rifle": {
+      "weapon.sway": 0.9,
+      "reload.duration": 4
+    },
+    "FAF-14 Spear": {
+      "weapon.sway": 1,
+      "reload.duration": 4
+    },
+    "RL-77 Airburst Rocket Launcher": {
+      "weapon.sway": 1,
+      "reload.duration": 4
+    },
+    "P-34 Breacher": {
+      "weapon.sway": 1,
+      "weapon.recoil_climb_vertical": 450,
+      "projectile.drag": 2,
+      "damage.standard_damage": 60,
+      "damage.durable_damage": 0,
+      "magazine.capacity": 1,
+      "magazine.starting_magazines": 1,
+      "magazine.spare_magazines": 2,
+      "magazine.magazines_from_supply": 2
+    },
+    "GP-20 Ultimatum": {
+      "weapon.recoil_climb_vertical": 500,
+      "projectile.velocity": 60
+    }
+  },
+  "stratagems": {
+    "EAT-17 Expendable Anti-Tank": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-700 Expendable Napalm": {
+      "stratagem.cooldown": 70
+    },
+    "EAT-411 Leveller": {
+      "stratagem.cooldown": 90
+    },
+    "MLS-4X Commando": {
+      "stratagem.cooldown": 70
+    },
+    "MS-11 Solo Silo": {
+      "stratagem.cooldown": 120
+    }
+  }
+}

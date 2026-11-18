@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "weapons": {
+    "APW-1 Anti-Materiel Rifle": {
+      "weapon.horizontal_spread": 1.5,
+      "weapon.vertical_spread": 1.5,
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.third_person_reticle": 4,
+      "projectile.primary.drag": 0.1,
+      "projectile.primary.penetration_slowdown": 0.1,
+      "damage.primary.standard_damage": 690,
+      "damage.primary.durable_damage": 350
+    },
+    "RS-422 Railgun": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.5,
+      "weapon.capacity": 1,
+      "damage.primary.standard_damage": 800,
+      "damage.primary.durable_damage": 300,
+      "damage.primary.ap_direct": 5,
+      "damage.primary.ap_slight": 5,
+      "damage.primary.ap_large": 4,
+      "damage.primary.ap_extreme": 4,
+      "damage.primary.stagger": 50,
+      "magazine.starting_magazines": 15,
+      "magazine.spare_magazines": 30,
+      "magazine.magazines_from_supply": 15,
+      "charge.level_1": 0.2,
+      "charge.level_2": 0.5,
+      "charge.level_3": 1.5,
+      "charge.explode_at_overcharge": 0
+    },
+    "AC-8 Autocannon": {
+      "weapon.sway": 0.7,
+      "damage.primary.standard_damage": 700,
+      "damage.primary.durable_damage": 350,
+      "damage.primary.ap_large": 3,
+      "damage.programmable.durable_damage": 150,
+      "damage.programmable.standard_damage": 150
+    },
+    "R-36 Eruptor": {
+      "weapon.ergonomics": 40,
+      "weapon.sway": 0.6,
+      "projectile.lifetime": 4.4
+    }
+  },
+  "raw": [
+    {
+      "component": "WeaponCustomizationComponentData",
+      "resource": "0x2E9D0BDC48B09E60",
+      "offset": "0x4",
+      "type": "u32",
+      "expect": 1514045116,
+      "value": 1742775424
+    }
+  ]
+}

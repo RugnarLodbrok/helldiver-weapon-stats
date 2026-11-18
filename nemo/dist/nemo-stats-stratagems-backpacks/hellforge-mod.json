@@ -3,6 +3,6 @@
   "id": "nemo-stats-stratagems-backpacks",
   "name": "Nemo Stats: Stratagem Backpacks",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for stratagem backpacks.",
+  "description": "Tunes the LIFT-860 hover pack's jump and hover stats.\n- LIFT-860 Hover Pack",
   "gameplay": true
 }

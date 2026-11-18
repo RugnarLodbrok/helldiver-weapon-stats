@@ -1,8 +1,6 @@
-weapons:
+description: Tunes the SMGs' damage, spread, and recoil.
 
-  #######
-  # SMG #
-  #######
+weapons:
 
   MP-98 Knight:
     weapon.sway: 0.9                                      # stock 1

@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-rocket",
+  "name": "Nemo Stats: Weapons Rocket",
+  "version": "1.0.0",
+  "description": "Tunes the rocket weapons' damage, reloads, and stratagem cooldowns.\n- weapons: GR-8 Recoilless Rifle, FAF-14 Spear, RL-77 Airburst Rocket Launcher, P-34 Breacher, GP-20 Ultimatum\n- stratagems: EAT-17 Expendable Anti-Tank, EAT-700 Expendable Napalm, EAT-411 Leveller, MLS-4X Commando, MS-11 Solo Silo",
+  "gameplay": true
+}

@@ -1,0 +1,57 @@
+description: Tunes the cannons' damage, charge, and spread.
+
+weapons:
+
+  APW-1 Anti-Materiel Rifle:
+    weapon.horizontal_spread: 1.5                         # stock 0.1
+    weapon.vertical_spread: 1.5                           # stock 0.1
+    weapon.ergonomics: 40                                 # stock 35
+    weapon.sway: 0.5                                      # stock 1
+    weapon.third_person_reticle: 4                        # stock 3; assault rifle reticle
+    projectile.primary.drag: 0.1                          # stock 0.3
+    projectile.primary.penetration_slowdown: 0.1          # stock 0.25
+    damage.primary.standard_damage: 690                   # stock 450
+    damage.primary.durable_damage: 350                    # stock 225
+
+  RS-422 Railgun:
+    notes: |
+      Scope swap: the raw write replaces the default Optics optionId (Railgun
+      Scope) with the SNIPER SCOPE 10x; the game's own delta then applies the
+      scope's zoom, zeroing, model and crosshair.
+    weapon.ergonomics: 40                                 # stock 35
+    weapon.sway: 0.5                                      # stock 1
+    weapon.capacity: 1                                    # stock 1
+    damage.primary.standard_damage: 800                   # stock 600
+    damage.primary.durable_damage: 300                    # stock 225
+    damage.primary.ap_direct: 5                           # stock 5
+    damage.primary.ap_slight: 5                           # stock 5
+    damage.primary.ap_large: 4                            # stock 5
+    damage.primary.ap_extreme: 4                          # stock 5
+    damage.primary.stagger: 50                            # stock 35
+    magazine.starting_magazines: 15                       # stock 10
+    magazine.spare_magazines: 30                          # stock 20
+    magazine.magazines_from_supply: 15                    # stock 10
+    charge.level_1: 0.2                                   # stock 0.45
+    charge.level_2: 0.5                                   # stock 0.5
+    charge.level_3: 1.5                                   # stock 3
+    charge.explode_at_overcharge: false                   # stock true
+    raw:
+      - component: WeaponCustomizationComponentData
+        resource: '0x2E9D0BDC48B09E60'
+        offset: '0x4'
+        type: u32
+        expect: 1514045116  # 0x5A3E7EBC Railgun Scope
+        value: 1742775424   # 0x67E0A480 SNIPER SCOPE 10x
+
+  AC-8 Autocannon:
+    weapon.sway: 0.7                                      # stock 1
+    damage.primary.standard_damage: 700                   # stock 325
+    damage.primary.durable_damage: 350                    # stock 260
+    damage.primary.ap_large: 3                            # stock 4
+    damage.programmable.durable_damage: 150               # stock 150
+    damage.programmable.standard_damage: 150              # stock 150
+
+  R-36 Eruptor:
+    weapon.ergonomics: 40                                 # stock 25
+    weapon.sway: 0.6                                      # stock 0.8
+    projectile.lifetime: 4.4                              # stock 1; ~800 m at velocity 180

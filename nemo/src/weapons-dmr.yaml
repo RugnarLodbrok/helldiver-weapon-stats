@@ -1,8 +1,6 @@
-weapons:
+description: Tunes the designated-marksmen rifles' spread, recoil, and damage.
 
-  ###################
-  # Marksman rifles #
-  ###################
+weapons:
 
   # Rifle caliber
   R-2124 Constitution:

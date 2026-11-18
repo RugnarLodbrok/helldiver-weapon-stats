@@ -2,9 +2,9 @@
 
 Tunes weapon stats (ergonomics, recoil, spread, damage, projectile velocity) for a
 set of primary and support weapons, armory throwables (grenades, mines, the shield,
-the throwing knife), stratagems (orbital, eagle, defensive, support, and the
+the throwing knife), stratagems (orbital, eagle, defensive, and the
 backpacks), explosion damage, and stratagem boosters. The tuning ships as
-seventeen HellForge **stats mods** (one per weapon type, `nemo-stats-<group>`),
+eighteen HellForge **stats mods** (`nemo-stats-<group>`),
 each a
 declarative `hellforge-stats.json` HellForge applies at data load, per player, with
 its own guarded validation. There is no in-game Lua addon, no FFI, and no patch
@@ -14,15 +14,19 @@ loop — the stats files are the mods' only gameplay artifacts.
 
 - `src/<group>.yaml` — the author's source of truth, one file per mod (the
   filename stem is the group name; the mod id is `nemo-stats-<group>`). The
-  seventeen files: `weapons-ar`, `weapons-dmr`, `weapons-shotgun`, `weapons-smg`,
+  eighteen files: `weapons-ar`, `weapons-dmr`, `weapons-shotgun`, `weapons-smg`,
   `weapons-laser`, `weapons-plasma`, `weapons-special`, `weapons-pistols`,
-  `weapons-utility`, `throwables`, `stratagems-backpacks`,
-  `stratagems-defensive`, `stratagems-support`, `stratagems-orbital`,
-  `stratagems-eagle`, `weapons-support`, `boosters`. Each file is
+  `throwables`, `stratagems-backpacks`, `stratagems-defensive`,
+  `stratagems-orbital`, `stratagems-eagle`, `weapons-mg`, `weapons-cannons`,
+  `weapons-rocket`, `weapons-gl`, `boosters`. Each file is
   shaped like the stats file (category → target → field → value, field names as
   in the HellForge schema). Sections: `weapons`, `throwables`, `stratagems`,
   `backpacks`, `explosions`, `boosters`, and an optional `raw` (verbatim write
-  pass-through; the scope swaps). A value is a plain number, a plain boolean, or
+  pass-through; the scope swaps). Each file also carries a required top-level
+  `description:` key: a single-line plain string (the manifest's description
+  lead line; the build appends one bullet per non-empty section listing that
+  section's targets, and the validator fails the build if the key is missing,
+  empty, or multi-line). A value is a plain number, a plain boolean, or
   a plain string (a status-reference field such as `damage.status_1_type` takes
   a semantic status id like `fire`; `stratagem.max_uses` takes a number or `-1`
   for unlimited). The `# stock N` trailing notes are machine-maintained by the
@@ -58,18 +62,19 @@ loop — the stats files are the mods' only gameplay artifacts.
 ## Build and deploy
 
     make -C mods/nemo/weapon_stat_tuner build    # validate -> annotate -> gen_stats
-    make -C mods/nemo/weapon_stat_tuner deploy   # copy the seventeen dist mods into HellForge
+    make -C mods/nemo/weapon_stat_tuner deploy   # copy the eighteen dist mods into HellForge
     make -C mods/nemo/weapon_stat_tuner tables   # regenerate the balance tables
     make -C mods/nemo/weapon_stat_tuner regen    # force regen after a game update
 
-`deploy` copies the seventeen `dist/nemo-stats-<group>/` folders to the HellForge
+`deploy` copies the eighteen `dist/nemo-stats-<group>/` folders to the HellForge
 `mods/` directory (folder name = manifest id), removes the retired monolithic
 `local.nemo-weapon-stat-tuner/` folder and the retired pre-split and pre-rename
 folders (`nemo-stats-stratagems/`, `nemo-stats-backpacks/`,
-`nemo-stats-primary-energy/`, and the old `nemo-stats-primary-*` /
-`nemo-stats-secondary-*` / `nemo-stats-support/` group names), and reports the
-deployed file list; the launcher auto-discovers and enables each folder.
-Rollback: remove the folders.
+`nemo-stats-primary-energy/`, `nemo-stats-weapons-support/`,
+`nemo-stats-stratagems-support/`, `nemo-stats-weapons-utility/`, and the old
+`nemo-stats-primary-*` / `nemo-stats-secondary-*` / `nemo-stats-support/` group
+names), and reports the deployed file list; the launcher auto-discovers and
+enables each folder. Rollback: remove the folders.
 
 ## What the stats file covers
 
@@ -100,11 +105,11 @@ Rollback: remove the folders.
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | AC-8 Autocannon | 325→700 | 260→350 | 190 | 30 | 4/4/4/0<br>→<br>4/4/3/0 | 820 | 0.3 | — | 3 | 1→0.7 | 17 | 200,450,2,100 | 2217 | 1108 |
-| RS-422 Railgun | 600→800 | 225→300 | — | 35 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
-| RS-422 Railgun (overcharge) | 1500→2000 | 562.5→750 | — | 35 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
+| RS-422 Railgun | 600→800 | 225→300 | — | 35→50 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
+| RS-422 Railgun (overcharge) | 1500→2000 | 562.5→750 | — | 35→50 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
 | APW-1 Anti-Materiel Rifle | 450→690 | 225→350 | 400 | 25 | 4/4/4/0 | 880 | 0.3→0.1 | 7 | 3 | 1→0.5 | 35→40 | 20,300,2,300 | 4600 | 2333 |
 | MG-206 Heavy Machine Gun | 150→220 | 35→100 | 450/600*/750 | 25→30 | 4/4/4/0<br>→<br>4/4/3/0 | 980→800 | 0.3→0.2 | 100 | 5.5→4 | 1 | 0→15 | 50,80,15,30 | 2200 | 1000 |
-| PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
+| PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20→15 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9→12 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
 | JAR-5 Dominator | 275→325 | 90→115 | 250→350 | 35 | 3/3/3/0<br>→<br>4/4/4/0 | 180→350 | 0 | 15 | 3.7→3.3 | 0.8→0.6 | 30→40 | 30,30,50,120 | 1896 | 671 |
 
 <!-- compare:end -->
@@ -192,54 +197,65 @@ Rollback: remove the folders.
 | R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | — | 0→16 | 1833 | 267 |
 | LAS-7 Dagger | 250→300 | 50 | — | 0 | 2/2/2/0 | — | — | — | 2.3 | 1→0.5 | 95 | 0,0,0,0 | — | 1 | — | — |
 | LAS-58 Talon | 200 | 20 | 750 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 1300→2000 | 0 | — | 4.6→3 | 1→0.5 | 95 | 2,2,2,1<br>→<br>0.1,0.1,0.1,0.1 | — | 0→4 | 2500 | 250 |
+| LAS-98 Laser Cannon | 350 | 200→420 | — | 0→10 | 4/4/4/4 | — | — | — | 5 | 1→0.5 | 45 | 0,0,0,0 | — | — | — | — |
+| LAS-99 Quasar Cannon | 2000 | 2000 | 10*/10 | 50 | 6/6/6/3 | 1300 | 0 | — | — | 1→0.7 | 35 | 40,40,50,180 | — | 0 | 333 | 333 |
 
 ### Plasma weapons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| PLAS-1 Scorcher | 100 | 50 | 350 | 20 | 2/2/2/0 | 550 | 1.5 | 20→30 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 583 | 292 |
-| PLAS-101 Purifier | 200 | 100 | 1000 | 20 | 3/3/3/0 | 350 | 1.5 | 15→20 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 3333 | 1667 |
-| PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
+| PLAS-1 Scorcher | 100 | 50 | 350→1000 | 20 | 2/2/2/0 | 550 | 1.5 | 20→30 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 1667 | 833 |
+| PLAS-101 Purifier | 200 | 100 | 1000 | 20 | 3/3/3/0 | 350→500 | 1.5→1 | 15→20 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 3333 | 1667 |
+| PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20→15 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9→12 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
 | PLAS-15 Loyalist | 100 | 50 | 1000 | 20 | 2/2/2/0 | 550 | 1 | — | 1.8 | 1 | 95 | 2.5,10,2.5,10 | 1667 | 833 |
 | SG-8P Punisher Plasma | 0 | 0 | 80 | 20 | 2/2/2/0 | 90 | 4 | 10 | 2.5 | 1 | 65 | 40,40,50,180 | 0 | 0 |
+| PLAS-45 Epoch | 400 | 200 | — | 30 | 4/4/4/4 | 250→500 | 0.1 | 3→7 | — | 1 | 25→40 | 20,45,15,65 | — | — |
 
 ### Special weapons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| R-36 Eruptor | 230 | 115 | 32 | 35 | 4/4/4/0 | 180 | 0 | 5 | 4.7 | 0.8→0.6 | 25→40 | 30,30,50,120 | 123 | 61 |
 | JAR-5 Dominator | 275 | 90 | 250→350 | 35 | 3/3/3/0 | 180 | 0 | 15 | 3.7→3.3 | 0.8→0.6 | 30→40 | 30,30,50,120 | 1604 | 525 |
-| GL-15 Evictor | 50 | 2 | 60 | 30 | 3/3/3/0 | 100 | 1.2 | 4 | 2.7 | 1 | 65 | 40,40,50,200 | 50 | 2 |
+| ARC-3 Arc Thrower | 250 | 100→250 | — | 35 | 7/7/7/0 | — | — | — | — | 1→0.7 | 50 | 40,40,50,50 | — | — |
+| P-35 Re-Educator | 60 | 10 | 110→300 | 1 | 4/4/3/0 | 150 | 2 | 6 | 2.1 | 1→0.5 | 100 | 5,15,5,15 | 300 | 50 |
 
-### Support weapons
+### Machine guns
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| GL-21 Grenade Launcher | 20 | 2 | 160 | 30 | 0/0/0/0 | 100 | 1.2 | 10 | 3.5 | 1 | 25 | 170,175,60,90 | 53 | 5 |
 | M-105 Stalwart | 90→95 | 22→30 | 700/850*/1150 | 15 | 2/2/2/0 | 900 | 0.3 | 250 | — | 1→0.7 | 40 | 15,15,10,20 | 1346 | 425 |
 | MG-43 Machine Gun | 90→150 | 23→70 | 630/760*/900 | 20 | 3/3/3/1<br>→<br>3/3/2/1 | 820 | 0.3→0.2 | 175 | 4.5→3 | 1→0.7 | 15→25 | 20,20,15,30 | 1900 | 887 |
 | M-1000 Maxigun | 80→150 | 18→75 | 1500 | 15 | 3/3/3/0<br>→<br>3/3/2/0 | 920 | 0.3→0.2 | — | 4.5 | 1 | 4→15 | 20,20,15,30<br>→<br>25,10,20,15 | 3750 | 1875 |
 | MG-206 Heavy Machine Gun | 150→220 | 35→100 | 450/600*/750 | 25→30 | 4/4/4/0<br>→<br>4/4/3/0 | 980→800 | 0.3→0.2 | 100 | 5.5→4 | 1 | 0→15 | 50,80,15,30 | 2200 | 1000 |
-| APW-1 Anti-Materiel Rifle | 450→690 | 225→350 | 400 | 25 | 4/4/4/0 | 880 | 0.3→0.1 | 7 | 3 | 1→0.5 | 35→40 | 20,300,2,300 | 4600 | 2333 |
-| RS-422 Railgun | 600→800 | 225→300 | — | 35 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
-| AC-8 Autocannon | 325→700 | 260→350 | 190 | 30 | 4/4/4/0<br>→<br>4/4/3/0 | 820 | 0.3 | 10 | 3 | 1→0.7 | 17 | 200,450,2,100 | 2217 | 1108 |
-| GR-8 Recoilless Rifle | 3200 | 3200 | 600 | 50 | 6/6/6/3 | 250 | 0.3 | 1 | 6→4 | 1→0.9 | 10 | 40,40,50,180 | 32000 | 32000 |
-| LAS-98 Laser Cannon | 350 | 200→420 | — | 0→10 | 4/4/4/4 | — | — | — | 5 | 1→0.5 | 45 | 0,0,0,0 | — | — |
-| LAS-99 Quasar Cannon | 2000 | 2000 | 10*/10 | 50 | 6/6/6/3 | 1300 | 0 | — | — | 1→0.7 | 35 | 40,40,50,180 | 333 | 333 |
-| FAF-14 Spear | 4000 | 4000 | 240 | 50 | 7/7/7/7 | — | — | 1 | 5→4 | 1 | 10 | 2.5,10,2.5,10 | 16000 | 16000 |
-| RL-77 Airburst Rocket Launcher | 350 | 350 | 600 | 50 | 3/3/3/0 | 250 | 0.3 | 1 | 5→4 | 1 | 10 | 40,40,50,180 | 3500 | 3500 |
-| GL-52 De-Escalator | 20 | 2 | 200 | 30 | 0/0/0/0 | 100 | 1.2 | 6 | 2.5 | 1→0.7 | 25 | 90,95,60,90 | 67 | 7 |
-| ARC-3 Arc Thrower | 250 | 100→250 | — | 35 | 7/7/7/0 | — | — | — | — | 1→0.7 | 50 | 40,40,50,50 | — | — |
-| GL-28 Belt-Fed Grenade Launcher | 0 | 0 | — | 30 | 4/4/4/0 | 100 | 1.2 | — | 4.5 | 1→0.8 | 20→45 | 20,25,15,35 | — | — |
 
-### Utility weapons
+### Cannons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| APW-1 Anti-Materiel Rifle | 450→690 | 225→350 | 400 | 25 | 4/4/4/0 | 880 | 0.3→0.1 | 7 | 3 | 1→0.5 | 35→40 | 20,300,2,300 | 4600 | 2333 |
+| RS-422 Railgun | 600→800 | 225→300 | — | 35→50 | 5/5/5/5<br>→<br>5/5/4/4 | 2000 | 0.3 | 1 | 1.2 | 1→0.5 | 35→40 | 10,25,3,25 | — | — |
+| AC-8 Autocannon | 325→700 | 260→350 | 190 | 30 | 4/4/4/0<br>→<br>4/4/3/0 | 820 | 0.3 | 10 | 3 | 1→0.7 | 17 | 200,450,2,100 | 2217 | 1108 |
+| R-36 Eruptor | 230 | 115 | 32 | 35 | 4/4/4/0 | 180 | 0 | 5 | 4.7 | 0.8→0.6 | 25→40 | 30,30,50,120 | 123 | 61 |
+
+### Rockets
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| GR-8 Recoilless Rifle | 3200 | 3200 | 600 | 50 | 6/6/6/3 | 250 | 0.3 | 1 | 6→4 | 1→0.9 | 10 | 40,40,50,180 | 32000 | 32000 |
+| FAF-14 Spear | 4000 | 4000 | 240 | 50 | 7/7/7/7 | — | — | 1 | 5→4 | 1 | 10 | 2.5,10,2.5,10 | 16000 | 16000 |
+| RL-77 Airburst Rocket Launcher | 350 | 350 | 600 | 50 | 3/3/3/0 | 250 | 0.3 | 1 | 5→4 | 1 | 10 | 40,40,50,180 | 3500 | 3500 |
 | P-34 Breacher | 60 | 0 | 20 | 10 | 4/4/3/0 | 150 | 2 | 1 | 2.7 | 1 | 45 | 200,500,100,450 | 20 | 0 |
-| GP-31 Grenade Pistol | 250 | 250 | 900 | 40 | 3/3/3/0 | 100 | 1.2 | 1 | 1.7 | 1→0.8 | 95 | 20,50,3,50 | 3750 | 3750 |
 | GP-20 Ultimatum | 1000 | 1000 | 900 | 50 | 6/6/6/6 | 20→60 | 0.5 | 1 | 2.7 | 1 | 35 | 20,50,3,50<br>→<br>20,50,3,500 | 15000 | 15000 |
-| P-35 Re-Educator | 60 | 10 | 110→300 | 1 | 4/4/3/0 | 150 | 2 | 6 | 2.1 | 1→0.5 | 100 | 5,15,5,15 | 300 | 50 |
+
+### Grenade launchers
+
+| Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| GL-21 Grenade Launcher | 20 | 2 | 160 | 30 | 0/0/0/0 | 100 | 1.2 | 10 | 3.5 | 1 | 25 | 170,175,60,90 | 53 | 5 |
+| GL-52 De-Escalator | 20 | 2 | 200 | 30 | 0/0/0/0 | 100 | 1.2 | 6 | 2.5 | 1→0.7 | 25 | 90,95,60,90 | 67 | 7 |
+| GL-28 Belt-Fed Grenade Launcher | 0 | 0 | — | 30 | 4/4/4/0 | 100 | 1.2 | — | 4.5 | 1→0.8 | 20→45 | 20,25,15,35 | — | — |
+| GL-15 Evictor | 50 | 2 | 60 | 30 | 3/3/3/0 | 100 | 1.2 | 4 | 2.7 | 1 | 65 | 40,40,50,200 | 50 | 2 |
+| GP-31 Grenade Pistol | 250 | 250 | 900 | 40 | 3/3/3/0 | 100 | 1.2 | 1 | 1.7 | 1→0.8 | 95 | 20,50,3,50 | 3750 | 3750 |
 
 ### Throwables
 

@@ -1,13 +1,12 @@
-weapons:
+description: Tunes the plasma weapons' projectiles, charge, and damage.
 
-  ##################
-  # Plasma weapons #
-  ##################
+weapons:
 
   PLAS-1 Scorcher:
     weapon.sway: 0.7                                      # stock 1
     weapon.horizontal_spread: 5                           # stock 10
     weapon.vertical_spread: 5                             # stock 10
+    weapon.fire_rate: 1000                                # stock 350
     damage.standard_damage: 100                           # stock 100
     damage.durable_damage: 50                             # stock 50
     magazine.capacity: 30                                 # stock 20
@@ -21,10 +20,14 @@ weapons:
     weapon.vertical_spread: 5                             # stock 10
     damage.standard_damage: 200                           # stock 200
     damage.durable_damage: 100                            # stock 100
+    charge.level_2: 0.5
+    charge.level_3: 0.5
+    projectile.drag: 1                                    # stock 1.5
+    projectile.velocity: 500                              # stock 350
     magazine.capacity: 20                                 # stock 15
-    magazine.starting_magazines: 4                        # stock 4
-    magazine.spare_magazines: 6                           # stock 6
-    magazine.magazines_from_supply: 6                     # stock 6
+    magazine.starting_magazines: 5                        # stock 4
+    magazine.spare_magazines: 7                           # stock 6
+    magazine.magazines_from_supply: 7                     # stock 6
 
   PLAS-39 Accelerator Rifle:
     weapon.ergonomics: 45                                 # stock 60
@@ -40,7 +43,8 @@ weapons:
     damage.durable_damage: 180                            # stock 125
     damage.ap_direct: 4                                   # stock 3
     damage.ap_slight: 4                                   # stock 3
-    magazine.capacity: 9                                  # stock 9
+    damage.stagger: 15                                    # stock 20
+    magazine.capacity: 12                                 # stock 9
     magazine.starting_magazines: 8                        # stock 8
     magazine.spare_magazines: 12                          # stock 12
     magazine.magazines_from_supply: 12                    # stock 12
@@ -51,3 +55,25 @@ weapons:
   SG-8P Punisher Plasma:
     explosion.primary.impact.damage.standard_damage: 225  # stock 225
     explosion.primary.impact.damage.durable_damage: 225   # stock 225
+
+  PLAS-45 Epoch:
+    weapon.horizontal_spread: 10                          # stock 30
+    weapon.vertical_spread: 10                            # stock 30
+    weapon.capacity: 7                                    # stock 3
+    weapon.ergonomics: 40                                 # stock 25
+    charge.level_1: 0.1                                   # stock 1
+    charge.level_2: 2.5                                   # stock 2.5
+    charge.level_3: 2.6                                   # stock 2.6
+    charge.overcharge_limit_seconds: 0                    # stock 3.25
+    projectile.primary.drag: 0.1                          # stock 0.1
+    projectile.primary.gravity: 1                         # stock 2
+    projectile.primary.lifetime: 5                        # stock 0.6
+    projectile.primary.velocity: 500                      # stock 250
+    projectile.full_charge.drag: 0.1                      # stock 0.1
+    projectile.full_charge.gravity: 1                     # stock 2
+    projectile.full_charge.lifetime: 5                    # stock 0.6
+    projectile.full_charge.velocity: 350                  # stock 250
+    magazine.starting_magazines: 4                        # stock 2
+    magazine.spare_magazines: 7                           # stock 4
+    magazine.magazines_from_supply: 4                     # stock 2
+    explosion.primary_impact.damage.demolition: 30        # stock 10

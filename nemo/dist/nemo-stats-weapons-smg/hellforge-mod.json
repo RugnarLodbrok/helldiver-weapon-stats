@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-smg",
   "name": "Nemo Stats: Weapons SMG",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for weapons smg.",
+  "description": "Tunes the SMGs' damage, spread, and recoil.\n- MP-98 Knight, StA-11 SMG, M7S SMG, SMG-203 Gallant, SMG-72 Pummeler, SMG/FLAM-34 Stoker, SMG-32 Reprimand",
   "gameplay": true
 }

@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "weapons": {
+    "GL-21 Grenade Launcher": {
+      "weapon.horizontal_spread": 15,
+      "weapon.vertical_spread": 15
+    },
+    "GL-52 De-Escalator": {
+      "weapon.sway": 0.7,
+      "damage.primary_impact_arc.standard_damage": 150,
+      "damage.primary_impact_arc.durable_damage": 100,
+      "arc.primary_impact_arc.chain_count": 2,
+      "arc.primary_impact_arc.max_split": 3,
+      "arc.primary_impact_arc.max_angle_spread": 350
+    },
+    "GL-28 Belt-Fed Grenade Launcher": {
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.8,
+      "weapon.horizontal_spread": 2,
+      "weapon.vertical_spread": 2,
+      "attack.primary.projectile": 202
+    },
+    "GL-15 Evictor": {
+      "weapon.horizontal_spread": 5,
+      "weapon.vertical_spread": 10,
+      "explosion.primary.impact.damage.standard_damage": 440,
+      "explosion.primary.impact.damage.durable_damage": 440,
+      "explosion.primary.impact.inner_radius": 7.5,
+      "explosion.primary.impact.outer_radius": 7.5
+    },
+    "GP-31 Grenade Pistol": {
+      "weapon.horizontal_spread": 10,
+      "weapon.vertical_spread": 10,
+      "weapon.sway": 0.8,
+      "weapon.recoil_climb_vertical": 50,
+      "projectile.drag": 1.2,
+      "damage.standard_damage": 250,
+      "damage.durable_damage": 250,
+      "explosion.primary.impact.damage.standard_damage": 440,
+      "explosion.primary.impact.damage.durable_damage": 440,
+      "explosion.primary.impact.inner_radius": 7.5,
+      "explosion.primary.impact.outer_radius": 7.5,
+      "rounds.feed_capacity_1": 1,
+      "rounds.starting_rounds": 8,
+      "rounds.spare_rounds": 16,
+      "rounds.rounds_from_supply": 8
+    }
+  },
+  "backpacks": {
+    "GL-28 Belt-Fed Grenade Launcher Backpack": {
+      "deposit.capacity": 250,
+      "deposit.start_amount": 250,
+      "deposit.refill_amount": 120
+    }
+  }
+}

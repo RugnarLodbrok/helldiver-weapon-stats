@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "weapons": {
+    "M-105 Stalwart": {
+      "weapon.sway": 0.7,
+      "weapon.horizontal_spread": 1.5,
+      "weapon.vertical_spread": 1.5
+    },
+    "MG-43 Machine Gun": {
+      "weapon.horizontal_spread": 1.5,
+      "weapon.vertical_spread": 1.5,
+      "weapon.ergonomics": 25,
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 20,
+      "weapon.recoil_drift_vertical": 20,
+      "weapon.recoil_climb_horizontal": 15,
+      "weapon.recoil_climb_vertical": 30,
+      "reload.duration": 3,
+      "projectile.primary.drag": 0.2,
+      "projectile.primary.penetration_slowdown": 0.2,
+      "damage.primary.standard_damage": 150,
+      "damage.primary.durable_damage": 70,
+      "damage.primary.ap_large": 2
+    },
+    "M-1000 Maxigun": {
+      "weapon.ergonomics": 15,
+      "weapon.sway": 1,
+      "weapon.horizontal_spread": 1.5,
+      "weapon.vertical_spread": 1.5,
+      "weapon.stationary_while_firing": 0,
+      "weapon.recoil_drift_horizontal": 25,
+      "weapon.recoil_drift_vertical": 10,
+      "weapon.recoil_climb_horizontal": 20,
+      "weapon.recoil_climb_vertical": 15,
+      "windup.wind_up_seconds": 0.2,
+      "projectile.primary.drag": 0.2,
+      "projectile.primary.penetration_slowdown": 0.2,
+      "damage.primary.standard_damage": 150,
+      "damage.primary.durable_damage": 75,
+      "damage.primary.ap_large": 2
+    },
+    "MG-206 Heavy Machine Gun": {
+      "weapon.ergonomics": 15,
+      "weapon.sway": 1,
+      "weapon.horizontal_spread": 1.5,
+      "weapon.vertical_spread": 1.5,
+      "weapon.capacity": 100,
+      "reload.duration": 4,
+      "projectile.primary.velocity": 800,
+      "projectile.primary.drag": 0.2,
+      "projectile.primary.penetration_slowdown": 0.2,
+      "damage.primary.standard_damage": 220,
+      "damage.primary.durable_damage": 100,
+      "damage.primary.stagger": 30,
+      "damage.primary.ap_slight": 4,
+      "damage.primary.ap_large": 3,
+      "magazine.magazines_from_supply": 4,
+      "magazine.spare_magazines": 4,
+      "magazine.starting_magazines": 2
+    }
+  },
+  "raw": [
+    {
+      "component": "WeaponCustomizationComponentData",
+      "resource": "0x11C27D3BABB38956",
+      "offset": "0x4",
+      "type": "u32",
+      "expect": 1713239419,
+      "value": 1742775424
+    },
+    {
+      "component": "WeaponCustomizationComponentData",
+      "resource": "0xA6A735ACCB4A327F",
+      "offset": "0x4",
+      "type": "u32",
+      "expect": 3885038159,
+      "value": 3905063732
+    }
+  ]
+}

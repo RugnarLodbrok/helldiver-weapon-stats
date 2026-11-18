@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-ar",
   "name": "Nemo Stats: Weapons AR",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for weapons ar.",
+  "description": "Tunes the assault rifles' spread, recoil, damage, and magazine reloads.\n- AR-23 Liberator, AR-23A Liberator Carbine, StA-52 Assault Rifle, AR-23P Liberator Penetrator, AR-23C Liberator Concussive, AR-32 Pacifier, AR-59 Suppressor, AR/GL-21 One-Two, AR/GL-21 One-Two / underbarrel, AR-11 Arbitrator, AR-11 Arbitrator / underbarrel, VG-70 Variable, AR-2 Coyote, BR-14 Adjudicator, MA5C Assault Rifle, AR-61 Tenderizer",
   "gameplay": true
 }

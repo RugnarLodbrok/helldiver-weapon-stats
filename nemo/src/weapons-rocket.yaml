@@ -1,0 +1,58 @@
+description: Tunes the rocket weapons' damage, reloads, and stratagem cooldowns.
+
+weapons:
+
+  GR-8 Recoilless Rifle:
+    weapon.sway: 0.9                                      # stock 1
+    reload.duration: 4                                    # stock 6
+
+  FAF-14 Spear:
+    weapon.sway: 1                                        # stock 1
+    reload.duration: 4                                    # stock 5
+
+  RL-77 Airburst Rocket Launcher:
+    weapon.sway: 1                                        # stock 1
+    reload.duration: 4                                    # stock 5
+
+  # Retired weapons-utility secondaries reassigned to rocket.
+  P-34 Breacher:
+    weapon.sway: 1                                        # stock 1
+    weapon.recoil_climb_vertical: 450                     # stock 450
+    projectile.drag: 2                                    # stock 2
+    damage.standard_damage: 60                            # stock 60
+    damage.durable_damage: 0                              # stock 0
+    magazine.capacity: 1                                  # stock 1
+    magazine.starting_magazines: 1                        # stock 1
+    magazine.spare_magazines: 2                           # stock 2
+    magazine.magazines_from_supply: 2                     # stock 1
+
+  GP-20 Ultimatum:
+    weapon.recoil_climb_vertical: 500                     # stock 50
+    projectile.velocity: 60                               # stock 20
+
+  # Stratagem-configured rockets: the cooldown sits with the weapon (the
+  # stratagem target is nested under the weapon, the G-7 Pineapple pattern).
+  EAT-17 Expendable Anti-Tank:
+    stratagems:
+      EAT-17 Expendable Anti-Tank:
+        stratagem.cooldown: 70                            # stock 70
+
+  EAT-700 Expendable Napalm:
+    stratagems:
+      EAT-700 Expendable Napalm:
+        stratagem.cooldown: 70                            # stock 140
+
+  EAT-411 Leveller:
+    stratagems:
+      EAT-411 Leveller:
+        stratagem.cooldown: 90                            # stock 140
+
+  MLS-4X Commando:
+    stratagems:
+      MLS-4X Commando:
+        stratagem.cooldown: 70                            # stock 120
+
+  MS-11 Solo Silo:
+    stratagems:
+      MS-11 Solo Silo:
+        stratagem.cooldown: 120                           # stock 180

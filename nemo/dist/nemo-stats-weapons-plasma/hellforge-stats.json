@@ -5,6 +5,7 @@
       "weapon.sway": 0.7,
       "weapon.horizontal_spread": 5,
       "weapon.vertical_spread": 5,
+      "weapon.fire_rate": 1000,
       "damage.standard_damage": 100,
       "damage.durable_damage": 50,
       "magazine.capacity": 30,
@@ -18,10 +19,14 @@
       "weapon.vertical_spread": 5,
       "damage.standard_damage": 200,
       "damage.durable_damage": 100,
+      "charge.level_2": 0.5,
+      "charge.level_3": 0.5,
+      "projectile.drag": 1,
+      "projectile.velocity": 500,
       "magazine.capacity": 20,
-      "magazine.starting_magazines": 4,
-      "magazine.spare_magazines": 6,
-      "magazine.magazines_from_supply": 6
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 7,
+      "magazine.magazines_from_supply": 7
     },
     "PLAS-39 Accelerator Rifle": {
       "weapon.ergonomics": 45,
@@ -37,7 +42,8 @@
       "damage.durable_damage": 180,
       "damage.ap_direct": 4,
       "damage.ap_slight": 4,
-      "magazine.capacity": 9,
+      "damage.stagger": 15,
+      "magazine.capacity": 12,
       "magazine.starting_magazines": 8,
       "magazine.spare_magazines": 12,
       "magazine.magazines_from_supply": 12
@@ -48,6 +54,28 @@
     "SG-8P Punisher Plasma": {
       "explosion.primary.impact.damage.standard_damage": 225,
       "explosion.primary.impact.damage.durable_damage": 225
+    },
+    "PLAS-45 Epoch": {
+      "weapon.horizontal_spread": 10,
+      "weapon.vertical_spread": 10,
+      "weapon.capacity": 7,
+      "weapon.ergonomics": 40,
+      "charge.level_1": 0.1,
+      "charge.level_2": 2.5,
+      "charge.level_3": 2.6,
+      "charge.overcharge_limit_seconds": 0,
+      "projectile.primary.drag": 0.1,
+      "projectile.primary.gravity": 1,
+      "projectile.primary.lifetime": 5,
+      "projectile.primary.velocity": 500,
+      "projectile.full_charge.drag": 0.1,
+      "projectile.full_charge.gravity": 1,
+      "projectile.full_charge.lifetime": 5,
+      "projectile.full_charge.velocity": 350,
+      "magazine.starting_magazines": 4,
+      "magazine.spare_magazines": 7,
+      "magazine.magazines_from_supply": 4,
+      "explosion.primary_impact.damage.demolition": 30
     }
   }
 }

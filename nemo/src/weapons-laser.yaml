@@ -1,8 +1,6 @@
-weapons:
+description: Tunes the laser weapons' damage, heat, and spread.
 
-  #################
-  # Laser weapons #
-  #################
+weapons:
 
   LAS-13 Trident:
     weapon.sway: 0.7                                      # stock 1
@@ -110,3 +108,20 @@ weapons:
     damage.status_1_type: fire                            # stock none
     damage.status_1_strength: 4                           # stock 0
     heat.heat_per_shot: 10                                # stock 15
+
+  LAS-98 Laser Cannon:
+    weapon.sway: 0.5                                      # stock 1
+    damage.primary.standard_damage: 350                   # stock 350
+    damage.primary.durable_damage: 420                    # stock 200
+    damage.primary.stagger: 10                            # stock 0
+    damage.primary.status_2_type: acid_storm              # stock none; slot 1 keeps fire
+    damage.primary.status_2_strength: 100                 # stock 0
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
+    heat.heat_per_second: 7                               # stock 8
+
+  LAS-99 Quasar Cannon:
+    weapon.sway: 0.7                                      # stock 1
+    heat.firing_charge: 66                                # stock 100
+    heat.charge_gain_per_second: 66                       # stock 33
+    heat.cool_per_second: 8.33                            # stock 6.66; post-shot cooldown 100/8.33 = 12.0 s (was 15.0 s)
+    heat.cool_per_second_overheated: 8.33                 # stock 6.66; match the non-overheated rate

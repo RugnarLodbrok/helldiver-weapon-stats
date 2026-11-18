@@ -1,8 +1,6 @@
-weapons:
+description: Tunes the shotguns' damage, pellet counts, and spread.
 
-  ############
-  # Shotguns #
-  ############
+weapons:
 
   M90A Shotgun:
     weapon.horizontal_spread: 80                          # stock 120

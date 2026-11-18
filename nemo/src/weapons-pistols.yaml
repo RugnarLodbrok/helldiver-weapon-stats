@@ -1,8 +1,6 @@
-weapons:
+description: Tunes the pistols' damage, stagger, and fire rate.
 
-  #####################
-  # Ballistic Pistols #
-  #####################
+weapons:
 
   P-19 Redeemer: # 9x20mm
     weapon.sway: 0.5                                      # stock 1

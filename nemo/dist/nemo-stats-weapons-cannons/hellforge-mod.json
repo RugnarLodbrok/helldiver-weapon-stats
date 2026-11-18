@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-weapons-cannons",
+  "name": "Nemo Stats: Weapons Cannons",
+  "version": "1.0.0",
+  "description": "Tunes the cannons' damage, charge, and spread.\n- APW-1 Anti-Materiel Rifle, RS-422 Railgun, AC-8 Autocannon, R-36 Eruptor",
+  "gameplay": true
+}

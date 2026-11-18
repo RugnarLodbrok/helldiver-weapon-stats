@@ -1,3 +1,5 @@
+description: Tunes the armory throwables' counts, explosion damage, and radii.
+
 throwables:
   ###########################
   # High-explosive grenades #

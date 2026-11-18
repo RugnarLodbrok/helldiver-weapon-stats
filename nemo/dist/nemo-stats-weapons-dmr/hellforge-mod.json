@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-dmr",
   "name": "Nemo Stats: Weapons DMR",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for weapons dmr.",
+  "description": "Tunes the designated-marksmen rifles' spread, recoil, and damage.\n- R-2124 Constitution, R-63 Diligence, R-2 Amendment, R-72 Censor, R-63CS Diligence Counter Sniper, R-6 Deadeye, R-4 Hyena",
   "gameplay": true
 }

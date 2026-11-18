@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-shotgun",
   "name": "Nemo Stats: Weapons Shotgun",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for weapons shotgun.",
+  "description": "Tunes the shotguns' damage, pellet counts, and spread.\n- M90A Shotgun, SG-8 Punisher, SG-8S Slugger, SG-451 Cookout, SG-20 Halt, SG-97 Sweeper, SG-225 Breaker, SG-225SP Breaker Spray&Pray, SG-225IE Breaker Incendiary, DBS-2 Double Freedom",
   "gameplay": true
 }

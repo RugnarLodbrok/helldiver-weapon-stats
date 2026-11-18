@@ -3,6 +3,6 @@
   "id": "nemo-stats-boosters",
   "name": "Nemo Stats: Boosters",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for boosters.",
+  "description": "Tunes the stratagem boosters' extraction, encounter, and radar stats.\n- Surplus EAT Allocation, Expert Extraction Pilot, Localization Confusion, UAV Recon Booster",
   "gameplay": true
 }

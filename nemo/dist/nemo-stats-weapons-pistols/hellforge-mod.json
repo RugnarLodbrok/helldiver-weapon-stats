@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-pistols",
   "name": "Nemo Stats: Weapons Pistols",
   "version": "1.0.0",
-  "description": "The Nemo balance pass for weapons pistols.",
+  "description": "Tunes the pistols' damage, stagger, and fire rate.\n- P-19 Redeemer, P-2 Peacemaker, P-113 Verdict, P-69 Veto, P-92 Warrant, M6C/SOCOM Pistol, P-4 Senator, P/40-K Bolt Pistol",
   "gameplay": true
 }

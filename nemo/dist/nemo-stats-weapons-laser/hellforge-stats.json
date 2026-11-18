@@ -107,6 +107,23 @@
       "damage.status_1_type": 5,
       "damage.status_1_strength": 4,
       "heat.heat_per_shot": 10
+    },
+    "LAS-98 Laser Cannon": {
+      "weapon.sway": 0.5,
+      "damage.primary.standard_damage": 350,
+      "damage.primary.durable_damage": 420,
+      "damage.primary.stagger": 10,
+      "damage.primary.status_2_type": 55,
+      "damage.primary.status_2_strength": 100,
+      "heat.firing_charge": 10,
+      "heat.heat_per_second": 7
+    },
+    "LAS-99 Quasar Cannon": {
+      "weapon.sway": 0.7,
+      "heat.firing_charge": 66,
+      "heat.charge_gain_per_second": 66,
+      "heat.cool_per_second": 8.33,
+      "heat.cool_per_second_overheated": 8.33
     }
   }
 }
