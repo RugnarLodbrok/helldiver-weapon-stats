@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-plasma",
   "name": "Nemo Stats: Plasma Weapons",
   "version": "1.0.0",
-  "description": "Tunes the plasma weapons' projectiles, charge, and damage.\n- PLAS-1 Scorcher, PLAS-101 Purifier, PLAS-39 Accelerator Rifle, PLAS-15 Loyalist, SG-8P Punisher Plasma, PLAS-45 Epoch",
+  "description": "Tunes the plasma weapons' projectiles, charge, and damage.\nPLAS-1 Scorcher\nPLAS-101 Purifier\nPLAS-39 Accelerator Rifle\nPLAS-15 Loyalist\nSG-8P Punisher Plasma\nPLAS-45 Epoch",
   "gameplay": true
 }

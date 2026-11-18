@@ -3,6 +3,6 @@
   "id": "nemo-stats-stratagems-defensive",
   "name": "Nemo Stats: Stratagem Defensive",
   "version": "1.0.0",
-  "description": "Tunes the defensive stratagems' mine damage and shield durability.\n- MD-17 Anti-Tank Mines, MD-6 Anti-Personnel Minefield, FX-12 Shield Generator Relay",
+  "description": "Tunes the defensive stratagems' mine damage and shield durability.\nMD-17 Anti-Tank Mines\nMD-6 Anti-Personnel Minefield\nFX-12 Shield Generator Relay",
   "gameplay": true
 }

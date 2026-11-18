@@ -70,15 +70,6 @@
       "damage.durable_damage": 20,
       "damage.stagger": 20
     },
-    "AR/GL-21 One-Two": {
-      "weapon.horizontal_spread": 3.1,
-      "weapon.vertical_spread": 3.1,
-      "weapon.ergonomics": 45,
-      "weapon.sway": 0.6,
-      "damage.standard_damage": 95,
-      "damage.durable_damage": 30,
-      "damage.stagger": 15
-    },
     "AR/GL-21 One-Two / underbarrel": {
       "weapon.horizontal_spread": 10,
       "weapon.vertical_spread": 10,
@@ -88,6 +79,19 @@
       "rounds.spare_rounds": 10,
       "rounds.rounds_from_supply": 5
     },
+    "AR/GL-21 One-Two": {
+      "weapon.horizontal_spread": 3.1,
+      "weapon.vertical_spread": 3.1,
+      "weapon.ergonomics": 45,
+      "weapon.sway": 0.6,
+      "damage.standard_damage": 95,
+      "damage.durable_damage": 30,
+      "damage.stagger": 15
+    },
+    "AR-11 Arbitrator / underbarrel": {
+      "rounds.spare_rounds": 30,
+      "rounds.rounds_from_supply": 30
+    },
     "AR-11 Arbitrator": {
       "weapon.horizontal_spread": 3.1,
       "weapon.vertical_spread": 3.1,
@@ -96,10 +100,6 @@
       "reload.duration": 3,
       "damage.standard_damage": 95,
       "damage.durable_damage": 30
-    },
-    "AR-11 Arbitrator / underbarrel": {
-      "rounds.spare_rounds": 30,
-      "rounds.rounds_from_supply": 30
     },
     "VG-70 Variable": {
       "weapon.horizontal_spread": 3.1,

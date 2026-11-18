@@ -3,6 +3,6 @@
   "id": "nemo-stats-stratagems-eagle",
   "name": "Nemo Stats: Stratagem Eagle",
   "version": "1.0.0",
-  "description": "Tunes the eagle stratagems' payload damage and rearm uses.\n- stratagems: Eagle 110mm Rocket Pods, Eagle Napalm Airstrike, Eagle Smoke Strike\n- explosions: Eagle 500kg Bomb",
+  "description": "Tunes the eagle stratagems' payload damage and rearm uses.\nstratagems:\nEagle 110mm Rocket Pods\nEagle Napalm Airstrike\nEagle Smoke Strike\nexplosions:\nEagle 500kg Bomb",
   "gameplay": true
 }

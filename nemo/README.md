@@ -24,9 +24,10 @@ loop — the stats files are the mods' only gameplay artifacts.
   `backpacks`, `explosions`, `boosters`, and an optional `raw` (verbatim write
   pass-through; the scope swaps). Each file also carries a required top-level
   `description:` key: a single-line plain string (the manifest's description
-  lead line; the build appends one bullet per non-empty section listing that
-  section's targets, and the validator fails the build if the key is missing,
-  empty, or multi-line). A value is a plain number, a plain boolean, or
+  lead line; the build appends one line per emitted top-level target, a
+  section-name label only when the mod carries more than one non-empty section,
+  and nested section targets are excluded, and the validator fails the build if
+  the key is missing, empty, or multi-line). A value is a plain number, a plain boolean, or
   a plain string (a status-reference field such as `damage.status_1_type` takes
   a semantic status id like `fire`; `stratagem.max_uses` takes a number or `-1`
   for unlimited). The `# stock N` trailing notes are machine-maintained by the
@@ -39,8 +40,10 @@ loop — the stats files are the mods' only gameplay artifacts.
   under it — a key named after one of the file's sections (`weapons`,
   `throwables`, `stratagems`, `backpacks`, `explosions`, `boosters`) holds that
   section's targets under the logical weapon (the G-7 Pineapple's two
-  `explosions` rows sit under `throwables: G-7 Pineapple: explosions:`; the
-  MG-43 / M-105 scope swaps sit under their weapons' `raw:`). The build
+  `explosions` rows sit under `throwables: G-7 Pineapple: explosions:`; a
+  weapon's underbarrel sits under its host's own `weapons:` key — a nested
+  section key may equal the parent's own section; the MG-43 / M-105 scope swaps
+  sit under their weapons' `raw:`). The build
   flattens the source shape to the flat section/target/field view before
   validating, generating, annotating, and tabling, so a nested config and an
   equivalent flat config emit byte-identical stats files.

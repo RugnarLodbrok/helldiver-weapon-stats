@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-special",
   "name": "Nemo Stats: Weapons Special",
   "version": "1.0.0",
-  "description": "Tunes the special weapons' damage, charge, and ergonomics.\n- JAR-5 Dominator, ARC-3 Arc Thrower, P-35 Re-Educator",
+  "description": "Tunes the special weapons' damage, charge, and ergonomics.\nJAR-5 Dominator\nARC-3 Arc Thrower\nP-35 Re-Educator",
   "gameplay": true
 }

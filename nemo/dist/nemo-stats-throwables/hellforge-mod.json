@@ -3,6 +3,6 @@
   "id": "nemo-stats-throwables",
   "name": "Nemo Stats: Throwables",
   "version": "1.0.0",
-  "description": "Tunes the armory throwables' counts, explosion damage, and radii.\n- throwables: G-12 High Explosive, G-16 Impact, G-50 Seeker, G-6 Frag, G-7 Pineapple, G-123 Thermite, G-48 Giga Grenade, G-60 Anti-Tank Seeker, G-10 Incendiary, G-13 Incendiary Impact, G-8 Immolation, G-142 Pyrotech, G-23 Stun, G-109 Urchin, G-31 Arc, G-3 Smoke, G-89 Smokescreen, G/40-K Melta Mine, TM-1 Lure Mine, G/SH-39 Shield",
+  "description": "Tunes the armory throwables' counts, explosion damage, and radii.\nG-12 High Explosive\nG-16 Impact\nG-50 Seeker\nG-6 Frag\nG-7 Pineapple\nG-123 Thermite\nG-48 Giga Grenade\nG-60 Anti-Tank Seeker\nG-10 Incendiary\nG-13 Incendiary Impact\nG-8 Immolation\nG-142 Pyrotech\nG-23 Stun\nG-109 Urchin\nG-31 Arc\nG-3 Smoke\nG-89 Smokescreen\nG/40-K Melta Mine\nTM-1 Lure Mine\nG/SH-39 Shield",
   "gameplay": true
 }

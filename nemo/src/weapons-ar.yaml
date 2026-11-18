@@ -84,15 +84,15 @@ weapons:
     damage.standard_damage: 95                            # stock 95
     damage.durable_damage: 30                             # stock 24
     damage.stagger: 15                                    # stock 15
-
-  AR/GL-21 One-Two / underbarrel:
-    weapon.horizontal_spread: 10                          # stock 30
-    weapon.vertical_spread: 10                            # stock 30
-    reload.duration: 2                                    # stock 0 (native 2.5 s); match GP-31 (2.0 s)
-    rounds.feed_capacity_1: 1                             # stock 1
-    rounds.starting_rounds: 6                             # stock 3
-    rounds.spare_rounds: 10                               # stock 5
-    rounds.rounds_from_supply: 5                          # stock 5
+    weapons:
+      AR/GL-21 One-Two / underbarrel:
+        weapon.horizontal_spread: 10                      # stock 30
+        weapon.vertical_spread: 10                        # stock 30
+        reload.duration: 2                                # stock 0 (native 2.5 s); match GP-31 (2.0 s)
+        rounds.feed_capacity_1: 1                         # stock 1
+        rounds.starting_rounds: 6                         # stock 3
+        rounds.spare_rounds: 10                           # stock 5
+        rounds.rounds_from_supply: 5                      # stock 5
 
   AR-11 Arbitrator:
     weapon.horizontal_spread: 3.1                         # stock 1
@@ -102,10 +102,10 @@ weapons:
     reload.duration: 3                                    # stock 3.75
     damage.standard_damage: 95                            # stock 70
     damage.durable_damage: 30                             # stock 20
-
-  AR-11 Arbitrator / underbarrel:
-    rounds.spare_rounds: 30                               # stock 20
-    rounds.rounds_from_supply: 30                         # stock 20
+    weapons:
+      AR-11 Arbitrator / underbarrel:
+        rounds.spare_rounds: 30                           # stock 20
+        rounds.rounds_from_supply: 30                     # stock 20
 
   VG-70 Variable:
     weapon.horizontal_spread: 3.1                         # stock 5

@@ -3,6 +3,6 @@
   "id": "nemo-stats-stratagems-orbital",
   "name": "Nemo Stats: Stratagem Orbital",
   "version": "1.0.0",
-  "description": "Tunes the orbital stratagems' cooldowns and payload damage.\n- Orbital Gas Strike, Orbital EMS Strike, Orbital Smoke Strike, Orbital Precision Strike, Orbital Airburst Strike, Orbital Gatling Barrage, Orbital Railcannon Strike, Orbital Napalm Barrage, Orbital Laser, Orbital 380mm HE Barrage",
+  "description": "Tunes the orbital stratagems' cooldowns and payload damage.\nOrbital Gas Strike\nOrbital EMS Strike\nOrbital Smoke Strike\nOrbital Precision Strike\nOrbital Airburst Strike\nOrbital Gatling Barrage\nOrbital Railcannon Strike\nOrbital Napalm Barrage\nOrbital Laser\nOrbital 380mm HE Barrage",
   "gameplay": true
 }
