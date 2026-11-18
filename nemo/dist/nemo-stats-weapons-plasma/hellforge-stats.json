@@ -60,7 +60,7 @@
       "magazine.magazines_from_supply": 7
     },
     "SG-8P Punisher Plasma": {
-      "projectile.velocity": 550,
+      "projectile.velocity": 250,
       "explosion.primary.impact.damage.standard_damage": 300,
       "explosion.primary.impact.damage.durable_damage": 300
     },

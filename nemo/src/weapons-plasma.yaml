@@ -73,7 +73,7 @@ weapons:
     notes: |
       Plasma grenade launcher.
       Faster payload, bigger damage.
-    projectile.velocity: 550                              # stock 90
+    projectile.velocity: 250                              # stock 90
     explosion.primary.impact.damage.standard_damage: 300  # stock 225
     explosion.primary.impact.damage.durable_damage: 300   # stock 225
 
