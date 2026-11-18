@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-ar",
   "name": "Nemo Stats: Weapons AR",
   "version": "1.0.0",
-  "description": "Tunes the assault rifles' spread, recoil, damage, and magazine reloads.\n- AR-23 Liberator\n- AR-23A Liberator Carbine\n- StA-52 Assault Rifle\n- AR-23P Liberator Penetrator\n- AR-23C Liberator Concussive\n- AR-32 Pacifier\n- AR-59 Suppressor\n- AR/GL-21 One-Two\n- AR-11 Arbitrator\n- VG-70 Variable\n- AR-2 Coyote\n- BR-14 Adjudicator\n- MA5C Assault Rifle\n- AR-61 Tenderizer",
+  "description": "Tunes the assault rifles' spread, recoil, damage, and magazine reloads.\n\n- AR-23 Liberator\n- AR-23A Liberator Carbine\n- StA-52 Assault Rifle\n- AR-23P Liberator Penetrator\n- AR-23C Liberator Concussive\n- AR-32 Pacifier\n- AR-59 Suppressor\n- AR/GL-21 One-Two\n- AR-11 Arbitrator\n- VG-70 Variable\n- AR-2 Coyote\n- BR-14 Adjudicator\n- MA5C Assault Rifle\n- AR-61 Tenderizer",
   "gameplay": true
 }

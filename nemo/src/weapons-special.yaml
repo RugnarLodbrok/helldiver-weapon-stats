@@ -3,6 +3,7 @@ description: Tunes the special weapons' damage, charge, and ergonomics.
 weapons:
 
   JAR-5 Dominator:
+    notes: Warhammer bolter.
     weapon.ergonomics: 40                                 # stock 30
     weapon.sway: 0.6                                      # stock 0.8
     weapon.fire_rate: 350                                 # stock 250
@@ -13,6 +14,7 @@ weapons:
     ammunition.projectile: 202
 
   ARC-3 Arc Thrower:
+    notes: Bigger durable damage, more arcs.
     weapon.sway: 0.7                                      # stock 1
     weapon.horizontal_spread: 1                           # stock 10
     weapon.vertical_spread: 1                             # stock 10
@@ -26,6 +28,7 @@ weapons:
     arc.primary.max_angle_spread: 90                      # stock 60
 
   P-35 Re-Educator:
+    notes: Stuns even heavy enemies, more ammo.
     weapon.sway: 0.5                                      # stock 1
     weapon.fire_rate: 300                                 # stock 110
     damage.status_3_type: stun_massive                    # stock none

@@ -23,11 +23,16 @@ loop — the stats files are the mods' only gameplay artifacts.
   in the HellForge schema). Sections: `weapons`, `throwables`, `stratagems`,
   `backpacks`, `explosions`, `boosters`, and an optional `raw` (verbatim write
   pass-through; the scope swaps). Each file also carries a required top-level
-  `description:` key: a single-line plain string (the manifest's description
-  lead line; the build appends one line per emitted top-level target, a
-  section-name label only when the mod carries more than one non-empty section,
-  and nested section targets are excluded, and the validator fails the build if
-  the key is missing, empty, or multi-line). A value is a plain number, a plain boolean, or
+  `description:` key: a plain string — a single line, or a lead line followed by
+  a blank line and prose (the manifest's description lead; the build appends a
+  blank line and a bullet list of the emitted top-level targets, a section-name
+  bullet only when
+  the mod carries more than one non-empty section, and nested section targets are
+  excluded; a target carrying a `notes:` key has its note follow its bullet as an
+  indented plain-text continuation, one line per note line, and a nested target's
+  note is excluded with the target; the validator fails the build if the key is
+  missing, empty, or a multi-line value that is not a lead line, a blank line,
+  and prose). A value is a plain number, a plain boolean, or
   a plain string (a status-reference field such as `damage.status_1_type` takes
   a semantic status id like `fire`; `stratagem.max_uses` takes a number or `-1`
   for unlimited). The `# stock N` trailing notes are machine-maintained by the
@@ -35,8 +40,9 @@ loop — the stats files are the mods' only gameplay artifacts.
   whose stem is not a known group name fails the build.
 
   A target may also carry two reserved keys that never reach the stats file:
-  `notes:` (a block-scalar string with the weapon's balance rationale) and
-  `raw:` (that weapon's raw write entries). A target may also nest a section
+  `notes:` (a block-scalar string with the weapon's balance rationale, surfaced
+  in the manifest description as an indented continuation under the target's
+  bullet) and `raw:` (that weapon's raw write entries). A target may also nest a section
   under it — a key named after one of the file's sections (`weapons`,
   `throwables`, `stratagems`, `backpacks`, `explosions`, `boosters`) holds that
   section's targets under the logical weapon (the G-7 Pineapple's two
@@ -192,27 +198,27 @@ enables each folder. Rollback: remove the folders.
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | Beams | Fire str | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| LAS-13 Trident | 60→70 | 6→8 | 300 | 10 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 3 | 0→1 | 1050 | 120 |
+| LAS-99 Quasar Cannon | 2000 | 2000 | 10*/10 | 50 | 6/6/6/3 | 1300 | 0 | — | — | 1→0.7 | 35 | 40,40,50,180 | — | 0 | 333 | 333 |
+| R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | — | 0→16 | 1833 | 267 |
+| LAS-58 Talon | 200 | 20 | 750 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 1300→2000 | 0 | — | 4.6→3 | 1→0.5 | 95 | 2,2,2,1<br>→<br>0.1,0.1,0.1,0.1 | — | 0→4 | 2500 | 250 |
 | LAS-16 Sickle | 60→70 | 6→8 | 750→850 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 992 | 113 |
 | LAS-17 Double-Edge Sickle | 60→70 | 6→8 | 700 | 10 | 2/2/2/0 | 1300→2000 | 0 | — | 2.8 | 1→0.7 | 65 | 2,2,1,2 | — | 0→1 | 817 | 93 |
+| LAS-13 Trident | 60→70 | 6→8 | 300 | 10 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 2,2,1,2<br>→<br>0.1,0.1,0.1,0.1 | 3 | 0→1 | 1050 | 120 |
 | LAS-12 Sai | 80→70 | 4→8 | 800 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 100→2000 | 0 | — | 1.8 | 1→0.8 | 65 | 8,8,2,25<br>→<br>0.1,0.1,0.1,0.1 | — | 0→1 | 933 | 107 |
+| LAS-98 Laser Cannon | 350→450 | 200→420 | — | 0→10 | 4/4/4/4 | — | — | — | 5 | 1→0.5 | 45 | 0,0,0,0 | — | — | — | — |
 | LAS-5 Scythe | 350→450 | 70→75 | — | 0 | 2/2/2/0 | — | — | — | 3.7 | 1→0.7 | 65 | 0,0,0,0 | — | 1 | — | — |
-| R/40-K Hot-Shot Marksman Rifle | 275 | 40 | 210→400 | 20→15 | 3/3/3/0<br>→<br>2/2/2/0 | 500→2000 | 0 | 12→15 | 2.7→2.8 | 1→0.5 | 30→40 | 12.5,17.5,12.5,32.5<br>→<br>0.1,0.1,0.1,0.1 | — | 0→16 | 1833 | 267 |
 | LAS-7 Dagger | 250→300 | 50 | — | 0 | 2/2/2/0 | — | — | — | 2.3 | 1→0.5 | 95 | 0,0,0,0 | — | 1 | — | — |
-| LAS-58 Talon | 200 | 20 | 750 | 10 | 3/3/3/0<br>→<br>2/2/2/0 | 1300→2000 | 0 | — | 4.6→3 | 1→0.5 | 95 | 2,2,2,1<br>→<br>0.1,0.1,0.1,0.1 | — | 0→4 | 2500 | 250 |
-| LAS-98 Laser Cannon | 350 | 200→420 | — | 0→10 | 4/4/4/4 | — | — | — | 5 | 1→0.5 | 45 | 0,0,0,0 | — | — | — | — |
-| LAS-99 Quasar Cannon | 2000 | 2000 | 10*/10 | 50 | 6/6/6/3 | 1300 | 0 | — | — | 1→0.7 | 35 | 40,40,50,180 | — | 0 | 333 | 333 |
 
 ### Plasma weapons
 
 | Weapon | Std | Dur | RPM | Stg | AP | Vel | Drag | Cap | Reload | Sway | Ergo | Drift/Climb (H/V) | DPS | dDPS |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| PLAS-1 Scorcher | 100 | 50 | 350→1000 | 20 | 2/2/2/0 | 550 | 1.5 | 20→30 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 1667 | 833 |
-| PLAS-101 Purifier | 200 | 100 | 1000 | 20 | 3/3/3/0 | 350→500 | 1.5→1 | 15→20 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 3333 | 1667 |
 | PLAS-39 Accelerator Rifle | 250 | 125→180 | 550 | 20→15 | 3/3/3/0<br>→<br>4/4/3/0 | 1000 | 0.1 | 9→12 | 3.3→2 | 1→0.5 | 60→45 | 3,3,3,3<br>→<br>1,1,1,1 | 2292 | 1650 |
+| PLAS-1 Scorcher | 100 | 50 | 350→1000 | 20 | 2/2/2/0 | 550 | 1.5 | 20→30 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 1667 | 833 |
+| PLAS-101 Purifier | 200 | 100 | 1000 | 20 | 3/3/3/0 | 350→550 | 1.5→1 | 15→20 | 2.5 | 1→0.7 | 65 | 20,20,2,20 | 3333 | 1667 |
 | PLAS-15 Loyalist | 100 | 50 | 1000 | 20 | 2/2/2/0 | 550 | 1 | — | 1.8 | 1 | 95 | 2.5,10,2.5,10 | 1667 | 833 |
-| SG-8P Punisher Plasma | 0 | 0 | 80 | 20 | 2/2/2/0 | 90 | 4 | 10 | 2.5 | 1 | 65 | 40,40,50,180 | 0 | 0 |
-| PLAS-45 Epoch | 400 | 200 | — | 30 | 4/4/4/4 | 250→500 | 0.1 | 3→7 | — | 1 | 25→40 | 20,45,15,65 | — | — |
+| SG-8P Punisher Plasma | 0 | 0 | 80 | 20 | 2/2/2/0 | 90→550 | 4 | 10 | 2.5 | 1 | 65 | 40,40,50,180 | 0 | 0 |
+| PLAS-45 Epoch | 400 | 200 | — | 30 | 4/4/4/4 | 250→550 | 0.1 | 3→7 | — | 1 | 25→40 | 20,45,15,65 | — | — |
 
 ### Special weapons
 
@@ -270,19 +276,19 @@ enables each folder. Rollback: remove the folders.
 | G-6 Frag | 500→300 | 500→300 | 4 | 10 | 14 | 2.4 | 4 | 6 | 35→64 | — | 110→180 | — |
 | G-7 Pineapple | 300→200 | 300→200 | 4 | 10 | 14 | 2.4→2.2 | 4 | 5 | 18→24 | — | — | — |
 | G-123 Thermite | 2000 | 2000 | 1.5 | 2.5 | 4 | 2.9 | 2 | 3→4 | — | — | — | — |
-| G-48 Giga Grenade | 2000→2800 | 2000→2800 | 2→4 | 12 | 16 | — | 2 | 2→3 | — | — | — | — |
 | G-60 Anti-Tank Seeker | 1800→3000 | 1800→3000 | 4→2 | 12→3 | 15 | — | 2 | 3→4 | — | — | — | — |
+| G-48 Giga Grenade | 2000→2400 | 2000→2400 | 2→4 | 12 | 16 | — | 2 | 2→3 | — | — | — | — |
 | G-10 Incendiary | 300 | 300 | 1 | 7 | 9 | 2.9→2 | 4 | 5→6 | — | fire 50→100 | — | — |
 | G-13 Incendiary Impact | 150→300 | 150→300 | 1 | 7 | 9 | — | 4 | 5→6 | — | fire 100 | — | — |
 | G-8 Immolation | 20 | 20 | 4 | 10→12 | 10 | — | 4 | 6 | — | fire 100 | — | — |
 | G-142 Pyrotech | 50 | 50 | 2.5 | 5→6 | 7 | 2.9→2.4 | 4 | 6 | — | fire 100 | — | — |
-| G-23 Stun | 0 | 0 | 1 | 10 | 15 | 1.8→1.4 | 4→5 | 5→7 | — | stun-large→stun-massive 25 | — | — |
+| G-23 Stun | 0 | 0 | 1 | 10→12 | 15 | 1.8→1.4 | 4→5 | 5→7 | — | stun-large→stun-massive 25 | — | — |
 | G-109 Urchin | 0 | 0 | 2→4 | 4→12 | 1 | 2.9→3 | 4→5 | 5→7 | — | stun-large→stun-massive 10 | — | — |
 | G-31 Arc | 0 | 0 | 1 | 10 | 15 | 3 | 4 | 5 | — | arc-stun-small 8 | 100→150 | — |
-| G-3 Smoke | — | — | 8 | 8→12 | 0 | 2.4→2 | 4→6 | 5→7 | — | — | — | — |
-| G-89 Smokescreen | — | — | 5→8 | 5→12 | 0 | — | 4→6 | 5→7 | — | — | — | — |
-| G/40-K Melta Mine | 2000→2300 | 2000→2300 | 2.5 | 6 | 15 | — | 3 | 4 | — | — | — | — |
+| G-3 Smoke | — | — | 8→16 | 8→16 | 0 | 2.4→2 | 4→6 | 5→7 | — | — | — | — |
+| G-89 Smokescreen | — | — | 5→16 | 5→16 | 0 | — | 4→6 | 5→7 | — | — | — | — |
 | TM-1 Lure Mine | 1000→1200 | 1000→1200 | 2→4 | 8→12 | 12 | — | 3 | 4 | 35 | — | 110→180 | — |
+| G/40-K Melta Mine | 2000→3000 | 2000→3000 | 2.5 | 6 | 15 | — | 3 | 4 | — | — | — | — |
 | G/SH-39 Shield | — | — | — | — | — | — | 3 | 4→5 | — | — | — | 1.8→2.2 / 1000→2000 |
 
 <!-- tables:end -->

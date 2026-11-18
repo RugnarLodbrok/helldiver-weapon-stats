@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-plasma",
   "name": "Nemo Stats: Plasma Weapons",
   "version": "1.0.0",
-  "description": "Tunes the plasma weapons' projectiles, charge, and damage.\n- PLAS-1 Scorcher\n- PLAS-101 Purifier\n- PLAS-39 Accelerator Rifle\n- PLAS-15 Loyalist\n- SG-8P Punisher Plasma\n- PLAS-45 Epoch",
+  "description": "Tunes the plasma weapons' projectiles, charge, and damage.\n\n- PLAS-39 Accelerator Rifle\n  Primary low stagger AP4 sniper rifle.\n- PLAS-1 Scorcher\n  Assault rifle, better ammo economy.\n- PLAS-101 Purifier\n  Assault rifle/grenade launcher hybrid.\n  Shorter charge, better ammo economy.\n- PLAS-15 Loyalist\n  Pistol/grenade launcher hybrid.\n  Auto-fires at full charge.\n  Better ammo economy.\n- SG-8P Punisher Plasma\n  Plasma grenade launcher.\n  Faster payload, bigger damage.\n- PLAS-45 Epoch\n  Low charge time to bombard chaff enemies.\n  Better ammo economy.\n  Flatter, faster trajectory.",
   "gameplay": true
 }

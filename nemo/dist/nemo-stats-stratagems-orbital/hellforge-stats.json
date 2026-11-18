@@ -13,8 +13,8 @@
     },
     "Orbital Precision Strike": {
       "stratagem.cooldown": 53,
-      "explosion.damage.standard_damage": 2000,
-      "explosion.damage.durable_damage": 2000
+      "explosion.damage.standard_damage": 3000,
+      "explosion.damage.durable_damage": 3000
     },
     "Orbital Airburst Strike": {
       "stratagem.cooldown": 70
@@ -23,21 +23,29 @@
       "stratagem.cooldown": 70
     },
     "Orbital Railcannon Strike": {
-      "stratagem.cooldown": 70,
-      "damage.durable_damage": 11000,
-      "damage.standard_damage": 11000
-    },
-    "Orbital Napalm Barrage": {
-      "orbital.salvos": 3
+      "stratagem.cooldown": 90,
+      "damage.durable_damage": 14000,
+      "damage.standard_damage": 14000,
+      "damage.ap_direct": 15,
+      "damage.ap_slight": 15,
+      "damage.ap_large": 15,
+      "damage.ap_extreme": 15,
+      "explosion.inner_radius": 3.0,
+      "explosion.outer_radius": 10.0,
+      "explosion.shockwave_radius": 20.0,
+      "explosion.damage.stagger": 50
     },
     "Orbital Laser": {
       "stratagem.max_uses": -1
     },
     "Orbital 380mm HE Barrage": {
       "orbital.salvos": 5,
-      "orbital.shells_per_salvo": 4,
-      "orbital.shell_interval": 1.125,
-      "orbital.salvo_interval": 3.0
+      "orbital.shells_per_salvo": 5,
+      "orbital.shell_interval": 1.1,
+      "orbital.salvo_interval": 2.0
+    },
+    "Orbital Napalm Barrage": {
+      "orbital.salvos": 3
     }
   }
 }

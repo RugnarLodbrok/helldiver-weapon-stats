@@ -2,34 +2,8 @@ description: Tunes the plasma weapons' projectiles, charge, and damage.
 
 weapons:
 
-  PLAS-1 Scorcher:
-    weapon.sway: 0.7                                      # stock 1
-    weapon.horizontal_spread: 5                           # stock 10
-    weapon.vertical_spread: 5                             # stock 10
-    weapon.fire_rate: 1000                                # stock 350
-    damage.standard_damage: 100                           # stock 100
-    damage.durable_damage: 50                             # stock 50
-    magazine.capacity: 30                                 # stock 20
-    magazine.starting_magazines: 5                        # stock 3
-    magazine.spare_magazines: 9                           # stock 5
-    magazine.magazines_from_supply: 9                     # stock 5
-
-  PLAS-101 Purifier:
-    weapon.sway: 0.7                                      # stock 1
-    weapon.horizontal_spread: 5                           # stock 10
-    weapon.vertical_spread: 5                             # stock 10
-    damage.standard_damage: 200                           # stock 200
-    damage.durable_damage: 100                            # stock 100
-    charge.level_2: 0.5
-    charge.level_3: 0.5
-    projectile.drag: 1                                    # stock 1.5
-    projectile.velocity: 500                              # stock 350
-    magazine.capacity: 20                                 # stock 15
-    magazine.starting_magazines: 5                        # stock 4
-    magazine.spare_magazines: 7                           # stock 6
-    magazine.magazines_from_supply: 7                     # stock 6
-
   PLAS-39 Accelerator Rifle:
+    notes: Primary low stagger AP4 sniper rifle.
     weapon.ergonomics: 45                                 # stock 60
     weapon.sway: 0.5                                      # stock 1
     weapon.recoil_drift_horizontal: 1                     # stock 3
@@ -49,30 +23,81 @@ weapons:
     magazine.spare_magazines: 12                          # stock 12
     magazine.magazines_from_supply: 12                    # stock 12
 
+  PLAS-1 Scorcher:
+    notes: Assault rifle, better ammo economy.
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 5                           # stock 10
+    weapon.vertical_spread: 5                             # stock 10
+    weapon.fire_rate: 1000                                # stock 350
+    damage.standard_damage: 100                           # stock 100
+    damage.durable_damage: 50                             # stock 50
+    magazine.capacity: 30                                 # stock 20
+    magazine.starting_magazines: 5                        # stock 3
+    magazine.spare_magazines: 9                           # stock 5
+    magazine.magazines_from_supply: 9                     # stock 5
+
+  PLAS-101 Purifier:
+    notes: |
+      Assault rifle/grenade launcher hybrid.
+      Shorter charge, better ammo economy.
+    weapon.sway: 0.7                                      # stock 1
+    weapon.horizontal_spread: 5                           # stock 10
+    weapon.vertical_spread: 5                             # stock 10
+    damage.standard_damage: 200                           # stock 200
+    damage.durable_damage: 100                            # stock 100
+    charge.level_2: 0.5
+    charge.level_3: 0.5
+    projectile.drag: 1                                    # stock 1.5
+    projectile.gravity: 0.5                               # stock 1
+    projectile.velocity: 550                              # stock 350
+    magazine.capacity: 20                                 # stock 15
+    magazine.starting_magazines: 5                        # stock 4
+    magazine.spare_magazines: 7                           # stock 6
+    magazine.magazines_from_supply: 7                     # stock 6
+
   PLAS-15 Loyalist:
+    notes: |
+      Pistol/grenade launcher hybrid.
+      Auto-fires at full charge.
+      Better ammo economy.
     weapon.fire_rate: 1000                                # stock 1000
+    charge.level_2: 0.5
+    charge.level_3: 0.5
+    charge.auto_fire_at_full: 1
+    magazine.capacity: 10
+    magazine.starting_magazines: 5
+    magazine.spare_magazines: 7
+    magazine.magazines_from_supply: 7
 
   SG-8P Punisher Plasma:
-    explosion.primary.impact.damage.standard_damage: 225  # stock 225
-    explosion.primary.impact.damage.durable_damage: 225   # stock 225
+    notes: |
+      Plasma grenade launcher.
+      Faster payload, bigger damage.
+    projectile.velocity: 550                              # stock 90
+    explosion.primary.impact.damage.standard_damage: 300  # stock 225
+    explosion.primary.impact.damage.durable_damage: 300   # stock 225
 
   PLAS-45 Epoch:
+    notes: |
+      Low charge time to bombard chaff enemies.
+      Better ammo economy.
+      Flatter, faster trajectory.
     weapon.horizontal_spread: 10                          # stock 30
     weapon.vertical_spread: 10                            # stock 30
     weapon.capacity: 7                                    # stock 3
     weapon.ergonomics: 40                                 # stock 25
     charge.level_1: 0.1                                   # stock 1
-    charge.level_2: 2.5                                   # stock 2.5
-    charge.level_3: 2.6                                   # stock 2.6
+    charge.level_2: 1.9                                   # stock 2.5
+    charge.level_3: 2.0                                   # stock 2.6
     charge.overcharge_limit_seconds: 0                    # stock 3.25
     projectile.primary.drag: 0.1                          # stock 0.1
     projectile.primary.gravity: 1                         # stock 2
     projectile.primary.lifetime: 5                        # stock 0.6
-    projectile.primary.velocity: 500                      # stock 250
+    projectile.primary.velocity: 550                      # stock 250
     projectile.full_charge.drag: 0.1                      # stock 0.1
     projectile.full_charge.gravity: 1                     # stock 2
     projectile.full_charge.lifetime: 5                    # stock 0.6
-    projectile.full_charge.velocity: 350                  # stock 250
+    projectile.full_charge.velocity: 550                  # stock 250
     magazine.starting_magazines: 4                        # stock 2
     magazine.spare_magazines: 7                           # stock 4
     magazine.magazines_from_supply: 4                     # stock 2

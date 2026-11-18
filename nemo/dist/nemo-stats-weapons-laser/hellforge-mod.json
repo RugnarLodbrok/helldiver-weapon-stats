@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-laser",
   "name": "Nemo Stats: Laser Weapons",
   "version": "1.0.0",
-  "description": "Tunes the laser weapons' damage, heat, and spread.\n- LAS-13 Trident\n- LAS-16 Sickle\n- LAS-17 Double-Edge Sickle\n- LAS-12 Sai\n- LAS-5 Scythe\n- R/40-K Hot-Shot Marksman Rifle\n- LAS-7 Dagger\n- LAS-58 Talon\n- LAS-98 Laser Cannon\n- LAS-99 Quasar Cannon",
+  "description": "Tunes the laser weapons' damage, heat, and spread.\n\nOverall lasers are low durability, low penetration, fire status with infinite ammo and no recoil.\n\n- LAS-99 Quasar Cannon\n  Laser anti-tank support weapon.\n  Reduced charge up time.\n- R/40-K Hot-Shot Marksman Rifle\n  High damage precise DMR with high fire status effect and bigger ammo.\n- LAS-58 Talon\n  High damage precise laser hand cannon.\n- LAS-16 Sickle\n  Laser assault rifle with high capacity.\n- LAS-17 Double-Edge Sickle\n  Sickle with no safety, self-damage.\n- LAS-13 Trident\n  Three barrels instead of one, lower RPM.\n- LAS-12 Sai\n  SMG variant with weaker heat economy.\n- LAS-98 Laser Cannon\n  Powerful laser beam support weapon with high durable damage.\n  Reduces targets armor value.\n- LAS-5 Scythe\n  Laser beam primary weapon with low durable damage.\n- LAS-7 Dagger\n  Laser beam secondary weapon with low durable damage.",
   "gameplay": true
 }

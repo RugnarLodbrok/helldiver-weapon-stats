@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-cannons",
   "name": "Nemo Stats: Weapons Cannons",
   "version": "1.0.0",
-  "description": "Tunes the cannons' damage, charge, and spread.\n- APW-1 Anti-Materiel Rifle\n- RS-422 Railgun\n- AC-8 Autocannon\n- R-36 Eruptor",
+  "description": "Tunes the cannons' damage, charge, and spread.\n\n- APW-1 Anti-Materiel Rifle\n- RS-422 Railgun\n  Scope swap: the raw write replaces the default Optics optionId (Railgun\n  Scope) with the SNIPER SCOPE 10x; the game's own delta then applies the\n  scope's zoom, zeroing, model and crosshair.\n- AC-8 Autocannon\n- R-36 Eruptor",
   "gameplay": true
 }

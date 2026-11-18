@@ -1,69 +1,26 @@
-description: Tunes the laser weapons' damage, heat, and spread.
+description: |
+  Tunes the laser weapons' damage, heat, and spread.
+
+  Overall lasers are low durability, low penetration, fire status with infinite ammo and no recoil.
 
 weapons:
 
-  LAS-13 Trident:
-    weapon.sway: 0.7                                      # stock 1
-    weapon.recoil_drift_horizontal: 0.1                   # stock 2
-    weapon.recoil_drift_vertical: 0.1                     # stock 2
-    weapon.recoil_climb_horizontal: 0.1                   # stock 1
-    weapon.recoil_climb_vertical: 0.1                     # stock 2
-    weapon.horizontal_spread: 0.1                         # stock 200
-    weapon.vertical_spread: 0.1                           # stock 50
-    damage.standard_damage: 70                            # stock 60
-    damage.durable_damage: 8                              # stock 6
-    damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 1                           # stock 0
-    heat.heat_per_shot: 4                                 # stock 10
-    beam.pulse_beams: 1                                   # stock 2
+  ################
+  # Hard hitting #
+  ################
 
-  LAS-16 Sickle:
+  LAS-99 Quasar Cannon:
+    notes: |
+      Laser anti-tank support weapon.
+      Reduced charge up time.
     weapon.sway: 0.7                                      # stock 1
-    weapon.fire_rate: 850                                 # stock 750
-    weapon.recoil_drift_horizontal: 0.1                   # stock 2
-    weapon.recoil_drift_vertical: 0.1                     # stock 2
-    weapon.recoil_climb_horizontal: 0.1                   # stock 1
-    weapon.recoil_climb_vertical: 0.1                     # stock 2
-    weapon.horizontal_spread: 0.1                         # stock 20
-    weapon.vertical_spread: 0.1                           # stock 20
-    projectile.velocity: 2000                             # stock 1300
-    damage.standard_damage: 70                            # stock 60
-    damage.durable_damage: 8                              # stock 6
-    damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 1                           # stock 0
-    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
-    heat.heat_per_shot: 0.95                              # stock 1.15; as in new patch
-
-  LAS-17 Double-Edge Sickle:
-    weapon.sway: 0.7                                      # stock 1
-    heat.firing_charge: 10                                # stock 100; 0 = instant
-
-  LAS-12 Sai:
-    weapon.sway: 0.8                                      # stock 1
-    weapon.recoil_drift_horizontal: 0.1                   # stock 8
-    weapon.recoil_drift_vertical: 0.1                     # stock 8
-    weapon.recoil_climb_horizontal: 0.1                   # stock 2
-    weapon.recoil_climb_vertical: 0.1                     # stock 25
-    weapon.horizontal_spread: 0.1                         # stock 140
-    weapon.vertical_spread: 0.1                           # stock 140
-    projectile.velocity: 2000                             # stock 100
-    damage.standard_damage: 70                            # stock 80
-    damage.durable_damage: 8                              # stock 4
-    damage.ap_direct: 2                                   # stock 3
-    damage.ap_slight: 2                                   # stock 3
-    damage.ap_large: 2                                    # stock 3
-    damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 1                           # stock 0
-    heat.cool_per_second: 6.7                             # stock 5.4
-    heat.heat_per_shot: 1.3                               # stock 2
-
-  LAS-5 Scythe:
-    weapon.sway: 0.7                                      # stock 1
-    damage.standard_damage: 450                           # stock 350
-    damage.durable_damage: 75                             # stock 70
-    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.25 s wind-up
+    heat.firing_charge: 66                                # stock 100
+    heat.charge_gain_per_second: 66                       # stock 33
+    heat.cool_per_second: 8.33                            # stock 6.66; post-shot cooldown 100/8.33 = 12.0 s (was 15.0 s)
+    heat.cool_per_second_overheated: 8.33                 # stock 6.66; match the non-overheated rate
 
   R/40-K Hot-Shot Marksman Rifle:
+    notes: High damage precise DMR with high fire status effect and bigger ammo.
     weapon.ergonomics: 40                                 # stock 30
     weapon.sway: 0.5                                      # stock 1
     weapon.fire_rate: 400                                 # stock 210
@@ -85,12 +42,8 @@ weapons:
     damage.status_1_strength: 16                          # stock 0
     magazine.capacity: 15                                 # stock 12
 
-  LAS-7 Dagger:
-    weapon.sway: 0.5                                      # stock 1
-    damage.standard_damage: 300                           # stock 250
-    damage.durable_damage: 50                             # stock 50
-
   LAS-58 Talon:
+    notes: High damage precise laser hand cannon.
     weapon.sway: 0.5                                      # stock 1
     weapon.recoil_drift_horizontal: 0.1                   # stock 2
     weapon.recoil_drift_vertical: 0.1                     # stock 2
@@ -109,9 +62,79 @@ weapons:
     damage.status_1_strength: 4                           # stock 0
     heat.heat_per_shot: 10                                # stock 15
 
+  #################
+  # Fast shooting #
+  #################
+
+  LAS-16 Sickle:
+    notes: Laser assault rifle with high capacity.
+    weapon.sway: 0.7                                      # stock 1
+    weapon.fire_rate: 850                                 # stock 750
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 1
+    weapon.recoil_climb_vertical: 0.1                     # stock 2
+    weapon.horizontal_spread: 0.1                         # stock 20
+    weapon.vertical_spread: 0.1                           # stock 20
+    projectile.velocity: 2000                             # stock 1300
+    damage.standard_damage: 70                            # stock 60
+    damage.durable_damage: 8                              # stock 6
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
+    heat.heat_per_shot: 0.95                              # stock 1.15; as in new patch
+
+  LAS-17 Double-Edge Sickle:
+    notes: Sickle with no safety, self-damage.
+    weapon.sway: 0.7                                      # stock 1
+    heat.firing_charge: 10                                # stock 100; 0 = instant
+
+  LAS-13 Trident:
+    notes: Three barrels instead of one, lower RPM.
+    weapon.sway: 0.7                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 2
+    weapon.recoil_drift_vertical: 0.1                     # stock 2
+    weapon.recoil_climb_horizontal: 0.1                   # stock 1
+    weapon.recoil_climb_vertical: 0.1                     # stock 2
+    weapon.horizontal_spread: 0.1                         # stock 200
+    weapon.vertical_spread: 0.1                           # stock 50
+    damage.standard_damage: 70                            # stock 60
+    damage.durable_damage: 8                              # stock 6
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.heat_per_shot: 4                                 # stock 10
+    beam.pulse_beams: 1                                   # stock 2
+
+  LAS-12 Sai:
+    notes: SMG variant with weaker heat economy.
+    weapon.sway: 0.8                                      # stock 1
+    weapon.recoil_drift_horizontal: 0.1                   # stock 8
+    weapon.recoil_drift_vertical: 0.1                     # stock 8
+    weapon.recoil_climb_horizontal: 0.1                   # stock 2
+    weapon.recoil_climb_vertical: 0.1                     # stock 25
+    weapon.horizontal_spread: 0.1                         # stock 140
+    weapon.vertical_spread: 0.1                           # stock 140
+    projectile.velocity: 2000                             # stock 100
+    damage.standard_damage: 70                            # stock 80
+    damage.durable_damage: 8                              # stock 4
+    damage.ap_direct: 2                                   # stock 3
+    damage.ap_slight: 2                                   # stock 3
+    damage.ap_large: 2                                    # stock 3
+    damage.status_1_type: fire                            # stock none
+    damage.status_1_strength: 1                           # stock 0
+    heat.cool_per_second: 6.7                             # stock 5.4
+    heat.heat_per_shot: 1.3                               # stock 2
+
+  ########
+  # Beam #
+  ########
+
   LAS-98 Laser Cannon:
+    notes: |
+      Powerful laser beam support weapon with high durable damage.
+      Reduces targets armor value.
     weapon.sway: 0.5                                      # stock 1
-    damage.primary.standard_damage: 350                   # stock 350
+    damage.primary.standard_damage: 450                   # stock 350
     damage.primary.durable_damage: 420                    # stock 200
     damage.primary.stagger: 10                            # stock 0
     damage.primary.status_2_type: acid_storm              # stock none; slot 1 keeps fire
@@ -119,9 +142,15 @@ weapons:
     heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
     heat.heat_per_second: 7                               # stock 8
 
-  LAS-99 Quasar Cannon:
+  LAS-5 Scythe:
+    notes: Laser beam primary weapon with low durable damage.
     weapon.sway: 0.7                                      # stock 1
-    heat.firing_charge: 66                                # stock 100
-    heat.charge_gain_per_second: 66                       # stock 33
-    heat.cool_per_second: 8.33                            # stock 6.66; post-shot cooldown 100/8.33 = 12.0 s (was 15.0 s)
-    heat.cool_per_second_overheated: 8.33                 # stock 6.66; match the non-overheated rate
+    damage.standard_damage: 450                           # stock 350
+    damage.durable_damage: 75                             # stock 70
+    heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.25 s wind-up
+
+  LAS-7 Dagger:
+    notes: Laser beam secondary weapon with low durable damage.
+    weapon.sway: 0.5                                      # stock 1
+    damage.standard_damage: 300                           # stock 250
+    damage.durable_damage: 50                             # stock 50

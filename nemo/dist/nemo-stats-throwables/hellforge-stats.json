@@ -51,14 +51,6 @@
       "explosion.damage.standard_damage": 2000,
       "explosion.damage.durable_damage": 2000
     },
-    "G-48 Giga Grenade": {
-      "throwable.max_count": 3,
-      "throwable.count_from_supply": 2,
-      "explosion.inner_radius": 4,
-      "explosion.outer_radius": 12,
-      "explosion.damage.standard_damage": 2800,
-      "explosion.damage.durable_damage": 2800
-    },
     "G-60 Anti-Tank Seeker": {
       "throwable.max_count": 4,
       "throwable.count_from_supply": 2,
@@ -66,6 +58,14 @@
       "explosion.outer_radius": 3,
       "explosion.damage.standard_damage": 3000,
       "explosion.damage.durable_damage": 3000
+    },
+    "G-48 Giga Grenade": {
+      "throwable.max_count": 3,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 4,
+      "explosion.outer_radius": 12,
+      "explosion.damage.standard_damage": 2400,
+      "explosion.damage.durable_damage": 2400
     },
     "G-10 Incendiary": {
       "throwable.max_count": 6,
@@ -110,7 +110,7 @@
       "throwable.starting_count": 5,
       "throwable.explosion_delay": 1.4,
       "explosion.inner_radius": 1,
-      "explosion.outer_radius": 10,
+      "explosion.outer_radius": 12,
       "explosion.damage.status_1_type": 40
     },
     "G-109 Urchin": {
@@ -134,23 +134,15 @@
       "throwable.count_from_supply": 4,
       "throwable.starting_count": 6,
       "throwable.explosion_delay": 2,
-      "explosion.inner_radius": 8,
-      "explosion.outer_radius": 12
+      "explosion.inner_radius": 16,
+      "explosion.outer_radius": 16
     },
     "G-89 Smokescreen": {
       "throwable.max_count": 7,
       "throwable.count_from_supply": 4,
       "throwable.starting_count": 6,
-      "explosion.inner_radius": 8,
-      "explosion.outer_radius": 12
-    },
-    "G/40-K Melta Mine": {
-      "throwable.max_count": 4,
-      "throwable.count_from_supply": 2,
-      "explosion.inner_radius": 2.5,
-      "explosion.outer_radius": 6,
-      "explosion.damage.standard_damage": 2300,
-      "explosion.damage.durable_damage": 2300
+      "explosion.inner_radius": 16,
+      "explosion.outer_radius": 16
     },
     "TM-1 Lure Mine": {
       "throwable.max_count": 4,
@@ -159,6 +151,14 @@
       "explosion.outer_radius": 12,
       "explosion.damage.standard_damage": 1200,
       "explosion.damage.durable_damage": 1200
+    },
+    "G/40-K Melta Mine": {
+      "throwable.max_count": 4,
+      "throwable.count_from_supply": 2,
+      "explosion.inner_radius": 2.5,
+      "explosion.outer_radius": 6,
+      "explosion.damage.standard_damage": 3000,
+      "explosion.damage.durable_damage": 3000
     },
     "G/SH-39 Shield": {
       "throwable.max_count": 5,

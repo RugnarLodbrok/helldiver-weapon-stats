@@ -1,66 +1,12 @@
 {
   "format": 1,
   "weapons": {
-    "LAS-13 Trident": {
+    "LAS-99 Quasar Cannon": {
       "weapon.sway": 0.7,
-      "weapon.recoil_drift_horizontal": 0.1,
-      "weapon.recoil_drift_vertical": 0.1,
-      "weapon.recoil_climb_horizontal": 0.1,
-      "weapon.recoil_climb_vertical": 0.1,
-      "weapon.horizontal_spread": 0.1,
-      "weapon.vertical_spread": 0.1,
-      "damage.standard_damage": 70,
-      "damage.durable_damage": 8,
-      "damage.status_1_type": 5,
-      "damage.status_1_strength": 1,
-      "heat.heat_per_shot": 4,
-      "beam.pulse_beams": 1
-    },
-    "LAS-16 Sickle": {
-      "weapon.sway": 0.7,
-      "weapon.fire_rate": 850,
-      "weapon.recoil_drift_horizontal": 0.1,
-      "weapon.recoil_drift_vertical": 0.1,
-      "weapon.recoil_climb_horizontal": 0.1,
-      "weapon.recoil_climb_vertical": 0.1,
-      "weapon.horizontal_spread": 0.1,
-      "weapon.vertical_spread": 0.1,
-      "projectile.velocity": 2000,
-      "damage.standard_damage": 70,
-      "damage.durable_damage": 8,
-      "damage.status_1_type": 5,
-      "damage.status_1_strength": 1,
-      "heat.firing_charge": 10,
-      "heat.heat_per_shot": 0.95
-    },
-    "LAS-17 Double-Edge Sickle": {
-      "weapon.sway": 0.7,
-      "heat.firing_charge": 10
-    },
-    "LAS-12 Sai": {
-      "weapon.sway": 0.8,
-      "weapon.recoil_drift_horizontal": 0.1,
-      "weapon.recoil_drift_vertical": 0.1,
-      "weapon.recoil_climb_horizontal": 0.1,
-      "weapon.recoil_climb_vertical": 0.1,
-      "weapon.horizontal_spread": 0.1,
-      "weapon.vertical_spread": 0.1,
-      "projectile.velocity": 2000,
-      "damage.standard_damage": 70,
-      "damage.durable_damage": 8,
-      "damage.ap_direct": 2,
-      "damage.ap_slight": 2,
-      "damage.ap_large": 2,
-      "damage.status_1_type": 5,
-      "damage.status_1_strength": 1,
-      "heat.cool_per_second": 6.7,
-      "heat.heat_per_shot": 1.3
-    },
-    "LAS-5 Scythe": {
-      "weapon.sway": 0.7,
-      "damage.standard_damage": 450,
-      "damage.durable_damage": 75,
-      "heat.firing_charge": 10
+      "heat.firing_charge": 66,
+      "heat.charge_gain_per_second": 66,
+      "heat.cool_per_second": 8.33,
+      "heat.cool_per_second_overheated": 8.33
     },
     "R/40-K Hot-Shot Marksman Rifle": {
       "weapon.ergonomics": 40,
@@ -84,11 +30,6 @@
       "damage.status_1_strength": 16,
       "magazine.capacity": 15
     },
-    "LAS-7 Dagger": {
-      "weapon.sway": 0.5,
-      "damage.standard_damage": 300,
-      "damage.durable_damage": 50
-    },
     "LAS-58 Talon": {
       "weapon.sway": 0.5,
       "weapon.recoil_drift_horizontal": 0.1,
@@ -108,9 +49,64 @@
       "damage.status_1_strength": 4,
       "heat.heat_per_shot": 10
     },
+    "LAS-16 Sickle": {
+      "weapon.sway": 0.7,
+      "weapon.fire_rate": 850,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 70,
+      "damage.durable_damage": 8,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.firing_charge": 10,
+      "heat.heat_per_shot": 0.95
+    },
+    "LAS-17 Double-Edge Sickle": {
+      "weapon.sway": 0.7,
+      "heat.firing_charge": 10
+    },
+    "LAS-13 Trident": {
+      "weapon.sway": 0.7,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "damage.standard_damage": 70,
+      "damage.durable_damage": 8,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.heat_per_shot": 4,
+      "beam.pulse_beams": 1
+    },
+    "LAS-12 Sai": {
+      "weapon.sway": 0.8,
+      "weapon.recoil_drift_horizontal": 0.1,
+      "weapon.recoil_drift_vertical": 0.1,
+      "weapon.recoil_climb_horizontal": 0.1,
+      "weapon.recoil_climb_vertical": 0.1,
+      "weapon.horizontal_spread": 0.1,
+      "weapon.vertical_spread": 0.1,
+      "projectile.velocity": 2000,
+      "damage.standard_damage": 70,
+      "damage.durable_damage": 8,
+      "damage.ap_direct": 2,
+      "damage.ap_slight": 2,
+      "damage.ap_large": 2,
+      "damage.status_1_type": 5,
+      "damage.status_1_strength": 1,
+      "heat.cool_per_second": 6.7,
+      "heat.heat_per_shot": 1.3
+    },
     "LAS-98 Laser Cannon": {
       "weapon.sway": 0.5,
-      "damage.primary.standard_damage": 350,
+      "damage.primary.standard_damage": 450,
       "damage.primary.durable_damage": 420,
       "damage.primary.stagger": 10,
       "damage.primary.status_2_type": 55,
@@ -118,12 +114,16 @@
       "heat.firing_charge": 10,
       "heat.heat_per_second": 7
     },
-    "LAS-99 Quasar Cannon": {
+    "LAS-5 Scythe": {
       "weapon.sway": 0.7,
-      "heat.firing_charge": 66,
-      "heat.charge_gain_per_second": 66,
-      "heat.cool_per_second": 8.33,
-      "heat.cool_per_second_overheated": 8.33
+      "damage.standard_damage": 450,
+      "damage.durable_damage": 75,
+      "heat.firing_charge": 10
+    },
+    "LAS-7 Dagger": {
+      "weapon.sway": 0.5,
+      "damage.standard_damage": 300,
+      "damage.durable_damage": 50
     }
   }
 }
