@@ -20,12 +20,15 @@ weapons:
     weapon.vertical_spread: 1                             # stock 10
     damage.primary.standard_damage: 250                   # stock 250
     damage.primary.durable_damage: 250                    # stock 100
-    charge.level_1: 0.2                                   # stock 1; min charge time
-    charge.level_2: 0.4                                   # stock 1.1; full charge time
+    charge.level_1: 0.1                                   # stock 1; min charge time
+    charge.level_2: 0.8                                   # stock 1.1; full charge time
+    charge.level_3: 1                                     # stock 1.2; overcharge time
     charge.auto_fire_at_full: true                        # stock false; hold to keep firing
     arc.primary.chain_count: 2                            # stock 1
     arc.primary.max_split: 2                              # stock 1
     arc.primary.max_angle_spread: 90                      # stock 60
+    arc.primary.range: 60                                 # stock 55
+    arc.primary.distance_at_max_spread: 50                # stock 40
 
   P-35 Re-Educator:
     notes: Stuns even heavy enemies, more ammo.

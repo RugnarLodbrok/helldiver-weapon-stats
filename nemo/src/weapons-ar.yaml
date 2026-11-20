@@ -41,24 +41,29 @@ weapons:
     damage.standard_damage: 72                            # stock 65
     damage.durable_damage: 15                             # stock 15
     damage.stagger: 10                                    # stock 10
+    fire_rate.modes.z: 900                                # stock 0; 900 rpm mode
+    weapon_function.left: 2                               # stock 0; rate-of-fire selector on the left input
 
   AR-23C Liberator Concussive:
     weapon.horizontal_spread: 3.1                         # stock 4
     weapon.vertical_spread: 3.1                           # stock 4
     weapon.sway: 0.8                                      # stock 1
-    weapon.fire_rate: 500                                 # stock 400
     projectile.penetration_slowdown: 0.8                  # stock 0.25
     damage.standard_damage: 75                            # stock 75
     damage.durable_damage: 35                             # stock 35
     damage.stagger: 35                                    # stock 35
     attachment.magazine.rifle_5_5x50mm_standard.reload_duration: 2
+    weapon.fire_rate: 500                                 # stock 400
+    fire_rate.modes.x: 350                                # stock 0
+    fire_rate.modes.z: 700                                # stock 0
+    weapon_function.left: 2                               # stock 0; rate-of-fire selector on the left input
 
   AR-32 Pacifier:
     weapon.horizontal_spread: 3.1                         # stock 4
     weapon.vertical_spread: 3.1                           # stock 4
     weapon.sway: 0.8                                      # stock 1
     projectile.penetration_slowdown: 0.4                  # stock 0.25
-    damage.standard_damage: 60                            # stock 55
+    damage.standard_damage: 70                            # stock 55
     damage.durable_damage: 10                             # stock 10
     damage.stagger: 15                                    # stock 15
     damage.status_1_strength: 6                           # stock 2; stun effect
@@ -66,6 +71,10 @@ weapons:
     magazine.starting_magazines: 7                        # stock 6
     magazine.spare_magazines: 10                          # stock 8
     magazine.magazines_from_supply: 10                    # stock 8
+    weapon.fire_rate: 700                                 # stock 700
+    fire_rate.modes.x: 400                                # stock 0
+    fire_rate.modes.z: 900                                # stock 0
+    weapon_function.left: 2                               # stock 0; rate-of-fire selector on the left input
 
   AR-59 Suppressor:
     weapon.horizontal_spread: 3.1                         # stock 2

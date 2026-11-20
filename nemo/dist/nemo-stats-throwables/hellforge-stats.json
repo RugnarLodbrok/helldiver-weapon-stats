@@ -147,6 +147,7 @@
     "TM-1 Lure Mine": {
       "throwable.max_count": 4,
       "throwable.count_from_supply": 3,
+      "throwable.launch_distance_max": 12,
       "explosion.inner_radius": 4,
       "explosion.outer_radius": 12,
       "explosion.damage.standard_damage": 1200,

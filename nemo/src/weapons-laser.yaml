@@ -100,9 +100,12 @@ weapons:
     weapon.vertical_spread: 0.1                           # stock 50
     damage.standard_damage: 70                            # stock 60
     damage.durable_damage: 8                              # stock 6
+    damage.stagger: 15                                    # stock 10
     damage.status_1_type: fire                            # stock none
     damage.status_1_strength: 1                           # stock 0
     heat.heat_per_shot: 4                                 # stock 10
+    heat.cool_per_second: 9                               # stock 15
+    beam.fire_rate: 350                                   # stock 300
     beam.pulse_beams: 1                                   # stock 2
 
   LAS-12 Sai:

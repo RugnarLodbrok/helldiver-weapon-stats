@@ -80,9 +80,12 @@
       "weapon.vertical_spread": 0.1,
       "damage.standard_damage": 70,
       "damage.durable_damage": 8,
+      "damage.stagger": 15,
       "damage.status_1_type": 5,
       "damage.status_1_strength": 1,
       "heat.heat_per_shot": 4,
+      "heat.cool_per_second": 9,
+      "beam.fire_rate": 350,
       "beam.pulse_beams": 1
     },
     "LAS-12 Sai": {

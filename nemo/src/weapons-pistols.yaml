@@ -6,7 +6,7 @@ weapons:
     weapon.sway: 0.5                                      # stock 1
     projectile.drag: 0.6                                  # stock 1.2
     projectile.penetration_slowdown: 0.9                  # stock 0.25
-    damage.standard_damage: 90                            # stock 70
+    damage.standard_damage: 95                            # stock 70
     damage.durable_damage: 18                             # stock 12
     damage.stagger: 15                                    # stock 10
     magazine.capacity: 40                                 # stock 31
@@ -19,7 +19,7 @@ weapons:
     weapon.fire_rate: 1200                                # stock 900
     projectile.drag: 0.6                                  # stock 1.2
     projectile.penetration_slowdown: 0.9                  # stock 0.25
-    damage.standard_damage: 90                            # stock 100
+    damage.standard_damage: 95                            # stock 100
     damage.durable_damage: 18                             # stock 32
     damage.stagger: 15                                    # stock 10
     magazine.capacity: 34                                 # stock 15

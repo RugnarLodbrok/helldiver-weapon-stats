@@ -15,12 +15,15 @@
       "weapon.vertical_spread": 1,
       "damage.primary.standard_damage": 250,
       "damage.primary.durable_damage": 250,
-      "charge.level_1": 0.2,
-      "charge.level_2": 0.4,
+      "charge.level_1": 0.1,
+      "charge.level_2": 0.8,
+      "charge.level_3": 1,
       "charge.auto_fire_at_full": 1,
       "arc.primary.chain_count": 2,
       "arc.primary.max_split": 2,
-      "arc.primary.max_angle_spread": 90
+      "arc.primary.max_angle_spread": 90,
+      "arc.primary.range": 60,
+      "arc.primary.distance_at_max_spread": 50
     },
     "P-35 Re-Educator": {
       "weapon.sway": 0.5,

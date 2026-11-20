@@ -34,32 +34,41 @@
       "projectile.penetration_slowdown": 0.1,
       "damage.standard_damage": 72,
       "damage.durable_damage": 15,
-      "damage.stagger": 10
+      "damage.stagger": 10,
+      "fire_rate.modes.z": 900,
+      "weapon_function.left": 2
     },
     "AR-23C Liberator Concussive": {
       "weapon.horizontal_spread": 3.1,
       "weapon.vertical_spread": 3.1,
       "weapon.sway": 0.8,
-      "weapon.fire_rate": 500,
       "projectile.penetration_slowdown": 0.8,
       "damage.standard_damage": 75,
       "damage.durable_damage": 35,
       "damage.stagger": 35,
-      "attachment.magazine.rifle_5_5x50mm_standard.reload_duration": 2
+      "attachment.magazine.rifle_5_5x50mm_standard.reload_duration": 2,
+      "weapon.fire_rate": 500,
+      "fire_rate.modes.x": 350,
+      "fire_rate.modes.z": 700,
+      "weapon_function.left": 2
     },
     "AR-32 Pacifier": {
       "weapon.horizontal_spread": 3.1,
       "weapon.vertical_spread": 3.1,
       "weapon.sway": 0.8,
       "projectile.penetration_slowdown": 0.4,
-      "damage.standard_damage": 60,
+      "damage.standard_damage": 70,
       "damage.durable_damage": 10,
       "damage.stagger": 15,
       "damage.status_1_strength": 6,
       "magazine.capacity": 40,
       "magazine.starting_magazines": 7,
       "magazine.spare_magazines": 10,
-      "magazine.magazines_from_supply": 10
+      "magazine.magazines_from_supply": 10,
+      "weapon.fire_rate": 700,
+      "fire_rate.modes.x": 400,
+      "fire_rate.modes.z": 900,
+      "weapon_function.left": 2
     },
     "AR-59 Suppressor": {
       "weapon.horizontal_spread": 3.1,

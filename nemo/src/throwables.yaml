@@ -224,6 +224,7 @@ throwables:
     notes: Nukes large area.
     throwable.max_count: 4                                # stock 4
     throwable.count_from_supply: 3                        # stock 2
+    throwable.launch_distance_max: 12                     # stock 4
     explosion.inner_radius: 4                             # stock 2
     explosion.outer_radius: 12                            # stock 8
     explosion.damage.standard_damage: 1200                # stock 1000
