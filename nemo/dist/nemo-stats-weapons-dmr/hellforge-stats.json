@@ -102,7 +102,7 @@
       "weapon.fire_rate": 300,
       "projectile.drag": 0.15,
       "projectile.penetration_slowdown": 0.4,
-      "damage.standard_damage": 200,
+      "damage.standard_damage": 220,
       "damage.durable_damage": 90,
       "damage.status_1_strength": 16,
       "magazine.capacity": 12,

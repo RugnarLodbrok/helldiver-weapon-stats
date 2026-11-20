@@ -1,10 +1,20 @@
 {
   "format": 1,
+  "weapons": {
+    "AX/AR-23 Guard Dog / gun": {
+      "weapon.capacity": 60
+    }
+  },
   "backpacks": {
     "LIFT-860 Hover Pack": {
       "jump.sustain_duration": 0.4,
       "jump.sustain_thrust": 150.0,
       "hover.max_horizontal_speed": 4.5
+    },
+    "AX/AR-23 Guard Dog": {
+      "deposit.capacity": 12,
+      "deposit.refill_amount": 12,
+      "deposit.start_amount": 12
     }
   }
 }

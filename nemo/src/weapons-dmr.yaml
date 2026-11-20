@@ -106,7 +106,7 @@ weapons:
     weapon.fire_rate: 300                                 # stock 190
     projectile.drag: 0.15                                 # stock 0.3
     projectile.penetration_slowdown: 0.4                  # stock 0.25
-    damage.standard_damage: 200                           # stock 220
+    damage.standard_damage: 220                           # stock 220
     damage.durable_damage: 90                             # stock 45
     damage.status_1_strength: 16                          # stock 3; fire effect
     magazine.capacity: 12                                 # stock 15
