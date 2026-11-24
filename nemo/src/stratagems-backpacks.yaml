@@ -12,6 +12,7 @@ backpacks:
     deposit.refill_amount: 12                             # stock 8
     deposit.start_amount: 12                              # stock 8
 
+
 weapons:
 
   AX/AR-23 Guard Dog / gun:

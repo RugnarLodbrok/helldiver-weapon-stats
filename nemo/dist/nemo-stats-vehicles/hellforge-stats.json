@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "weapons": {
+    "M-102 Gunner FRV / gun": {
+      "weapon.capacity": 1000,
+      "magazine.starting_magazines": 1,
+      "magazine.spare_magazines": 0,
+      "magazine.magazines_from_supply": 0,
+      "weapon.recoil_drift_horizontal": 4,
+      "weapon.recoil_drift_vertical": 4,
+      "weapon.recoil_climb_vertical": 5
+    }
+  }
+}

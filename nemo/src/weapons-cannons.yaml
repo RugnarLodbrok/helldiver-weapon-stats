@@ -25,15 +25,15 @@ weapons:
     damage.primary.durable_damage: 300                    # stock 225
     damage.primary.ap_direct: 5                           # stock 5
     damage.primary.ap_slight: 5                           # stock 5
-    damage.primary.ap_large: 4                            # stock 5
+    damage.primary.ap_large: 5                            # stock 5
     damage.primary.ap_extreme: 4                          # stock 5
     damage.primary.stagger: 50                            # stock 35
     magazine.starting_magazines: 15                       # stock 10
     magazine.spare_magazines: 30                          # stock 20
     magazine.magazines_from_supply: 15                    # stock 10
-    charge.level_1: 0.2                                   # stock 0.45
-    charge.level_2: 0.5                                   # stock 0.5
-    charge.level_3: 1.5                                   # stock 3
+    charge.level_1: 0.1                                   # stock 0.45
+    charge.level_2: 0.4                                   # stock 0.5
+    charge.level_3: 1.4                                   # stock 3
     charge.explode_at_overcharge: false                   # stock true
     raw:
       - component: WeaponCustomizationComponentData
@@ -47,7 +47,6 @@ weapons:
     weapon.sway: 0.7                                      # stock 1
     damage.primary.standard_damage: 700                   # stock 325
     damage.primary.durable_damage: 350                    # stock 260
-    damage.primary.ap_large: 3                            # stock 4
     damage.programmable.durable_damage: 150               # stock 150
     damage.programmable.standard_damage: 150              # stock 150
 

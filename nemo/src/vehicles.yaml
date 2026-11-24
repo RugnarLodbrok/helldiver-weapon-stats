@@ -1,0 +1,16 @@
+description: Tunes the mounted vehicle weapons' magazine and recoil.
+
+weapons:
+
+  M-102 Gunner FRV / gun:
+    notes: |
+      A single mag with no spares or supply mags; the recoil drift/climb are
+      quartered. The recoil fields are unreviewed (absent from the stats schema
+      for mounted weapons) and pass through verbatim.
+    weapon.capacity: 1000                                 # stock 100
+    magazine.starting_magazines: 1                        # stock 4
+    magazine.spare_magazines: 0                           # stock 4
+    magazine.magazines_from_supply: 0                     # stock 2
+    weapon.recoil_drift_horizontal: 4
+    weapon.recoil_drift_vertical: 4
+    weapon.recoil_climb_vertical: 5

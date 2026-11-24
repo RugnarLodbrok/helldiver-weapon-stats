@@ -4,13 +4,16 @@
     "R-2124 Constitution": {
       "weapon.horizontal_spread": 0.2,
       "weapon.vertical_spread": 0.2,
+      "reload.duration": 1.8,
       "projectile.drag": 0.2,
       "projectile.penetration_slowdown": 0.2,
       "damage.standard_damage": 180,
       "damage.durable_damage": 80,
       "damage.ap_direct": 3,
       "damage.ap_slight": 3,
-      "damage.stagger": 20
+      "damage.stagger": 20,
+      "rounds.spare_rounds": 150,
+      "rounds.rounds_from_supply": 150
     },
     "R-63 Diligence": {
       "weapon.ergonomics": 65,
@@ -27,7 +30,8 @@
       "damage.ap_direct": 3,
       "damage.ap_slight": 3,
       "damage.stagger": 20,
-      "magazine.capacity": 20
+      "magazine.capacity": 20,
+      "magazine.starting_magazines": 6
     },
     "R-2 Amendment": {
       "weapon.horizontal_spread": 0.6,
@@ -74,13 +78,15 @@
       "damage.durable_damage": 130,
       "damage.ap_direct": 4,
       "damage.stagger": 30,
-      "magazine.capacity": 12
+      "magazine.capacity": 12,
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 8
     },
     "R-6 Deadeye": {
       "weapon.horizontal_spread": 0.1,
       "weapon.vertical_spread": 0.1,
       "weapon.ergonomics": 50,
-      "weapon.fire_rate": 200,
+      "weapon.fire_rate": 400,
       "weapon.sway": 0.5,
       "weapon.recoil_drift_horizontal": 5,
       "weapon.recoil_climb_vertical": 150,
@@ -90,7 +96,9 @@
       "damage.ap_direct": 4,
       "damage.standard_damage": 300,
       "damage.durable_damage": 130,
-      "damage.stagger": 30
+      "damage.stagger": 30,
+      "rounds.spare_rounds": 90,
+      "rounds.rounds_from_supply": 90
     },
     "R-4 Hyena": {
       "weapon.ergonomics": 40,
@@ -106,7 +114,8 @@
       "damage.durable_damage": 90,
       "damage.status_1_strength": 16,
       "magazine.capacity": 12,
-      "magazine.spare_magazines": 6,
+      "magazine.starting_magazines": 5,
+      "magazine.spare_magazines": 8,
       "magazine.magazines_from_supply": 8
     }
   }

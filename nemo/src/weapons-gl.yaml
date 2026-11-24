@@ -3,18 +3,32 @@ description: Tunes the grenade launchers' projectile damage and spread.
 weapons:
 
   GL-21 Grenade Launcher:
+    notes: Tighter spread, damage match evictor.
+    weapon.sway: 0.7                                      # stock 1
     weapon.horizontal_spread: 15                          # stock 20
     weapon.vertical_spread: 15                            # stock 20
+    weapon.recoil_drift_horizontal: 90                    # stock 170
+    weapon.recoil_drift_vertical: 95                      # stock 175
+    damage.primary.standard_damage: 250                   # stock 20
+    damage.primary.durable_damage: 250                    # stock 2
+    explosion.primary_impact.damage.standard_damage: 440  # stock 400
+    explosion.primary_impact.damage.durable_damage: 440   # stock 400
 
   GL-52 De-Escalator:
+    notes: Two rounds per reload, bigger damage.
     weapon.sway: 0.7                                      # stock 1
     damage.primary_impact_arc.standard_damage: 150        # stock 100
     damage.primary_impact_arc.durable_damage: 100         # stock 70
     arc.primary_impact_arc.chain_count: 2                 # stock 2
     arc.primary_impact_arc.max_split: 3                   # stock 2
     arc.primary_impact_arc.max_angle_spread: 350          # stock 300
+    rounds.starting_rounds: 40                            # stock 32
+    rounds.spare_rounds: 60                               # stock 40
+    rounds.rounds_from_supply: 60                         # stock 40
+    rounds.rounds_per_reload: 2
 
   GL-28 Belt-Fed Grenade Launcher:
+    notes: Fires bolter rounds, bigger capacity.
     weapon.ergonomics: 45                                 # stock 20
     weapon.sway: 0.8                                      # stock 1
     weapon.horizontal_spread: 2                           # stock 4
@@ -24,29 +38,27 @@ weapons:
     attack.primary.projectile: 202
     backpacks:
       GL-28 Belt-Fed Grenade Launcher Backpack:
-        deposit.capacity: 250
-        deposit.start_amount: 250
-        deposit.refill_amount: 120
+        deposit.capacity: 400
+        deposit.start_amount: 400
+        deposit.refill_amount: 200
 
   GL-15 Evictor:
+    notes: Tighter spread.
     weapon.horizontal_spread: 5                           # stock 15
     weapon.vertical_spread: 10                            # stock 12
     explosion.primary.impact.damage.standard_damage: 440  # stock 440
     explosion.primary.impact.damage.durable_damage: 440   # stock 440
-    explosion.primary.impact.inner_radius: 7.5            # stock 2.25
+    explosion.primary.impact.inner_radius: 3.5            # stock 2.25
     explosion.primary.impact.outer_radius: 7.5            # stock 5.5
 
   GP-31 Grenade Pistol:
+    notes: Tighter spread.
     weapon.horizontal_spread: 10                          # stock 30
     weapon.vertical_spread: 10                            # stock 30
     weapon.sway: 0.8                                      # stock 1
     weapon.recoil_climb_vertical: 50                      # stock 50
     projectile.drag: 1.2                                  # stock 1.2
-    damage.standard_damage: 250                           # stock 250
-    damage.durable_damage: 250                            # stock 250
-    explosion.primary.impact.damage.standard_damage: 440  # stock 400
-    explosion.primary.impact.damage.durable_damage: 440   # stock 400
-    explosion.primary.impact.inner_radius: 7.5            # stock 2.25
+    explosion.primary.impact.inner_radius: 3.5            # stock 2.25
     explosion.primary.impact.outer_radius: 7.5            # stock 6.5
     rounds.feed_capacity_1: 1                             # stock 1
     rounds.starting_rounds: 8                             # stock 4

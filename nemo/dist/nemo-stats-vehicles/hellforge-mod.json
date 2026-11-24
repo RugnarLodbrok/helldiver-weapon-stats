@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "id": "nemo-stats-vehicles",
+  "name": "Nemo Stats: Vehicles",
+  "version": "1.0.0",
+  "description": "Tunes the mounted vehicle weapons' magazine and recoil.\n\n- M-102 Gunner FRV / gun\n  A single mag with no spares or supply mags; the recoil drift/climb are\n  quartered. The recoil fields are unreviewed (absent from the stats schema\n  for mounted weapons) and pass through verbatim.",
+  "gameplay": true
+}

@@ -81,9 +81,9 @@ weapons:
     weapon.vertical_spread: 0.1                           # stock 20
     projectile.velocity: 2000                             # stock 1300
     damage.standard_damage: 70                            # stock 60
-    damage.durable_damage: 4                              # stock 6
+    damage.durable_damage: 6                              # stock 6
     damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 0.5                         # stock 0
+    damage.status_1_strength: 0.7                         # stock 0
     heat.firing_charge: 10                                # stock 100; 0 = instant, drops the 0.5 s wind-up
     heat.heat_per_shot: 0.95                              # stock 1.15; as in new patch
 
@@ -103,10 +103,10 @@ weapons:
     weapon.horizontal_spread: 0.1                         # stock 200
     weapon.vertical_spread: 0.1                           # stock 50
     damage.standard_damage: 70                            # stock 60
-    damage.durable_damage: 4                              # stock 6
+    damage.durable_damage: 6                              # stock 6
     damage.stagger: 15                                    # stock 10
     damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 0.5                         # stock 0
+    damage.status_1_strength: 0.7                         # stock 0
     heat.heat_per_shot: 4                                 # stock 10
     heat.cool_per_second: 6.5                             # stock 15
     beam.fire_rate: 250                                   # stock 300
@@ -123,12 +123,12 @@ weapons:
     weapon.vertical_spread: 0.1                           # stock 140
     projectile.velocity: 2000                             # stock 100
     damage.standard_damage: 70                            # stock 80
-    damage.durable_damage: 4                              # stock 4
+    damage.durable_damage: 6                              # stock 4
     damage.ap_direct: 2                                   # stock 3
     damage.ap_slight: 2                                   # stock 3
     damage.ap_large: 2                                    # stock 3
     damage.status_1_type: fire                            # stock none
-    damage.status_1_strength: 0.5                         # stock 0
+    damage.status_1_strength: 0.7                         # stock 0
     heat.cool_per_second: 6.7                             # stock 5.4
     heat.heat_per_shot: 1.3                               # stock 2
 

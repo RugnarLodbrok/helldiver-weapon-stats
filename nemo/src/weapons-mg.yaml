@@ -75,8 +75,7 @@ weapons:
     damage.primary.standard_damage: 220                   # stock 150
     damage.primary.durable_damage: 100                    # stock 35
     damage.primary.stagger: 30                            # stock 25
-    damage.primary.ap_slight: 4                           # stock 4
     damage.primary.ap_large: 3                            # stock 4
     magazine.magazines_from_supply: 4                     # stock 2
-    magazine.spare_magazines: 4                           # stock 2
+    magazine.spare_magazines: 3                           # stock 2
     magazine.starting_magazines: 2                        # stock 1

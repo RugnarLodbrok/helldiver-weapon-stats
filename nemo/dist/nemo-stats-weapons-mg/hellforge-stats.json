@@ -52,10 +52,9 @@
       "damage.primary.standard_damage": 220,
       "damage.primary.durable_damage": 100,
       "damage.primary.stagger": 30,
-      "damage.primary.ap_slight": 4,
       "damage.primary.ap_large": 3,
       "magazine.magazines_from_supply": 4,
-      "magazine.spare_magazines": 4,
+      "magazine.spare_magazines": 3,
       "magazine.starting_magazines": 2
     }
   },

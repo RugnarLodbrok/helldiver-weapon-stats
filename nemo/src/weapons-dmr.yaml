@@ -6,6 +6,7 @@ weapons:
   R-2124 Constitution:
     weapon.horizontal_spread: 0.2                         # stock 0.1
     weapon.vertical_spread: 0.2                           # stock 0.1
+    reload.duration: 1.8                                  # stock 2.833
     projectile.drag: 0.2                                  # stock 0.3
     projectile.penetration_slowdown: 0.2                  # stock 0.25
     damage.standard_damage: 180                           # stock 180
@@ -13,6 +14,8 @@ weapons:
     damage.ap_direct: 3                                   # stock 3
     damage.ap_slight: 3                                   # stock 3
     damage.stagger: 20                                    # stock 20
+    rounds.spare_rounds: 150                              # stock 100
+    rounds.rounds_from_supply: 150                        # stock 100
 
   R-63 Diligence:
     weapon.ergonomics: 65                                 # stock 65
@@ -30,6 +33,7 @@ weapons:
     damage.ap_slight: 3                                   # stock 2
     damage.stagger: 20                                    # stock 15
     magazine.capacity: 20                                 # stock 25
+    magazine.starting_magazines: 6                        # stock 5
 
   R-2 Amendment:
     weapon.horizontal_spread: 0.6                         # stock 0.1
@@ -79,12 +83,14 @@ weapons:
     damage.ap_direct: 4                                   # stock 3
     damage.stagger: 30                                    # stock 20
     magazine.capacity: 12                                 # stock 15
+    magazine.starting_magazines: 5                        # stock 4
+    magazine.spare_magazines: 8                           # stock 6
 
   R-6 Deadeye:
     weapon.horizontal_spread: 0.1                         # stock 0.1
     weapon.vertical_spread: 0.1                           # stock 0.1
     weapon.ergonomics: 50                                 # stock 65
-    weapon.fire_rate: 200                                 # stock 100
+    weapon.fire_rate: 400                                 # stock 100
     weapon.sway: 0.5                                      # stock 1
     weapon.recoil_drift_horizontal: 5                     # stock 40
     weapon.recoil_climb_vertical: 150                     # stock 200
@@ -95,6 +101,8 @@ weapons:
     damage.standard_damage: 300                           # stock 300
     damage.durable_damage: 130                            # stock 100
     damage.stagger: 30                                    # stock 30
+    rounds.spare_rounds: 90                               # stock 60
+    rounds.rounds_from_supply: 90                         # stock 60
 
   R-4 Hyena:
     weapon.ergonomics: 40                                 # stock 30
@@ -110,5 +118,6 @@ weapons:
     damage.durable_damage: 90                             # stock 45
     damage.status_1_strength: 16                          # stock 3; fire effect
     magazine.capacity: 12                                 # stock 15
-    magazine.spare_magazines: 6                           # stock 5
+    magazine.starting_magazines: 5                        # stock 4
+    magazine.spare_magazines: 8                           # stock 5
     magazine.magazines_from_supply: 8                     # stock 5

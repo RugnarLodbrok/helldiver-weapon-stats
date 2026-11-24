@@ -2,6 +2,9 @@ description: Tunes the defensive stratagems' mine damage and shield durability.
 
 stratagems:
 
+  E/GL-21 Grenadier Battlement:
+    weapon.capacity: 120
+
   MD-17 Anti-Tank Mines:
     explosion.damage.durable_damage: 4000
     explosion.damage.stagger: 35
