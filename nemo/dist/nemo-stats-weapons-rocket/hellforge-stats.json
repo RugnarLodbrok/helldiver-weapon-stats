@@ -7,26 +7,38 @@
     },
     "FAF-14 Spear": {
       "weapon.sway": 1,
-      "reload.duration": 4
+      "damage.primary.standard_damage": 5000,
+      "damage.primary.durable_damage": 5000,
+      "damage.primary.ap_direct": 12,
+      "damage.primary.ap_slight": 12,
+      "damage.primary.ap_large": 12,
+      "damage.primary.ap_extreme": 12,
+      "reload.duration": 4,
+      "missile.max_angle_to_target": 60,
+      "missile.turn_rate_at_max_angle": 14,
+      "missile.turn_rate_aligned": 18
     },
     "RL-77 Airburst Rocket Launcher": {
       "weapon.sway": 1,
       "reload.duration": 4
     },
-    "P-34 Breacher": {
-      "weapon.sway": 1,
-      "weapon.recoil_climb_vertical": 450,
-      "projectile.drag": 2,
-      "damage.standard_damage": 60,
-      "damage.durable_damage": 0,
-      "magazine.capacity": 1,
-      "magazine.starting_magazines": 1,
-      "magazine.spare_magazines": 2,
-      "magazine.magazines_from_supply": 2
-    },
     "GP-20 Ultimatum": {
       "weapon.recoil_climb_vertical": 500,
       "projectile.velocity": 60
+    },
+    "P-34 Breacher": {
+      "magazine.capacity": 1,
+      "magazine.starting_magazines": 1,
+      "magazine.spare_magazines": 1,
+      "magazine.magazines_from_supply": 1,
+      "reload.duration": 1.8
+    },
+    "P-33 Missile Pistol": {
+      "reload.duration": 1.8
+    },
+    "MLS-4X Commando": {
+      "damage.primary.standard_damage": 1650,
+      "damage.primary.durable_damage": 1650
     }
   },
   "stratagems": {
@@ -40,10 +52,15 @@
       "stratagem.cooldown": 90
     },
     "MLS-4X Commando": {
-      "stratagem.cooldown": 70
+      "stratagem.cooldown": 90
     },
     "MS-11 Solo Silo": {
       "stratagem.cooldown": 120
+    }
+  },
+  "backpacks": {
+    "FAF-14 Spear Backpack": {
+      "deposit.capacity": 5
     }
   }
 }

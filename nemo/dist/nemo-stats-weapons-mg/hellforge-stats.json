@@ -46,7 +46,6 @@
       "weapon.vertical_spread": 1.5,
       "weapon.capacity": 100,
       "reload.duration": 4,
-      "projectile.primary.velocity": 800,
       "projectile.primary.drag": 0.2,
       "projectile.primary.penetration_slowdown": 0.2,
       "damage.primary.standard_damage": 220,
@@ -56,6 +55,25 @@
       "magazine.magazines_from_supply": 4,
       "magazine.spare_magazines": 3,
       "magazine.starting_magazines": 2
+    },
+    "E/MG-101 HMG Emplacement / weapon": {
+      "weapon.recoil_climb_vertical": 5,
+      "weapon.recoil_drift_horizontal": 10,
+      "weapon.recoil_drift_vertical": 6
+    }
+  },
+  "stratagems": {
+    "E/MG-101 HMG Emplacement": {
+      "projectile.drag": 0.1,
+      "projectile.velocity": 980,
+      "damage.standard_damage": 220,
+      "damage.durable_damage": 100,
+      "damage.stagger": 30,
+      "damage.demolition": 15,
+      "damage.ap_large": 3,
+      "weapon.fire_rate": 1200,
+      "weapon.capacity": 1000,
+      "entity.health": 2000
     }
   },
   "raw": [

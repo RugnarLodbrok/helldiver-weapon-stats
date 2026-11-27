@@ -1,4 +1,8 @@
-description: Tunes the grenade launchers' projectile damage and spread.
+description: |
+  Tunes the grenade launchers' projectile damage and spread.
+
+  Tighter spread and reduced sway. Consistent damage/blast radius between GL-21, GP-31, GL-15.
+  GL-28 fires bolter rounds from a 400-round backpack.
 
 weapons:
 

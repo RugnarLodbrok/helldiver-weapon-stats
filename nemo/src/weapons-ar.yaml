@@ -20,6 +20,7 @@ weapons:
     weapon.vertical_spread: 3.1                           # stock 3
     weapon.sway: 0.8                                      # stock 1
     weapon.recoil_drift_vertical: 25                      # stock 20
+    projectile.drag: 0.4                                  # stock 0.3
     attachment.magazine.rifle_5_5x50mm_drum.reload_duration: 3.2
     attachment.magazine.rifle_5_5x50mm_extended.reload_duration: 2.5
 
@@ -41,7 +42,7 @@ weapons:
     damage.standard_damage: 72                            # stock 65
     damage.durable_damage: 15                             # stock 15
     damage.stagger: 10                                    # stock 10
-    fire_rate.modes.z: 900                                # stock 0; 900 rpm mode
+    fire_rate.modes.z: 900                                # stock 0
     weapon_function.left: 2                               # stock 0; rate-of-fire selector on the left input
 
   AR-23C Liberator Concussive:

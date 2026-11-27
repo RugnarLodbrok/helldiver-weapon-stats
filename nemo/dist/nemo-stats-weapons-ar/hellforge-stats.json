@@ -14,6 +14,7 @@
       "weapon.vertical_spread": 3.1,
       "weapon.sway": 0.8,
       "weapon.recoil_drift_vertical": 25,
+      "projectile.drag": 0.4,
       "attachment.magazine.rifle_5_5x50mm_drum.reload_duration": 3.2,
       "attachment.magazine.rifle_5_5x50mm_extended.reload_duration": 2.5
     },

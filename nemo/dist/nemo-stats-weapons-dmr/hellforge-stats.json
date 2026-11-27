@@ -2,6 +2,7 @@
   "format": 1,
   "weapons": {
     "R-2124 Constitution": {
+      "weapon.sway": 0.3,
       "weapon.horizontal_spread": 0.2,
       "weapon.vertical_spread": 0.2,
       "reload.duration": 1.8,
@@ -12,8 +13,8 @@
       "damage.ap_direct": 3,
       "damage.ap_slight": 3,
       "damage.stagger": 20,
-      "rounds.spare_rounds": 150,
-      "rounds.rounds_from_supply": 150
+      "rounds.spare_rounds": 190,
+      "rounds.rounds_from_supply": 190
     },
     "R-63 Diligence": {
       "weapon.ergonomics": 65,
@@ -36,7 +37,7 @@
     "R-2 Amendment": {
       "weapon.horizontal_spread": 0.6,
       "weapon.vertical_spread": 0.6,
-      "weapon.ergonomics": 60,
+      "weapon.ergonomics": 55,
       "weapon.sway": 0.5,
       "weapon.recoil_drift_horizontal": 5,
       "weapon.recoil_drift_vertical": 70,
@@ -59,7 +60,7 @@
       "projectile.drag": 0.3,
       "projectile.penetration_slowdown": 0.5,
       "damage.standard_damage": 165,
-      "damage.durable_damage": 45,
+      "damage.durable_damage": 50,
       "damage.ap_direct": 3,
       "damage.stagger": 25,
       "magazine.capacity": 20
@@ -71,12 +72,13 @@
       "weapon.recoil_drift_vertical": 150,
       "weapon.horizontal_spread": 0.4,
       "weapon.vertical_spread": 0.4,
-      "reload.duration": 2.8,
+      "reload.duration": 3,
       "projectile.drag": 0.15,
       "projectile.penetration_slowdown": 0.15,
       "damage.standard_damage": 300,
       "damage.durable_damage": 130,
       "damage.ap_direct": 4,
+      "damage.demolition": 15,
       "damage.stagger": 30,
       "magazine.capacity": 12,
       "magazine.starting_magazines": 5,
@@ -96,9 +98,10 @@
       "damage.ap_direct": 4,
       "damage.standard_damage": 300,
       "damage.durable_damage": 130,
+      "damage.demolition": 15,
       "damage.stagger": 30,
-      "rounds.spare_rounds": 90,
-      "rounds.rounds_from_supply": 90
+      "rounds.spare_rounds": 204,
+      "rounds.rounds_from_supply": 204
     },
     "R-4 Hyena": {
       "weapon.ergonomics": 40,
@@ -112,6 +115,7 @@
       "projectile.penetration_slowdown": 0.4,
       "damage.standard_damage": 220,
       "damage.durable_damage": 90,
+      "damage.demolition": 15,
       "damage.status_1_strength": 16,
       "magazine.capacity": 12,
       "magazine.starting_magazines": 5,

@@ -25,7 +25,7 @@
       "weapon.sway": 0.7,
       "weapon.horizontal_spread": 5,
       "weapon.vertical_spread": 5,
-      "weapon.fire_rate": 1000,
+      "weapon.fire_rate": 500,
       "damage.standard_damage": 100,
       "damage.durable_damage": 50,
       "magazine.capacity": 30,
@@ -69,6 +69,7 @@
       "weapon.vertical_spread": 10,
       "weapon.capacity": 7,
       "weapon.ergonomics": 40,
+      "reload.duration": 4,
       "charge.level_1": 0.1,
       "charge.level_2": 1.9,
       "charge.level_3": 2.0,
@@ -81,9 +82,9 @@
       "projectile.full_charge.gravity": 1,
       "projectile.full_charge.lifetime": 5,
       "projectile.full_charge.velocity": 550,
-      "magazine.starting_magazines": 4,
-      "magazine.spare_magazines": 7,
-      "magazine.magazines_from_supply": 4,
+      "magazine.starting_magazines": 3,
+      "magazine.spare_magazines": 5,
+      "magazine.magazines_from_supply": 3,
       "explosion.primary_impact.damage.demolition": 30
     }
   }

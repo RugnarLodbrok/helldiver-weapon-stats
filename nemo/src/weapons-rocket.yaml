@@ -8,27 +8,38 @@ weapons:
 
   FAF-14 Spear:
     weapon.sway: 1                                        # stock 1
+    damage.primary.standard_damage: 5000                  # stock 4000
+    damage.primary.durable_damage: 5000                   # stock 4000
+    damage.primary.ap_direct: 12                          # stock 7
+    damage.primary.ap_slight: 12                          # stock 7
+    damage.primary.ap_large: 12                           # stock 7
+    damage.primary.ap_extreme: 12                         # stock 7
     reload.duration: 4                                    # stock 5
+    missile.max_angle_to_target: 60                       # stock 45
+    missile.turn_rate_at_max_angle: 14                    # stock 10
+    missile.turn_rate_aligned: 18                         # stock 13
+    backpacks:
+      FAF-14 Spear Backpack:
+        deposit.capacity: 5
 
   RL-77 Airburst Rocket Launcher:
     weapon.sway: 1                                        # stock 1
     reload.duration: 4                                    # stock 5
 
-  # Retired weapons-utility secondaries reassigned to rocket.
-  P-34 Breacher:
-    weapon.sway: 1                                        # stock 1
-    weapon.recoil_climb_vertical: 450                     # stock 450
-    projectile.drag: 2                                    # stock 2
-    damage.standard_damage: 60                            # stock 60
-    damage.durable_damage: 0                              # stock 0
-    magazine.capacity: 1                                  # stock 1
-    magazine.starting_magazines: 1                        # stock 1
-    magazine.spare_magazines: 2                           # stock 2
-    magazine.magazines_from_supply: 2                     # stock 1
-
   GP-20 Ultimatum:
     weapon.recoil_climb_vertical: 500                     # stock 50
     projectile.velocity: 60                               # stock 20
+
+  # Retired weapons-utility secondaries reassigned to rocket.
+  P-34 Breacher:
+    magazine.capacity: 1                                  # stock 1
+    magazine.starting_magazines: 1                        # stock 1
+    magazine.spare_magazines: 1                           # stock 2
+    magazine.magazines_from_supply: 1                     # stock 1
+    reload.duration: 1.8                                  # stock 2.667
+
+  P-33 Missile Pistol:
+    reload.duration: 1.8                                  # stock 2.667
 
   # Stratagem-configured rockets: the cooldown sits with the weapon (the
   # stratagem target is nested under the weapon, the G-7 Pineapple pattern).
@@ -48,9 +59,11 @@ weapons:
         stratagem.cooldown: 90                            # stock 140
 
   MLS-4X Commando:
+    damage.primary.standard_damage: 1650                  # stock 1100
+    damage.primary.durable_damage: 1650                   # stock 1100
     stratagems:
       MLS-4X Commando:
-        stratagem.cooldown: 70                            # stock 120
+        stratagem.cooldown: 90                            # stock 120
 
   MS-11 Solo Silo:
     stratagems:

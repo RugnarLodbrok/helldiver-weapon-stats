@@ -3,6 +3,6 @@
   "id": "nemo-stats-weapons-dmr",
   "name": "Nemo Stats: Weapons DMR",
   "version": "1.0.0",
-  "description": "Tunes the designated-marksmen rifles' spread, recoil, and damage.\n\n- R-2124 Constitution\n- R-63 Diligence\n- R-2 Amendment\n- R-72 Censor\n- R-63CS Diligence Counter Sniper\n- R-6 Deadeye\n- R-4 Hyena",
+  "description": "Tunes the designated-marksmen rifles' damage, reloads, and spread.\n\nOverall reduced sway, reload speed, increased durable damage, but decreased magazine size.\nHigh caliber DMR gets AP4 on head-on hit and even bigger damage.\n\n- R-2124 Constitution\n  Still a joke weapon, but with proper damage and capacity.\n- R-63 Diligence\n  Headshot workhorse.\n- R-2 Amendment\n  Faster shooting with bayonet and burst mode at the cost of ergonomics.\n- R-72 Censor\n  Subsonic silenced headshot workhorse.\n- R-63CS Diligence Counter Sniper\n  Heavy-hitting semi-auto, AP4 on direct hit.\n- R-6 Deadeye\n  Precise, heavy-hitting, AP4 on direct hit.\n- R-4 Hyena\n  High caliber, incendiary, damage between the regular Diligence and the CS.",
   "gameplay": true
 }

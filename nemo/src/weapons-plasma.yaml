@@ -28,7 +28,7 @@ weapons:
     weapon.sway: 0.7                                      # stock 1
     weapon.horizontal_spread: 5                           # stock 10
     weapon.vertical_spread: 5                             # stock 10
-    weapon.fire_rate: 1000                                # stock 350
+    weapon.fire_rate: 500                                 # stock 350
     damage.standard_damage: 100                           # stock 100
     damage.durable_damage: 50                             # stock 50
     magazine.capacity: 30                                 # stock 20
@@ -86,6 +86,7 @@ weapons:
     weapon.vertical_spread: 10                            # stock 30
     weapon.capacity: 7                                    # stock 3
     weapon.ergonomics: 40                                 # stock 25
+    reload.duration: 4
     charge.level_1: 0.1                                   # stock 1
     charge.level_2: 1.9                                   # stock 2.5
     charge.level_3: 2.0                                   # stock 2.6
@@ -98,7 +99,7 @@ weapons:
     projectile.full_charge.gravity: 1                     # stock 2
     projectile.full_charge.lifetime: 5                    # stock 0.6
     projectile.full_charge.velocity: 550                  # stock 250
-    magazine.starting_magazines: 4                        # stock 2
-    magazine.spare_magazines: 7                           # stock 4
-    magazine.magazines_from_supply: 4                     # stock 2
+    magazine.starting_magazines: 3                        # stock 2
+    magazine.spare_magazines: 5                           # stock 4
+    magazine.magazines_from_supply: 3                     # stock 2
     explosion.primary_impact.damage.demolition: 30        # stock 10

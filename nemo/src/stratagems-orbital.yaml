@@ -30,14 +30,14 @@ stratagems:
     stratagem.cooldown: 70                                # stock 70
 
   Orbital Railcannon Strike:
-    notes: Deletes any target.
+    notes: Deletes and overpenetrates any target.
     stratagem.cooldown: 90                                # stock 180
     damage.durable_damage: 14000
     damage.standard_damage: 14000
-    damage.ap_direct: 15
-    damage.ap_slight: 15
-    damage.ap_large: 15
-    damage.ap_extreme: 15
+    damage.ap_direct: 18
+    damage.ap_slight: 18
+    damage.ap_large: 18
+    damage.ap_extreme: 18
     explosion.inner_radius: 3.0
     explosion.outer_radius: 10.0
     explosion.shockwave_radius: 20.0

@@ -3,6 +3,6 @@
   "id": "nemo-stats-stratagems-orbital",
   "name": "Nemo Stats: Stratagem Orbital",
   "version": "1.0.0",
-  "description": "Tunes the orbital stratagems' cooldowns and payload damage.\n\n- Orbital Gas Strike\n  Low cooldown, reliable crowd control.\n- Orbital EMS Strike\n  Low cooldown, reliable crowd control.\n- Orbital Smoke Strike\n  Low cooldown, protection.\n- Orbital Precision Strike\n  Reliable blow this shit button.\n- Orbital Airburst Strike\n  Reliable area denial.\n- Orbital Gatling Barrage\n  Reliable area denial.\n- Orbital Railcannon Strike\n  Deletes any target.\n- Orbital Laser\n  No usage limit.\n- Orbital 380mm HE Barrage\n  More reliable area cleanup.\n- Orbital Napalm Barrage\n  Nerfed, but still deletes breach.",
+  "description": "Tunes the orbital stratagems' cooldowns and payload damage.\n\n- Orbital Gas Strike\n  Low cooldown, reliable crowd control.\n- Orbital EMS Strike\n  Low cooldown, reliable crowd control.\n- Orbital Smoke Strike\n  Low cooldown, protection.\n- Orbital Precision Strike\n  Reliable blow this shit button.\n- Orbital Airburst Strike\n  Reliable area denial.\n- Orbital Gatling Barrage\n  Reliable area denial.\n- Orbital Railcannon Strike\n  Deletes and overpenetrates any target.\n- Orbital Laser\n  No usage limit.\n- Orbital 380mm HE Barrage\n  More reliable area cleanup.\n- Orbital Napalm Barrage\n  Nerfed, but still deletes breach.",
   "gameplay": true
 }
